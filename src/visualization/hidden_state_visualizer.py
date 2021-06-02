@@ -109,31 +109,22 @@ class QAHiddenStateVisualizer:
         return reduced.transpose()
 
 
-def run():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-s", "--sample_path", help="directory where sample file is stored", required=True)
-    parser.add_argument("-m", "--model_path", help="directory where sample file is stored", required=True)
-    parser.add_argument("--bert_model", help="type of bert model / tokenizer used", default="bert-base-uncased")
-    parser.add_argument("--output_dir", help="directory to store the output files", default="./output")
-    parser.add_argument("--cache_dir", help="directory to store the cache files", default="./cache")
-    parser.add_argument("--lower_case", help="whether tokenization was lower or upper case", default=True)
-    parser.add_argument("--plot_title", help="title of current experiment")
-    args = parser.parse_args()
+def run(sample_path, model_path, bert_model="bert-base-uncased", output_dir="./output", cache_dir="./cache", lower_case=True, plot_title="Plot"):
+    # replaced arg parser, since we want to run our experiments from a jupyter notebook
 
-    sample: QASample = QASample.from_json_file(args.sample_path)
+    sample: QASample = QASample.from_json_file(sample_path)
 
     bert_model: BertQAModel = BertQAModel(
-        model_path=args.model_path,
-        model_type=args.bert_model,
-        lower_case=args.lower_case,
-        cache_dir=args.cache_dir)
+        model_path=model_path,
+        model_type=bert_model,
+        lower_case=lower_case,
+        cache_dir=cache_dir)
 
     visualizer: QAHiddenStateVisualizer = QAHiddenStateVisualizer(input_sample=sample,
                                                                   qa_model=bert_model,
-                                                                  output_path=args.output_dir,
-                                                                  plot_title=args.plot_title)
+                                                                  output_path=output_dir,
+                                                                  plot_title=plot_title)
     visualizer.run_visualization()
 
 
-if __name__ == '__main__':
-    run()
+# removed main method
