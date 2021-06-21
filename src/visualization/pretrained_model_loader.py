@@ -25,7 +25,6 @@ class ModelType(Enum):
     @Params:
         model_path
         model_type
-        lower_case
         cache_dir
         device
 """
@@ -33,9 +32,8 @@ class ModelType(Enum):
 
 class QAModel:
 
-    def __init__(self, model_type: ModelType, lower_case: bool, custom=False, model_path=None, cache_dir: str = "../cache", device: str = "cpu"):
+    def __init__(self, model_type: ModelType=None, custom=False, model_path=None, cache_dir: str = "../cache", device: str = "cpu"):
         self.model_type = model_type
-        self.lower_case = lower_case
         self.model_path = model_path
         self.cache_dir = cache_dir
         self.device = device

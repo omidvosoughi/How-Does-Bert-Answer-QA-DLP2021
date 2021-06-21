@@ -10,9 +10,6 @@ from .sample_wrapper import QASample
 
 class Visualizer:
 
-    def __init__(self):
-        pass
-
     def visualize_hidden_states(self, model: QAModel, sample_file_path: str):
         sample = QASample.from_json_file(sample_file_path)
         prediction, hidden_states, features = model.predict(sample)
@@ -48,7 +45,7 @@ class Visualizer:
 
         token_labels = []
 
-        for token_pos, token in enumerate(tokens):
+        for token_pos, _ in enumerate(tokens):
 
             if prediction_pos[0] <= token_pos <= prediction_pos[1]:
                 token_labels.append(TokenLabel.PREDICTION)
