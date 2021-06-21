@@ -12,6 +12,7 @@ from .data_utils import QASample, SquadExample, QAInputFeatures, RawResult, read
 
 class ModelType(Enum):
     BERT_BASE_UNCASED = "bert-base-uncased"
+    BERT_BASE_UNCASED_SQUAD = "csarron/bert-base-uncased-squad-v1"
 
 
 """
