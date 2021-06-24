@@ -240,6 +240,7 @@ class QAInputFeatures(object):
                  token_to_orig_map,
                  input_ids,
                  input_mask,
+                 decoder_ids,
                  segment_ids,
                  cls_index,
                  p_mask,
@@ -254,6 +255,7 @@ class QAInputFeatures(object):
         self.tokens = tokens
         self.token_to_orig_map = token_to_orig_map
         self.input_ids = input_ids
+        self.decoder_ids = decoder_ids
         self.input_mask = input_mask
         self.segment_ids = segment_ids
         self.cls_index = cls_index
@@ -513,6 +515,8 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
             logger.info(
                 "answer: %s" % (answer_text))
 
+        decoder_ids = tokenizer.convert_tokens_to_ids(tokens[start_position:(end_position + 1)])
+
         return QAInputFeatures(
             unique_id=unique_id,
             example_index=0,
@@ -520,6 +524,7 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
             tokens=tokens,
             token_to_orig_map=token_to_orig_map,
             input_ids=input_ids,
+            decoder_ids=decoder_ids,
             input_mask=input_mask,
             segment_ids=segment_ids,
             cls_index=cls_index,
