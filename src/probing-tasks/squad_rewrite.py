@@ -36,7 +36,7 @@ import random
 from math import floor
 from nltk.tokenize import sent_tokenize, word_tokenize
 
-def squad_to_jiant(task, slow: bool) -> str:
+def squad_to_jiant(task, slow: bool=False) -> str:
   ret = []
   paragraphs = task['paragraphs']
   for p in paragraphs:
@@ -107,7 +107,7 @@ def find_sentence_from_index(char_ind: int, sentences: list) -> tuple[int, int]:
   print(f'Error: The given char_index {char_ind} exceeds the text length')
   return None
 
-def convert_dataset(in_path: str, out_path: str, train_split: float, dev_split: float, slow: bool):
+def convert_dataset(in_path: str, out_path: str, train_split: float, dev_split: float, slow: bool, small: bool):
   with open(in_path, 'r') as f:
     tasks = []
     data = json.load(f)
@@ -118,7 +118,11 @@ def convert_dataset(in_path: str, out_path: str, train_split: float, dev_split: 
       if i % (l//20) == 0:
         print('.', end='')
     print('\n')
+
   random.shuffle(tasks)
+  
+  if small:
+    tasks = tasks[:50]
 
   dev_start: int = floor(len(tasks) * train_split)
   test_start: int = dev_start + floor(len(tasks) * dev_split)
@@ -147,12 +151,13 @@ if __name__ == '__main__':
   parser.add_argument('-ts', '--trainsplit', default=0.8, type=float, help='train split: a number between 0 and 1, default=0.8')
   parser.add_argument('-ds', '--devsplit', default=0.1, type=float, help='dev split: a number between 0 and 1, default=0.1')
   parser.add_argument('-s', '--slow', action='store_true', help='use the slower but more reliable function to parse target labels')
-  args = parser.parse_args(['explain-BERT-QA-master\datasets\squad1.1\dev-v1.1.json','explain-BERT-QA-master\datasets\squad1.1\ '])
+  parser.add_argument('--small', action='store_true', help='create a small dataset of 50 instances for testing')
+  args = parser.parse_args(['.\datasets\squad1.1\dev-v1.1.json','.\datasets\squad1.1\small\ ', '--small'])
   #args = parser.parse_args()
   if args.trainsplit + args.devsplit > 1 or args.trainsplit + args.devsplit < 0:
     print('Error: sum of train split and dev split is not between 0 and 1')
   elif args.trainsplit > 1 or args.trainsplit < 0 or args.devsplit > 1 or args.devsplit < 0:
     print('Error: train and dev split are not between 0 and 1')
   else:
-    #convert_dataset(args.in_path, args.out_path, args.testsplit, args.devsplit, args.slow)
-    print(squad_to_jiant(test, False))
+    convert_dataset(args.in_path, args.out_path, args.trainsplit, args.devsplit, args.slow, args.small)
+    #print(squad_to_jiant(test))
