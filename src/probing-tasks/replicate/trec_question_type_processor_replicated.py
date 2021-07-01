@@ -15,38 +15,44 @@ Example probing task result in Jiant format (JSON):
 
 """
 
-from typing import List
 import argparse
-from task_processors import JiantTaskProcessor
+from typing import List
+from task_processors_replicated import output_task_in_jiant_format
 
-
-class TRECQuestionTypeProcessor(JiantTaskProcessor):
-    DOC_ID = "trec-qt"
-
-    def process_file(self) -> List:
-        """
+def convert_to_jiant_ep_format(input_path: str):
+    """
         Converts the TREC-10 Question Classification file into samples for the Question Type Probing task in Jiant format
         :return: A list of samples in jiant edge probing format.
-        """
-        labels = []
+    """
 
-        with open(self.input_path, encoding="latin-1") as input_file:
-            lines = input_file.readlines()
-            for line in lines:
-                line = line[:-1]  # remove line break character
-                split_by_first_space = line.split(" ", 1)
-                label = split_by_first_space[0]
-                labels.append(label)
+    DOC_ID = "trec-qt"
+    samples = []
+    sample_id = 0
 
-        return list(set(labels))
+    with open(input_path, encoding="latin-1") as input_file:
+        info = {"doc_id": DOC_ID, "q_id": str(sample_id)}
+        sample_id += 1
+        lines = input_file.readlines()
+        for line in lines:
+            line = line[:-1]
+            line_split = line.split(" ")
+            
+            label = line_split[0]
+            text = line_split[1:-1]
+                
+            entry = {"info": info,
+                     "text": " ".join(text),
+                     "targets": [{"span1": [0, len(text)], "label": label}]}
 
+            samples.append(entry)
+    
+    return samples
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input_path", help="path to input dataset file", required=True)
-    parser.add_argument("-o", "--output_dir",help="directory where labels.txt shall be stored",
-                        default="./output")
     args = parser.parse_args()
 
-    processor = TRECQuestionTypeProcessor(input_path=args.input_path, output_dir=args.output_dir)
-    processor.output_task_in_jiant_format()
+    samples = convert_to_jiant_ep_format(input_path=args.input_path)
+    #print(samples)
+    output_task_in_jiant_format(samples)
