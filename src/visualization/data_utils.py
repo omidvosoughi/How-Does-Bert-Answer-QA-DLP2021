@@ -36,6 +36,7 @@ def whitespace_tokenize(text):
     tokens = text.split()
     return tokens
 
+
 class BasicTokenizer(object):
     """
     Constructs a BasicTokenizer that will run basic tokenization (punctuation splitting, lower casing, etc.).
@@ -56,7 +57,13 @@ class BasicTokenizer(object):
             value for :obj:`lowercase` (as in the original BERT).
     """
 
-    def __init__(self, do_lower_case=True, never_split=None, tokenize_chinese_chars=True, strip_accents=None):
+    def __init__(
+        self,
+        do_lower_case=True,
+        never_split=None,
+        tokenize_chinese_chars=True,
+        strip_accents=None,
+    ):
         if never_split is None:
             never_split = []
         self.do_lower_case = do_lower_case
@@ -75,7 +82,11 @@ class BasicTokenizer(object):
                 :func:`PreTrainedTokenizer.tokenize`) List of token not to split.
         """
         # union() returns a new set by concatenating the two sets.
-        never_split = self.never_split.union(set(never_split)) if never_split else self.never_split
+        never_split = (
+            self.never_split.union(set(never_split))
+            if never_split
+            else self.never_split
+        )
         text = self._clean_text(text)
 
         # This was added on November 1st, 2018 for the multilingual and Chinese
@@ -191,15 +202,17 @@ class SquadExample(object):
     For examples without an answer, the start and end position are -1.
     """
 
-    def __init__(self,
-                 qas_id,
-                 question_text,
-                 doc_tokens,
-                 sup_ids=None,
-                 orig_answer_text=None,
-                 start_position=None,
-                 end_position=None,
-                 is_impossible=None):
+    def __init__(
+        self,
+        qas_id,
+        question_text,
+        doc_tokens,
+        sup_ids=None,
+        orig_answer_text=None,
+        start_position=None,
+        end_position=None,
+        is_impossible=None,
+    ):
         self.qas_id = qas_id
         self.question_text = question_text
         self.doc_tokens = doc_tokens
@@ -215,8 +228,7 @@ class SquadExample(object):
     def __repr__(self):
         s = ""
         s += "qas_id: %s" % (self.qas_id)
-        s += ", question_text: %s" % (
-            self.question_text)
+        s += ", question_text: %s" % (self.question_text)
         s += ", doc_tokens: [%s]" % (" ".join(self.doc_tokens))
         if self.sup_ids:
             s += ", sup_ids: %d" % (self.sup_ids)
@@ -232,23 +244,25 @@ class SquadExample(object):
 class QAInputFeatures(object):
     """A single set of features of data."""
 
-    def __init__(self,
-                 unique_id,
-                 example_index,
-                 doc_span_index,
-                 tokens,
-                 token_to_orig_map,
-                 input_ids,
-                 input_mask,
-                 decoder_ids,
-                 segment_ids,
-                 cls_index,
-                 p_mask,
-                 paragraph_len,
-                 sup_ids=None,
-                 start_position=None,
-                 end_position=None,
-                 is_impossible=None):
+    def __init__(
+        self,
+        unique_id,
+        example_index,
+        doc_span_index,
+        tokens,
+        token_to_orig_map,
+        input_ids,
+        input_mask,
+        decoder_ids,
+        segment_ids,
+        cls_index,
+        p_mask,
+        paragraph_len,
+        sup_ids=None,
+        start_position=None,
+        end_position=None,
+        is_impossible=None,
+    ):
         self.unique_id = unique_id
         self.example_index = example_index
         self.doc_span_index = doc_span_index
@@ -323,12 +337,12 @@ def read_squad_example(example: QASample):
     #
     # Note that this means for training mode, every example is NOT
     # guaranteed to be preserved.
-    actual_text = " ".join(doc_tokens[start_position:(end_position + 1)])
-    cleaned_answer_text = " ".join(
-        whitespace_tokenize(orig_answer_text))
+    actual_text = " ".join(doc_tokens[start_position : (end_position + 1)])
+    cleaned_answer_text = " ".join(whitespace_tokenize(orig_answer_text))
     if actual_text.find(cleaned_answer_text) == -1:
-        logger.warning("Could not find answer: '%s' vs. '%s'",
-                       actual_text, cleaned_answer_text)
+        logger.warning(
+            "Could not find answer: '%s' vs. '%s'", actual_text, cleaned_answer_text
+        )
 
     return SquadExample(
         qas_id=qas_id,
@@ -337,16 +351,27 @@ def read_squad_example(example: QASample):
         orig_answer_text=orig_answer_text,
         start_position=start_position,
         end_position=end_position,
-        sup_ids=sup_token_pos_ids)
+        sup_ids=sup_token_pos_ids,
+    )
 
 
-def convert_qa_example_to_features(example, tokenizer, max_seq_length,
-                                   doc_stride, max_query_length, is_training,
-                                   cls_token_at_end=False,
-                                   cls_token='[CLS]', sep_token='[SEP]', pad_token=0,
-                                   sequence_a_segment_id=0, sequence_b_segment_id=1,
-                                   cls_token_segment_id=0, pad_token_segment_id=0,
-                                   mask_padding_with_zero=True):
+def convert_qa_example_to_features(
+    example,
+    tokenizer,
+    max_seq_length,
+    doc_stride,
+    max_query_length,
+    is_training,
+    cls_token_at_end=False,
+    cls_token="[CLS]",
+    sep_token="[SEP]",
+    pad_token=0,
+    sequence_a_segment_id=0,
+    sequence_b_segment_id=1,
+    cls_token_segment_id=0,
+    pad_token_segment_id=0,
+    mask_padding_with_zero=True,
+):
     """Loads a data file into a list of `InputBatch`s."""
 
     unique_id = 1000000000
@@ -373,8 +398,12 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
     else:
         tok_end_position = len(all_doc_tokens) - 1
     (tok_start_position, tok_end_position) = _improve_answer_span(
-        all_doc_tokens, tok_start_position, tok_end_position, tokenizer,
-        example.orig_answer_text)
+        all_doc_tokens,
+        tok_start_position,
+        tok_end_position,
+        tokenizer,
+        example.orig_answer_text,
+    )
 
     # The -3 accounts for [CLS], [SEP] and [SEP]
     max_tokens_for_doc = max_seq_length - len(query_tokens) - 3
@@ -383,7 +412,8 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
     # To deal with this we do a sliding window approach, where we take chunks
     # of the up to our max length with a stride of `doc_stride`.
     _DocSpan = collections.namedtuple(  # pylint: disable=invalid-name
-        "DocSpan", ["start", "length"])
+        "DocSpan", ["start", "length"]
+    )
     doc_spans = []
     start_offset = 0
     while start_offset < len(all_doc_tokens):
@@ -472,8 +502,7 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
             doc_start = doc_span.start
             doc_end = doc_span.start + doc_span.length - 1
             out_of_span = False
-            if not (tok_start_position >= doc_start and
-                    tok_end_position <= doc_end):
+            if not (tok_start_position >= doc_start and tok_end_position <= doc_end):
                 out_of_span = True
             if out_of_span:
                 start_position = 0
@@ -486,8 +515,12 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
 
                 # Get token position for supporting fact spans
                 for sup in example.sup_ids:
-                    sup_tok_start_position = orig_to_tok_index[sup[0]] - doc_start + doc_offset
-                    sup_tok_end_position = orig_to_tok_index[sup[1]] - doc_start + doc_offset
+                    sup_tok_start_position = (
+                        orig_to_tok_index[sup[0]] - doc_start + doc_offset
+                    )
+                    sup_tok_end_position = (
+                        orig_to_tok_index[sup[1]] - doc_start + doc_offset
+                    )
 
                     sup_ids.append((sup_tok_start_position, sup_tok_end_position))
 
@@ -499,23 +532,24 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
         logger.info("unique_id: %s" % (unique_id))
         logger.info("doc_span_index: %s" % (doc_span_index))
         logger.info("tokens: %s" % " ".join(tokens))
-        logger.info("token_to_orig_map: %s" % " ".join([
-            "%d:%d" % (x, y) for (x, y) in token_to_orig_map.items()]))
+        logger.info(
+            "token_to_orig_map: %s"
+            % " ".join(["%d:%d" % (x, y) for (x, y) in token_to_orig_map.items()])
+        )
         logger.info("input_ids: %s" % " ".join([str(x) for x in input_ids]))
-        logger.info(
-            "input_mask: %s" % " ".join([str(x) for x in input_mask]))
-        logger.info(
-            "segment_ids: %s" % " ".join([str(x) for x in segment_ids]))
+        logger.info("input_mask: %s" % " ".join([str(x) for x in input_mask]))
+        logger.info("segment_ids: %s" % " ".join([str(x) for x in segment_ids]))
         if span_is_impossible:
             logger.info("impossible example")
         if not span_is_impossible:
-            answer_text = " ".join(tokens[start_position:(end_position + 1)])
+            answer_text = " ".join(tokens[start_position : (end_position + 1)])
             logger.info("start_position: %d" % (start_position))
             logger.info("end_position: %d" % (end_position))
-            logger.info(
-                "answer: %s" % (answer_text))
+            logger.info("answer: %s" % (answer_text))
 
-        decoder_ids = tokenizer.convert_tokens_to_ids(tokens[start_position:(end_position + 1)])
+        decoder_ids = tokenizer.convert_tokens_to_ids(
+            tokens[start_position : (end_position + 1)]
+        )
 
         return QAInputFeatures(
             unique_id=unique_id,
@@ -533,7 +567,8 @@ def convert_qa_example_to_features(example, tokenizer, max_seq_length,
             start_position=start_position,
             end_position=end_position,
             sup_ids=sup_ids,
-            is_impossible=span_is_impossible)
+            is_impossible=span_is_impossible,
+        )
 
 
 def convert_text_example_to_features(example, max_seq_length, tokenizer):
@@ -543,7 +578,7 @@ def convert_text_example_to_features(example, max_seq_length, tokenizer):
 
     # Account for [CLS] and [SEP] with "- 2"
     if len(tokens) > max_seq_length - 2:
-        tokens = tokens[:(max_seq_length - 2)]
+        tokens = tokens[: (max_seq_length - 2)]
 
     tokens = ["[CLS]"] + tokens + ["[SEP]"]
     segment_ids = [0] * len(tokens)
@@ -564,14 +599,17 @@ def convert_text_example_to_features(example, max_seq_length, tokenizer):
     assert len(input_mask) == max_seq_length
     assert len(segment_ids) == max_seq_length
 
-    return TextInputFeatures(input_ids=input_ids,
-                             input_mask=input_mask,
-                             segment_ids=segment_ids,
-                             tokens=tokens)
+    return TextInputFeatures(
+        input_ids=input_ids,
+        input_mask=input_mask,
+        segment_ids=segment_ids,
+        tokens=tokens,
+    )
 
 
-def _improve_answer_span(doc_tokens, input_start, input_end, tokenizer,
-                         orig_answer_text):
+def _improve_answer_span(
+    doc_tokens, input_start, input_end, tokenizer, orig_answer_text
+):
     """Returns tokenized answer spans that better match the annotated answer."""
 
     # The SQuAD annotations are character based. We first project them to
@@ -600,21 +638,24 @@ def _improve_answer_span(doc_tokens, input_start, input_end, tokenizer,
 
     for new_start in range(input_start, input_end + 1):
         for new_end in range(input_end, new_start - 1, -1):
-            text_span = " ".join(doc_tokens[new_start:(new_end + 1)])
+            text_span = " ".join(doc_tokens[new_start : (new_end + 1)])
             if text_span == tok_answer_text:
                 return (new_start, new_end)
 
     return (input_start, input_end)
 
 
-RawResult = collections.namedtuple("RawResult",
-                                   ["unique_id", "start_logits", "end_logits"])
+RawResult = collections.namedtuple(
+    "RawResult", ["unique_id", "start_logits", "end_logits"]
+)
 
 
-def parse_prediction(example, features, result, max_answer_length=30, do_lower_case=True, n_best_size=20):
+def parse_prediction(
+    example, features, result, max_answer_length=30, do_lower_case=True, n_best_size=20
+):
     _PrelimPrediction = collections.namedtuple(  # pylint: disable=invalid-name
-        "PrelimPrediction",
-        ["start_index", "end_index", "start_logit", "end_logit"])
+        "PrelimPrediction", ["start_index", "end_index", "start_logit", "end_logit"]
+    )
 
     prelim_predictions = []
 
@@ -644,15 +685,18 @@ def parse_prediction(example, features, result, max_answer_length=30, do_lower_c
                     start_index=start_index,
                     end_index=end_index,
                     start_logit=result.start_logits[start_index],
-                    end_logit=result.end_logits[end_index]))
+                    end_logit=result.end_logits[end_index],
+                )
+            )
 
     prelim_predictions = sorted(
-        prelim_predictions,
-        key=lambda x: (x.start_logit + x.end_logit),
-        reverse=True)
+        prelim_predictions, key=lambda x: (x.start_logit + x.end_logit), reverse=True
+    )
 
     _NbestPrediction = collections.namedtuple(  # pylint: disable=invalid-name
-        "NbestPrediction", ["text", "start_index", "end_index", "start_logit", "end_logit"])
+        "NbestPrediction",
+        ["text", "start_index", "end_index", "start_logit", "end_logit"],
+    )
 
     seen_predictions = {}
     nbest = []
@@ -661,10 +705,10 @@ def parse_prediction(example, features, result, max_answer_length=30, do_lower_c
             break
 
         if pred.start_index > 0:  # this is a non-null prediction
-            tok_tokens = features.tokens[pred.start_index:(pred.end_index + 1)]
+            tok_tokens = features.tokens[pred.start_index : (pred.end_index + 1)]
             orig_doc_start = features.token_to_orig_map[pred.start_index]
             orig_doc_end = features.token_to_orig_map[pred.end_index]
-            orig_tokens = example.doc_tokens[orig_doc_start:(orig_doc_end + 1)]
+            orig_tokens = example.doc_tokens[orig_doc_start : (orig_doc_end + 1)]
             tok_text = " ".join(tok_tokens)
 
             # De-tokenize WordPieces that have been split off.
@@ -691,19 +735,36 @@ def parse_prediction(example, features, result, max_answer_length=30, do_lower_c
                 start_index=pred.start_index,
                 end_index=pred.end_index,
                 start_logit=pred.start_logit,
-                end_logit=pred.end_logit))
+                end_logit=pred.end_logit,
+            )
+        )
 
     # In very rare edge cases we could only have single null prediction.
     # So we just create a nonce prediction in this case to avoid failure.
     if len(nbest) == 1:
-        nbest.insert(0,
-                     _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0, start_index=-1, end_index=-1))
+        nbest.insert(
+            0,
+            _NbestPrediction(
+                text="empty",
+                start_logit=0.0,
+                end_logit=0.0,
+                start_index=-1,
+                end_index=-1,
+            ),
+        )
 
     # In very rare edge cases we could have no valid predictions. So we
     # just create a nonce prediction in this case to avoid failure.
     if not nbest:
         nbest.append(
-            _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0, start_index=-1, end_index=-1))
+            _NbestPrediction(
+                text="empty",
+                start_logit=0.0,
+                end_logit=0.0,
+                start_index=-1,
+                end_index=-1,
+            )
+        )
 
     assert len(nbest) >= 1
 
@@ -781,8 +842,7 @@ def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):
     start_position = tok_text.find(pred_text)
     if start_position == -1:
         if verbose_logging:
-            logger.info(
-                "Unable to find text: '%s' in '%s'" % (pred_text, orig_text))
+            logger.info("Unable to find text: '%s' in '%s'" % (pred_text, orig_text))
         return orig_text
     end_position = start_position + len(pred_text) - 1
 
@@ -791,8 +851,11 @@ def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):
 
     if len(orig_ns_text) != len(tok_ns_text):
         if verbose_logging:
-            logger.info("Length not equal after stripping spaces: '%s' vs '%s'",
-                        orig_ns_text, tok_ns_text)
+            logger.info(
+                "Length not equal after stripping spaces: '%s' vs '%s'",
+                orig_ns_text,
+                tok_ns_text,
+            )
         return orig_text
 
     # We then project the characters in `pred_text` back to `orig_text` using
@@ -823,7 +886,7 @@ def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):
             logger.info("Couldn't map end position")
         return orig_text
 
-    output_text = orig_text[orig_start_position:(orig_end_position + 1)]
+    output_text = orig_text[orig_start_position : (orig_end_position + 1)]
     return output_text
 
 
