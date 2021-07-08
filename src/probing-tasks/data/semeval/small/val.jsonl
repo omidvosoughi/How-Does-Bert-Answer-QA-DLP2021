@@ -1,2 +1,0 @@
-{"text": "Kelvin bought a silver ring which he was so happy with and he keeps wearing it now even though its abit too big haha.", "info": {"id": 57}, "targets": [{"label": "Other", "span1": [3, 4], "span2": [4, 5], "info": {"comment": ""}}]}
-{"text": "Scientists are in the midst of an ongoing debate about the relative value of openness and collaboration in their profession.", "info": {"id": 58}, "targets": [{"label": "Message-Topic(e1,e2)", "span1": [8, 9], "span2": [12, 13], "info": {"comment": "A debate is a multi-way message. (Debatable, I know.)"}}]}
