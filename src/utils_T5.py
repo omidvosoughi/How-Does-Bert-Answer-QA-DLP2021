@@ -13,8 +13,8 @@ import sys
 
 # process the examples in input and target text format and the eos token at the end 
 def add_eos_to_examples(example):
-    example['input_text'] = 'question: %s  context: %s </s>' % (example['question'], example['context'])
-    example['target_text'] = '%s </s>' % example['answers']['text'][0]
+    example['input_text'] = 'question: %s  context: %s' % (example['question'], example['context'])
+    example['target_text'] = '%s' % example['answers']['text'][0]
     return example
 
 # tokenize the examples
@@ -23,7 +23,8 @@ def convert_to_features(example_batch, tokenizer):
     target_encodings = tokenizer.batch_encode_plus(example_batch['target_text'], pad_to_max_length=True, max_length=16)
 
     encodings = {
-        'input_ids': input_encodings['input_ids'], 
+        'tokens': [tokenizer.tokenize(example) for example in example_batch['input_text']],
+        'input_ids': input_encodings['input_ids'],
         'attention_mask': input_encodings['attention_mask'],
         'target_ids': target_encodings['input_ids'],
         'target_attention_mask': target_encodings['attention_mask']
@@ -31,6 +32,8 @@ def convert_to_features(example_batch, tokenizer):
 
     return encodings
 
+
+# Finetuning T5 helper methods
 
 def prepare_batch(batch: List) -> Dict[str, torch.Tensor]:
     """
@@ -43,12 +46,11 @@ def prepare_batch(batch: List) -> Dict[str, torch.Tensor]:
     lm_labels[lm_labels[:, :] == 0] = -100
     attention_mask = torch.stack([example['attention_mask'] for example in batch])
     decoder_attention_mask = torch.stack([example['target_attention_mask'] for example in batch])
-    
 
     return {
-        'input_ids': input_ids, 
+        'input_ids': input_ids,
         'attention_mask': attention_mask,
-        'labels': lm_labels, 
+        'labels': lm_labels,
         'decoder_attention_mask': decoder_attention_mask
     }
 
@@ -93,7 +95,7 @@ class DataTrainingArguments:
 
 
 
-# Evaluation code
+# Evaluation helper methods
 # code from other source to calculate f1 score of the model; Above didnt worked even after hours of trial and error
 def normalize_answer(s):
     """Lower text and remove punctuation, articles and extra whitespace."""
@@ -147,7 +149,7 @@ def evaluate(gold_answers, predictions):
                     exact_match_score, prediction, ground_truths)
       f1 += metric_max_over_ground_truths(
           f1_score, prediction, ground_truths)
-    
+
     exact_match = 100.0 * exact_match / total
     f1 = 100.0 * f1 / total
 

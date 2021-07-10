@@ -68,7 +68,7 @@ class TokenPlotter:
         for i, vector in enumerate(self.vectors):
 
             # skip special tokens
-            if vector.token == "[SEP]" or vector.token == "[CLS]":
+            if vector.token == "[SEP]" or vector.token == "[CLS]" or vector.token == "</s>" or vector.token == '▁question' or vector.token == '▁context' or len(vector.token) == 1:
                 continue
 
             color: str = self.COLOR_LABEL_MAPPING[vector.label]

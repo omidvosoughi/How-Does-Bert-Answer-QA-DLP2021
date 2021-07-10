@@ -25,7 +25,7 @@ class Visualizer:
             tokens, question_indices, prediction_indices, features.sup_ids
         )
         for layer_index, layer in enumerate(hidden_states):
-            token_vectors: List = layer[0][: len(tokens)]
+            token_vectors: List = layer[0][:len(tokens)]
             layer_reduced: List = (
                 PCA(n_components=2).fit_transform(token_vectors).transpose()
             )
