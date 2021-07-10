@@ -1,2 +1,0 @@
-{"info": {"doc_id": "trec-qt", "q_id": 282}, "text": "What does I.V. stand for ?", "targets": [{"span1": [0, 6], "label": "ABBR:exp"}]}
-{"info": {"doc_id": "trec-qt", "q_id": 388}, "text": "What is propylene glycol ?", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}

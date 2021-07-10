@@ -1,0 +1,559 @@
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "A much better looking News Night I might add as Paula Zahn sits in for Anderson and Aaron /.", "targets": [{"span1": [10, 12], "label": "PERSON"}, {"span1": [17, 18], "label": "PERSON"}, {"span1": [15, 16], "label": "PERSON"}, {"span1": [4, 6], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "They 're both off /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Look at that /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Is that a replacement /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Paula Paula /.", "targets": [{"span1": [1, 2], "label": "PERSON"}, {"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Thank you for your faith Larry and thank you for your graciousness /.", "targets": [{"span1": [5, 6], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "And we 're going to get started here /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Good evening everybody /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Welcome to News Night /.", "targets": [{"span1": [2, 4], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "As uh Larry just told you I 'm Paula Zahn filling in for the two men Anderson Cooper and Aaron Brown /.", "targets": [{"span1": [16, 18], "label": "PERSON"}, {"span1": [19, 21], "label": "PERSON"}, {"span1": [2, 3], "label": "PERSON"}, {"span1": [8, 10], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "He lost his life long ago /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "but there 's still something modern science can give him back his identity /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "The mystery of the frozen airman continues /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Next stop the lab /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "And anger in the hood over a sign of the times /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "If Fifty Cent does n't have good sense then he needs to stop doing what he 's doing /.", "targets": [{"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "The rap star 's new movie is one thing /.", "targets": [{"span1": [7, 8], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "but the billboards for it are another /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Residents of Los Angeles want them and their message moved /.", "targets": [{"span1": [2, 4], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "and the studio is caving /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "Also tonight the rise and fall and rise and fall and rise and fall of Martha Stewart /.", "targets": [{"span1": [1, 2], "label": "TIME"}, {"span1": [15, 17], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "How many ups and downs can one woman have /?", "targets": [{"span1": [6, 7], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 0}, "text": "This is News Night /.", "targets": [{"span1": [2, 4], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "First of all here 's a quick track of some of the stories we 're following tonight /.", "targets": [{"span1": [16, 17], "label": "TIME"}, {"span1": [0, 1], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "President Bush unveiled a seven point one billion dollar plan to help protect Americans against the threat from bird flu /.", "targets": [{"span1": [13, 14], "label": "NORP"}, {"span1": [1, 2], "label": "PERSON"}, {"span1": [4, 9], "label": "MONEY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "It includes stockpiling enough vaccine to protect twenty million people /.", "targets": [{"span1": [7, 9], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "The president says there is no immediate threat but there is cause for concern /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "In Washington tensions are high after an unsual Senate session /.", "targets": [{"span1": [8, 9], "label": "ORG"}, {"span1": [1, 2], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "Democrats used a little used rule to force a special closed session /.", "targets": [{"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "Democrats say it was to force Republican leaders to complete a long promised investigation into how Bush administration officials handled pre-war intelligence on Iraq /.", "targets": [{"span1": [16, 17], "label": "PERSON"}, {"span1": [6, 7], "label": "NORP"}, {"span1": [23, 24], "label": "GPE"}, {"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "Republicans for their part are calling it a political stunt /.", "targets": [{"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "And Defense Secretary Donald Rumsfeld says more American troops could soon be heading to Iraq /.", "targets": [{"span1": [1, 2], "label": "ORG"}, {"span1": [3, 5], "label": "PERSON"}, {"span1": [14, 15], "label": "GPE"}, {"span1": [7, 8], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 1}, "text": "He says they will be needed temporarily to prevent an expected increase in insurgent attacks ahead of Iraq 's parliamentary election in December /.", "targets": [{"span1": [22, 23], "label": "DATE"}, {"span1": [17, 18], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "But we begin tonight with an ongoing mystery /.", "targets": [{"span1": [3, 4], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Who is that lone man discovered last month frozen in California 's Sierra Nevada mountains with just a few tantalizing clues to his identity /?", "targets": [{"span1": [10, 11], "label": "GPE"}, {"span1": [6, 8], "label": "DATE"}, {"span1": [12, 15], "label": "LOC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "This we do know at this hour /.", "targets": [{"span1": [5, 7], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The man died more than sixty years ago /.", "targets": [{"span1": [3, 8], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "He was in the military apparently a World War Two airman /.", "targets": [{"span1": [7, 10], "label": "EVENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And while it looks like his plane crashed in the mountains so did twenty - five other planes around the same time /.", "targets": [{"span1": [19, 22], "label": "DATE"}, {"span1": [13, 16], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Thelma Gutierrez went inside the forensic laboratory where scientists are trying to solve this mystery /.", "targets": [{"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "An address book a plastic comb a vintage penny /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "You 're looking at the last things a young airman put into his pockets on the day he died clues to a World War Two cold case that you 're about to see for the very first time /.", "targets": [{"span1": [15, 19], "label": "DATE"}, {"span1": [22, 25], "label": "EVENT"}, {"span1": [36, 37], "label": "ORDINAL"}, {"span1": [5, 6], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "It is a mystery that begins high in the Sierra Nevada Mountains at the bottom of a glacier /.", "targets": [{"span1": [8, 12], "label": "LOC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Two weeks ago climbers discovered a frozen man face down in the snow still in his army air force uniform and an unopened silk parachute /.", "targets": [{"span1": [0, 3], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "After six decades the airman is exhumed from his icy tomb and thawed out /.", "targets": [{"span1": [1, 3], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "but he 's wearing no military dog tags or ID /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Did this World War Two pilot perish when his training flight crashed in the mountains like twenty - five other ill fated flights more than sixty years ago /?", "targets": [{"span1": [16, 19], "label": "CARDINAL"}, {"span1": [2, 5], "label": "EVENT"}, {"span1": [23, 28], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The search for clues takes us to Honolulu Hawaii to the joint powmia accounting command or jpac /.", "targets": [{"span1": [10, 15], "label": "ORG"}, {"span1": [16, 17], "label": "ORG"}, {"span1": [7, 8], "label": "GPE"}, {"span1": [8, 9], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The mystery of the frozen airman is just one of more than a thousand different unsolved cases that scientists here at jpac are trying to solve /.", "targets": [{"span1": [21, 22], "label": "ORG"}, {"span1": [8, 9], "label": "CARDINAL"}, {"span1": [10, 14], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "In this laboratory alone I 'm surrounded by the remains of at least twenty different service members who are in the process of being identified so that they too can go home /.", "targets": [{"span1": [11, 14], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The investigation begins with a team of forensic specialists who probe and study the airman 's bones teeth and his belongings to piece together who he is /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And almost immediately clues begin to surface /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Dr. Robert Mann a forensic anthropologist has determined that the airman was Caucasian and had fair hair /.", "targets": [{"span1": [1, 3], "label": "PERSON"}, {"span1": [12, 13], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Next though I 'm going to have to look at his clavicles /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The airman 's collar bones and pelvic bones prove that he was in his twenties and died in an airplane crash /.", "targets": [{"span1": [13, 15], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "This is a person who likely died on impact versus perhaps freezing to death up in the mountains /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "I think that uh the injuries were so substantial um and severe that he would n't have felt anything /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "He would have died immediately /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "One two /-", "targets": [{"span1": [1, 2], "label": "CARDINAL"}, {"span1": [0, 1], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Another important clue /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "He has a significant number of uh fillings /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Like the bones xrays of his wisdom teeth also tell us something about his age /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Root tips are closed /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "they 're sealed up which is more indicative of someone who would be at least twenty - one years old /.", "targets": [{"span1": [13, 20], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And Dr. Andy Henry notices something else /.", "targets": [{"span1": [2, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The airmen have straight teeth /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "so he had a nice smile good teeth /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Yes I would have to say that yes /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Then there are the material clues the things he had on him when he died that offer a snapshot into who he could have been /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "If there 's a badge or anything else that /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "We know he was wearing a World War Two army air force uniform /.", "targets": [{"span1": [6, 9], "label": "EVENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Remnants of his sweater undergarments and socks are still intact /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And more clues emerge from his tattered uniform a corroded nameplate this pin on his collar and this army aircorps insignia /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "When I found these insignia I was happy to see them /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And our young white - haired airman also carried this black comb and some pocket change forty - five cents worth /.", "targets": [{"span1": [16, 20], "label": "MONEY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Some of these dimes are in ranging from nineteen thirty - six to nineteen forty - two /.", "targets": [{"span1": [13, 17], "label": "DATE"}, {"span1": [8, 12], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "In his uniform breast pocket Dr. Paul Emanovsky found this vintage Schafer pen and three small leatherbound address books /.", "targets": [{"span1": [14, 15], "label": "CARDINAL"}, {"span1": [11, 12], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "The pages have been decomposing /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "but could they contain names of friends and loved ones /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And we 're going to put it in a spectral comparator /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "At first nothing /.", "targets": [{"span1": [1, 2], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "then like magic clues begin to emerge /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Uh you can see all these letters from the calendar Sunday Monday Tuesday up at the top one nine four and two /.", "targets": [{"span1": [11, 12], "label": "DATE"}, {"span1": [19, 20], "label": "CARDINAL"}, {"span1": [12, 13], "label": "DATE"}, {"span1": [21, 22], "label": "CARDINAL"}, {"span1": [10, 11], "label": "DATE"}, {"span1": [18, 19], "label": "CARDINAL"}, {"span1": [17, 18], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Nineteen forty - two /.", "targets": [{"span1": [0, 5], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Yeah /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "After hours of meticulous examination of each address book they yield no personal information clues that could have faded with time /.", "targets": [{"span1": [1, 2], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And so while we still do not know who our twenty - something fair - haired airman is enormous progress has been made /.", "targets": [{"span1": [10, 13], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Out of the thousands of unidentified World War Two service members Dr. Mann says they 've narrowed it down to just ten /.", "targets": [{"span1": [3, 4], "label": "CARDINAL"}, {"span1": [6, 9], "label": "EVENT"}, {"span1": [21, 22], "label": "CARDINAL"}, {"span1": [12, 13], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "So what was it like to grow up there /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "In Pleasant Grove we recently met these three sisters all in their eighties who have high hopes that the frozen airman proves to be their big brother Glen Munn whose plane went missing in the Sierra back in nineteen forty - two /.", "targets": [{"span1": [7, 8], "label": "CARDINAL"}, {"span1": [34, 36], "label": "LOC"}, {"span1": [27, 29], "label": "PERSON"}, {"span1": [11, 13], "label": "DATE"}, {"span1": [1, 3], "label": "GPE"}, {"span1": [38, 42], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Oh I just wanted you know to know that he was found and that we can have him brought home here for burial and /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "We do n't know that though /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "We do n't /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "but that 's my wishes /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And until they learn otherwise they say they will keep that hope alive /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "And in the weeks and months ahead scientists are convinced they will identify this airman and return him home to his family wherever they might be /.", "targets": [{"span1": [5, 6], "label": "DATE"}, {"span1": [3, 4], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 2}, "text": "Thelma Gutierrez CNN Honolulu Hawaii /.", "targets": [{"span1": [4, 5], "label": "GPE"}, {"span1": [3, 4], "label": "GPE"}, {"span1": [0, 2], "label": "PERSON"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "And there are some new developments to talk about tonight /.", "targets": [{"span1": [9, 10], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Scientists may be even closer to solving the mystery /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "For an update we 're joined by Dr. Robert Mann one of the senior scientists you just saw working on this cold case /.", "targets": [{"span1": [10, 11], "label": "CARDINAL"}, {"span1": [8, 10], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Thanks for spending time with us tonight doctor /.", "targets": [{"span1": [6, 7], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "We understand since Thelma left your laboratories you 've now wittled this down to perhaps four airmen /.", "targets": [{"span1": [15, 16], "label": "CARDINAL"}, {"span1": [3, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "is that true /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Well hi Paula /.", "targets": [{"span1": [2, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "yes we have /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Uh when the remains came in a little over a week ago our analysts and historians got to work on that /.", "targets": [{"span1": [6, 12], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and they were able to wittle it down the number of missing aircraft uh to a few /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and at this point they 've wittled it down to one aircraft and a missing crew of four individuals /.", "targets": [{"span1": [10, 11], "label": "CARDINAL"}, {"span1": [17, 18], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "So we 've gone from several possible aircraft to one aircraft and from several missing airmen to four /.", "targets": [{"span1": [9, 10], "label": "CARDINAL"}, {"span1": [17, 18], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "So how much easier will that make it for you to unlock this case , do you think /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Well I think it 'll help quite a bit /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Um any time you 've got a body uh or remains like this that has come in and they 're in pretty good condition such as this one is , it 's mummified remains /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "We have some soft tissue we can deal with /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "so we can look at the color of the hair /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "we can tell right away the race and the sex of the individual /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "but then there are other things that are hidden beneath the soft tissue that are revealed only in the skeleton /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and that 's where we 're going to now /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "So in the interest of full disclosure what I know about forensics is basically what I 've learned on CSI /.", "targets": [{"span1": [19, 20], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and one would think that because you 've got it now narrowed down to four potential airmen that perhaps you could go to four families get strands of hair and try to do a potential DNA match with what you 've found in the ice /.", "targets": [{"span1": [14, 15], "label": "CARDINAL"}, {"span1": [23, 24], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Is it not that simple /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Well no no it 's not that simple /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Um one thing we always caution people about is the pool of aircraft and missing airmen could be larger than what we 're looking at /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "And what we want to do is we do n't want to just look at the material evidence that we have and immediately um jump to a conclusion that this is a certain individual /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "What we want to do is have the evidence speak for itself /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and when we look at this individual as we 've done the biological profile looking at his remains his bones his teeth and the material evidence /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and what we 're able to tell from this individual is that he died in his twenties he stood somewhere between five foot nine and six foot two inches tall um he sustained massive trauma to his body on impact /.", "targets": [{"span1": [21, 24], "label": "QUANTITY"}, {"span1": [15, 17], "label": "DATE"}, {"span1": [25, 29], "label": "QUANTITY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "And he 's Caucasoid male /.", "targets": [{"span1": [3, 4], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and so we know much more now just one week later than what we did when he came in about eight days ago /.", "targets": [{"span1": [7, 11], "label": "DATE"}, {"span1": [19, 23], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "So the most important question is when do you think you 're going to know exactly who he is /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Well that 's the most commonly asked question that we have /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "and you know the reality is nobody can give you the answer /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Nobody knows for sure exactly when we 'll identify him /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "What it depends on is that all the lines of evidence come together for successful identification /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "If I were to give my best opinion in this it would be a few weeks to a few months /.", "targets": [{"span1": [13, 16], "label": "DATE"}, {"span1": [17, 20], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Well we 'll be keeping our fingers crossed for you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Know how hard you all are working in the lab there Dr. Mann /.", "targets": [{"span1": [12, 13], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Thank you for spending some time with us tonight /.", "targets": [{"span1": [8, 9], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Our pleasure /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "Thank you Paula /.", "targets": [{"span1": [2, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 3}, "text": "thank you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "We 're going to turn now to some of the other stories in our world tonight /.", "targets": [{"span1": [15, 16], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Here 's Erica Hill from Headline News /.", "targets": [{"span1": [2, 4], "label": "PERSON"}, {"span1": [5, 7], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Hi Erica /.", "targets": [{"span1": [1, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Hi Paula /.", "targets": [{"span1": [1, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "we start off with a tragic dispute after a traffic /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "a tragic death has now been settled in court /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Now the dispute came between divorced parents over where to bury their son who was killed in Iraq /.", "targets": [{"span1": [17, 18], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "A California judge has now ruled army staff sergeant Jason Hendrix to remain buried next to his grandfather that is in Oklahoma where his father lives /.", "targets": [{"span1": [21, 22], "label": "GPE"}, {"span1": [1, 2], "label": "GPE"}, {"span1": [9, 11], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "His mother claimed her son wanted to be buried in California where she lived /.", "targets": [{"span1": [10, 11], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "but the judge says her testimony was quote forced and contrived /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Austin Texas Republican Congressman Tom DeLay gets his way /.", "targets": [{"span1": [2, 3], "label": "NORP"}, {"span1": [1, 2], "label": "GPE"}, {"span1": [4, 6], "label": "PERSON"}, {"span1": [0, 1], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "The judge scheduled to preside over his trial was removed from the case today /.", "targets": [{"span1": [13, 14], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "DeLay 's attorneys heads off the recusal because they questioned the judge 's impartiality since he had contributed to Democratic causes /.", "targets": [{"span1": [19, 20], "label": "NORP"}, {"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "DeLay is charged with money laundering and conspiracy /.", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "He has pleaded not guilty /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "In Washington the federal reserve once again raising a key short term interest rate by a quarter percent /.", "targets": [{"span1": [1, 2], "label": "GPE"}, {"span1": [15, 18], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "It is the twelfth such hike since June of last year /.", "targets": [{"span1": [7, 11], "label": "DATE"}, {"span1": [3, 4], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "More could be on the way /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "In its statement the fed dismissed concerns that the economy has slowed down because of Hurricane Katrina /.", "targets": [{"span1": [15, 17], "label": "EVENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "And in case you missed it the Royals are here /.", "targets": [{"span1": [7, 8], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Today Britain 's Prince Charles and his wife Camilla laid flowers at the World Trade Center site in New York and then dedicated a nearby memorial to British victims of the nine eleven attack /.", "targets": [{"span1": [18, 20], "label": "GPE"}, {"span1": [27, 28], "label": "NORP"}, {"span1": [30, 34], "label": "EVENT"}, {"span1": [8, 9], "label": "PERSON"}, {"span1": [1, 2], "label": "GPE"}, {"span1": [3, 5], "label": "PERSON"}, {"span1": [0, 1], "label": "DATE"}, {"span1": [13, 16], "label": "FAC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "It is the first stop on their eight day trip across the United States Paula /.", "targets": [{"span1": [14, 15], "label": "PERSON"}, {"span1": [11, 14], "label": "GPE"}, {"span1": [7, 9], "label": "DATE"}, {"span1": [3, 4], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "and I 'm sure I 'll be hearing a little bit more about it all week /.", "targets": [{"span1": [14, 16], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Yeah Erica I actually um bumped into them along with three hundred of their closest friends earlier tonight on their last stop of the day here in New York /.", "targets": [{"span1": [10, 12], "label": "CARDINAL"}, {"span1": [1, 2], "label": "PERSON"}, {"span1": [27, 29], "label": "GPE"}, {"span1": [16, 18], "label": "DATE"}, {"span1": [23, 25], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "and they were uh uh uh amazingly casual and accessible /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "We were all quite surprised /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "That 's good to hear /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "Thanks Erica /.", "targets": [{"span1": [1, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 4}, "text": "see you a little bit later on /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "And still to come on News Night tonight the saddest post-Katrina stories were those of the eldery who died in hospitals and nursing homes /.", "targets": [{"span1": [10, 11], "label": "EVENT"}, {"span1": [5, 7], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "Now there are thirteen investigations into why and how such tragedies happened /.", "targets": [{"span1": [3, 4], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "And supermodels are n't the only ones to whom weight matters /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "Jockies also may go too far to stay thin much too far /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "When at my worst I was heaving three or five to six seven times a day /.", "targets": [{"span1": [11, 12], "label": "CARDINAL"}, {"span1": [7, 8], "label": "CARDINAL"}, {"span1": [12, 13], "label": "CARDINAL"}, {"span1": [9, 10], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 5}, "text": "Starving to stay thin that and more still to come on News Night /.", "targets": [{"span1": [11, 13], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "They happen to be the most vulnerable of hurricane victims the elderly many desperately ill living in nursing homes their fate in the hands of others /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Dozens died /.", "targets": [{"span1": [0, 1], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "There are at least thirteen investigations now underway /.", "targets": [{"span1": [2, 5], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "And at some nursing homes the failure to evacuate cost lives /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "In other cases it was the evacuation itself that proved fatal /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Here 's Keith Oppenheim /.", "targets": [{"span1": [2, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "My mother was Thelma Wahl /.", "targets": [{"span1": [3, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She was ninety years old /.", "targets": [{"span1": [2, 5], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She was a very good mother /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She was at Huntingdon because she needed care /.", "targets": [{"span1": [3, 4], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Priscilla Scott is mourning /.", "targets": [{"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Her ninety year old mother Thelma Wahl was a resident of the Huntingdon Place Nursing Home in Chalmette outside New Orleans /.", "targets": [{"span1": [11, 16], "label": "ORG"}, {"span1": [19, 21], "label": "GPE"}, {"span1": [17, 18], "label": "GPE"}, {"span1": [1, 4], "label": "DATE"}, {"span1": [5, 7], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Priscilla says Thelma Wahl had serious osteoperosis fractures in her vertebrae but says Thelma was not on the verge of death /.", "targets": [{"span1": [2, 4], "label": "PERSON"}, {"span1": [13, 14], "label": "PERSON"}, {"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "On Sunday August twenty - eighth the day before Hurricane Katrina struck the nursing home decided to evacuate patients /.", "targets": [{"span1": [9, 11], "label": "EVENT"}, {"span1": [1, 6], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "They waited too late to make the decision /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Priscilla says her mother should have been transported by ambulance /.", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Instead she says her mother sat on a school bus for twelve hours to Lafayette Louisiana normally a three hour trip /.", "targets": [{"span1": [14, 16], "label": "PERSON"}, {"span1": [18, 20], "label": "TIME"}, {"span1": [11, 13], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She says police told her there was no air conditioning /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Police declined comment /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "The owner of the nursing home Thelma Wahl was being taken to tells us by the time the bus arrived Thelma Wahl was dead /.", "targets": [{"span1": [6, 8], "label": "PERSON"}, {"span1": [20, 22], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "I feel that uh the bus is what did it to her /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She was alive when she left that nursing home /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "but she was not alive when she got to the Lafayette area /.", "targets": [{"span1": [10, 11], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "CNN made repeated attempts to contact administrators or representatives of Huntingdon Place /.", "targets": [{"span1": [0, 1], "label": "ORG"}, {"span1": [10, 12], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "but either we could not make contact or our calls were not returned /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "But staff for the Louisiana Attorney General 's office did speak to us by phone and confirmed that the matter of just what happened to Thelma Wahl when she was transported from this facility is under investigation /.", "targets": [{"span1": [25, 27], "label": "PERSON"}, {"span1": [4, 5], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "After dozens of patients died in the wake of Hurricane Katrina nursing homes have been under scrutiny /.", "targets": [{"span1": [1, 2], "label": "CARDINAL"}, {"span1": [9, 11], "label": "EVENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Thirty - four patients were left behind at Saint Rita 's nursing home in New Orleans when Katrina hit /.", "targets": [{"span1": [17, 18], "label": "EVENT"}, {"span1": [8, 11], "label": "ORG"}, {"span1": [0, 3], "label": "CARDINAL"}, {"span1": [14, 16], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "They all died in the flood /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "The owners were charged with negligent homicide /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "The county coroner says he urged Saint Rita 's to move its patients /.", "targets": [{"span1": [6, 9], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "They insisted several patients were too fragile to move /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Before Hurricane Rita a busload of nursing home residents were being evacuated from Houston /.", "targets": [{"span1": [1, 3], "label": "EVENT"}, {"span1": [13, 14], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "but during the ride a fire from a back wheel accelerated because of oxygen canisters patients on board were using /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Twenty - three people died /.", "targets": [{"span1": [0, 3], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Federal officials are investigating /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "No charges have been filed /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Joe Dodges executive director of the Louisiana Nursing Home Association says when it comes to evacuations elder care facilities are damned if they do and damned if they do n't /.", "targets": [{"span1": [5, 10], "label": "ORG"}, {"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Walk a mile in our shoes that 's all I have to say because anybody who works in a nursing home will very quickly learn that these are very fragile patients /.", "targets": [{"span1": [1, 3], "label": "QUANTITY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "We did the very best we could in these situations /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "We 've got /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Dodges says the reality is old sick patients are always in jeopardy when a hurricane strikes a dilemma made worse by massive traffic jams during pre-storm evacuations /.", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "I mean if they 're on a bus for nine or twelve hours there 's a good chance someone 's going to die unfortunately /.", "targets": [{"span1": [9, 10], "label": "TIME"}, {"span1": [11, 13], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Certainly it 's a very very difficult question to answer should I evacuate /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Jeff Meitrod and Steve Riddyah write for the Times Picayune New Orleans ' daily newspaper /.", "targets": [{"span1": [3, 5], "label": "PERSON"}, {"span1": [7, 10], "label": "WORK_OF_ART"}, {"span1": [10, 13], "label": "GPE"}, {"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "They say nursing homes had to make tough calls /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "But last spring in a series of stories called State of Neglect they reported that Louisiana 's nursing homes are often poorly run and poorly regulated /.", "targets": [{"span1": [1, 3], "label": "DATE"}, {"span1": [15, 16], "label": "GPE"}, {"span1": [9, 12], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Nursing homes that kill residents nursing homes that um seriously injure patients um because of bad care /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "uh and the state does n't really do very much about it /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "and so nursing home owners know that in a lot of cases it 's less expensive to break the rules and to hurt people than it is to provide the level of care that /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Huntington Place was criticized in the articles and has had several law suits brought against it /.", "targets": [{"span1": [0, 2], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "but it had a good inspection record /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Priscilla Scott says she is trying to contact the nursing home owners but has n't been able to find them /.", "targets": [{"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "She feels even if they had to make a tough call they owe her a better explanation as to why her mother died /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "Keith Oppenheim CNN New Orleans /.", "targets": [{"span1": [3, 5], "label": "GPE"}, {"span1": [2, 3], "label": "WORK_OF_ART"}, {"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "It still is n't clear why Huntington evacuated Thelma Wahl by bus rather than by ambulance /.", "targets": [{"span1": [8, 10], "label": "PERSON"}, {"span1": [6, 7], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 6}, "text": "but officials have said there were not enough ambulances to take care of everyone in the region /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Tomorrow night I will have a special report on a struggle that affects more than ten million Americans including one million men the struggle with eating disorders anorexia and bulimia /.", "targets": [{"span1": [19, 21], "label": "CARDINAL"}, {"span1": [0, 2], "label": "TIME"}, {"span1": [13, 17], "label": "CARDINAL"}, {"span1": [17, 18], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "As I just said it 's not just women and girls who are affected /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Men too struggle with these disorders /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "and I interviewed one of the nation 's top jockies Shane Sellers about the battle he waged everyday to control his weight /.", "targets": [{"span1": [10, 12], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "In the morning I 'd get up and take a diet pill um drink a cup of coffee um and then head out to the race track and /-", "targets": [{"span1": [1, 3], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "With no food in your stomach /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "No food in my stomach no /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "And um you know you go and see the trainers and work your horses in the morning that you have to work /.", "targets": [{"span1": [15, 17], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Um by ten o'clock you 're finished uh /-", "targets": [{"span1": [2, 4], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Were you hungry at this point /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Oh I 'm starving you know /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "I mean I went to bed with nothing in my stomach either /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Maybe you know just a piece of ham or s- /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "You know just grab something to put in my stomach before I went to bed and head to the track and maybe lay down for an hour and then uh head to the hotbox for a couple hours four or five pounds of water /.", "targets": [{"span1": [25, 27], "label": "TIME"}, {"span1": [38, 42], "label": "QUANTITY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "The hotbox is a sauna a fixture in almost every jockey locker room /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "The hotbox sweatbox /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Sellers would often spend two hours inside pooling or sweating off extra pounds /.", "targets": [{"span1": [4, 6], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "And are you miserable the whole time you 're in there /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Oh it 's horrible /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "You have to be very weak /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Weak /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Ca n't have nothing /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Yeah you 're already dehydrated you know /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "So for more than twenty years you went through this process of basically not eating anything during the day sitting in the sauna a couple hours a day sweating two or three pounds off getting back on your horses training and maybe maybe having a piece of ham /.", "targets": [{"span1": [29, 33], "label": "QUANTITY"}, {"span1": [23, 26], "label": "TIME"}, {"span1": [2, 6], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "and that 's all you had to sustain you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "If I did eat anything sometime , when at my worst three or five to six seven times a day I was heaving /.", "targets": [{"span1": [15, 16], "label": "CARDINAL"}, {"span1": [11, 12], "label": "CARDINAL"}, {"span1": [13, 14], "label": "CARDINAL"}, {"span1": [16, 17], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Jockies call it heaving or flipping /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "doctors would call it bulimia /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Overcome by hunger pains Sellers would eat massive amounts of food and then throw it up to make weight /.", "targets": [{"span1": [4, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "He says a tour of a jockey locker room shows you just how easy and accepted it was /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "These are regular toilets /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "and this is what they call a heaving /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "this is where they heave /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "You know it 's a much different type of commode /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "I do n't know if it was especially made for that purpose /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "but it 's sure not the same as the other /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "and that 's what we used it for /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Is it true that some of you got so efficient at flipping that you could actually do it without putting your finger down your throat /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "I was one /.", "targets": [{"span1": [2, 3], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "Jockey Shane Sellers just one of the many people you 'll meet tomorrow night in Walking the Thin Line /.", "targets": [{"span1": [15, 19], "label": "WORK_OF_ART"}, {"span1": [12, 14], "label": "TIME"}, {"span1": [4, 5], "label": "CARDINAL"}, {"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 7}, "text": "It is a special edition of Paula Zahn Now that gets underway at eight pm eastern /.", "targets": [{"span1": [13, 16], "label": "TIME"}, {"span1": [6, 9], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "Still to come on News Night tonight the Senate shuts down the doors clears the gallery /.", "targets": [{"span1": [8, 9], "label": "ORG"}, {"span1": [4, 6], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "Was today 's rare closed session needed to gaurd national secrets /.", "targets": [{"span1": [1, 2], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "or was it a political forum /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "And the president wants billions to help fight a possible bird flu pandemic /.", "targets": [{"span1": [4, 5], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "Sounds like a lot of money /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "but will it actually be enough /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "Also tonight rap star Fifty Cent may be at the top of the charts /.", "targets": [{"span1": [4, 6], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 8}, "text": "but one LA neighborhood is n't buying it /.", "targets": [{"span1": [2, 3], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "We ca n't say how those who will be voting on Samuel Alito 's nomination to Supreme Court feel about him /.", "targets": [{"span1": [16, 18], "label": "ORG"}, {"span1": [11, 14], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "but we can say something about how you feel tonight /.", "targets": [{"span1": [9, 10], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Here are the results of the CNN USA Today Gallup poll released just minutes ago of those asked about the president 's choice Judge Alito to succeed Justice Sandra Day O'Connor /.", "targets": [{"span1": [12, 15], "label": "TIME"}, {"span1": [28, 31], "label": "PERSON"}, {"span1": [9, 10], "label": "ORG"}, {"span1": [24, 25], "label": "PERSON"}, {"span1": [7, 9], "label": "ORG"}, {"span1": [6, 7], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Seventeen percent said he 's an excellent choice /.", "targets": [{"span1": [0, 2], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "twenty - six percent called him a good choice /.", "targets": [{"span1": [0, 4], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "twenty - two percent rated him only fair /.", "targets": [{"span1": [0, 4], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "seventeen percent thought he was a poor choice /.", "targets": [{"span1": [0, 2], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Questions about the facts or what were presented as facts that led the United States into the war in Iraq spilled into open warfare today on the Senate floor /.", "targets": [{"span1": [27, 28], "label": "ORG"}, {"span1": [24, 25], "label": "DATE"}, {"span1": [12, 15], "label": "GPE"}, {"span1": [19, 20], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Democrats forced the Senate into a rare closed door session /.", "targets": [{"span1": [3, 4], "label": "ORG"}, {"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Republican leader Bill Frist said the Senate was hijacked /.", "targets": [{"span1": [2, 4], "label": "PERSON"}, {"span1": [6, 7], "label": "ORG"}, {"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "CNN 's Ed Henry was there /.", "targets": [{"span1": [2, 4], "label": "PERSON"}, {"span1": [0, 1], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "A Democratic sneak attack that sent shock waves through the Senate /.", "targets": [{"span1": [1, 2], "label": "NORP"}, {"span1": [10, 11], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Mr. President enough time has gone by /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "I demand on behalf of the American people that we understand why these investigations are n't being conducted /.", "targets": [{"span1": [6, 7], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Democratic leader Harry Reed accused Republicans of failing to probe allegations the White House manipulated intelligence to justify the war in Iraq /.", "targets": [{"span1": [0, 1], "label": "NORP"}, {"span1": [21, 22], "label": "GPE"}, {"span1": [5, 6], "label": "NORP"}, {"span1": [2, 4], "label": "PERSON"}, {"span1": [11, 14], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "And in accordance with rule twenty - one I now move that Senate go into closed session /.", "targets": [{"span1": [4, 8], "label": "LAW"}, {"span1": [12, 13], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "President I second the motion /.", "targets": [{"span1": [2, 3], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "An easy but rare maneuver with extraordinary consequences /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "The Senate chamber was locked down , television cameras shut off , so law makers could go into secret session to debate /.", "targets": [{"span1": [1, 2], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Republican leader Bill Frist was enraged /.", "targets": [{"span1": [2, 4], "label": "PERSON"}, {"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Not with the previous Democratic leader or the current Democratic leader have ever I been slapped in the face with such an affront to the leadership of this grand institution /.", "targets": [{"span1": [9, 10], "label": "NORP"}, {"span1": [4, 5], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "There has been at least consideration for the other side of the aisle before a stunt /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "and this is a pure stunt /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Reed refused to back down demanding the Republican led intelligence committee finish a long awaited report on whether the Bush administration twisted intelligence /.", "targets": [{"span1": [19, 20], "label": "PERSON"}, {"span1": [7, 8], "label": "NORP"}, {"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "This investigation has been stymied stopped , obstructions thrown up every step of the way /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "That 's the real slap in the face /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "that 's the slap in the face /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "And today the American people are going to see a little bit of light /.", "targets": [{"span1": [1, 2], "label": "DATE"}, {"span1": [3, 4], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "What 's really going on is Democrats feel emboldened by the indictment of Vice President Cheney 's former chief of staff believing this is their chance to issue a broader indictment of the Bush administration /.", "targets": [{"span1": [6, 7], "label": "NORP"}, {"span1": [33, 34], "label": "PERSON"}, {"span1": [15, 16], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "We have lost over two thousand of our best and bravest /.", "targets": [{"span1": [3, 6], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "over fifteen thousand have been seriously wounded /.", "targets": [{"span1": [0, 3], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "We are spending more than six million dollars a month with no end in sight /.", "targets": [{"span1": [3, 8], "label": "MONEY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "and this Republican led Senate intelligence committee refuses to even ask the hard questions about the misinformation /-", "targets": [{"span1": [4, 5], "label": "ORG"}, {"span1": [2, 3], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Republicans insist they 're completing the investigation /.", "targets": [{"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "and this is just a distraction /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "This is purely political /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "This is settling an old political score /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Democrats say they also want to signal they 're ready to stand up to the Republican majority and may even filibuster the president 's latest Supreme Court pick Samuel Alito a move that would make these events seem like the opening fireworks in a much nastier battle /.", "targets": [{"span1": [25, 27], "label": "ORG"}, {"span1": [15, 16], "label": "NORP"}, {"span1": [28, 30], "label": "PERSON"}, {"span1": [0, 1], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "Ed Henry CNN Capitol Hill /.", "targets": [{"span1": [3, 5], "label": "LOC"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "So do you think we just saw the outlines to what the midterm election battlelines might look like /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 9}, "text": "A debate that 's likely to rage on for many many months to come /.", "targets": [{"span1": [9, 14], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Turning our attention now to something that has a lot of folks concerned /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "You 've been hearing an awful lot about avian or bird flu /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "The most common and deadly form has already spread in birds from South Asia to Europe /.", "targets": [{"span1": [12, 14], "label": "LOC"}, {"span1": [15, 16], "label": "LOC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "And now there is real concern that the virus could mutate and become devastating to humans /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "In fact some health experts say it 's just a matter of time /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Today President Bush unveiled a seven point one billion dollar plan to prepare for a possible flu pandemic /.", "targets": [{"span1": [2, 3], "label": "PERSON"}, {"span1": [0, 1], "label": "DATE"}, {"span1": [5, 10], "label": "MONEY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Now much of that money would go toward stockpiling enough vaccine to protect twenty million healthcare workers and other first responders speeding up production of vaccines and buying the anti-viral drugs Tamoflu and Rolenzo which in some cases prevent flu infection /.", "targets": [{"span1": [13, 15], "label": "CARDINAL"}, {"span1": [19, 20], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "And we now turn to senior medical correspondent Dr. Sanjay Gupto who has just gotten back from South Asia where bird flu has in the past two years killed at least sixty - two people about half of those who were struck with it /.", "targets": [{"span1": [29, 34], "label": "CARDINAL"}, {"span1": [9, 11], "label": "PERSON"}, {"span1": [24, 28], "label": "DATE"}, {"span1": [17, 19], "label": "LOC"}, {"span1": [35, 37], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Hundreds of millions of birds around the world have been destroyed to try to contain the disease /.", "targets": [{"span1": [0, 3], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "And Dr. Gupto now just joins us from the Emory University hospital in Atlanta /.", "targets": [{"span1": [8, 12], "label": "ORG"}, {"span1": [2, 3], "label": "PERSON"}, {"span1": [13, 14], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Always good to see you doctor /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "So /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Thanks /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "I know you 've had a chance to study the plan the president put forth today /.", "targets": [{"span1": [15, 16], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Does it go far enough in your estimation /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "You know what 's sort of interesting Paula /.", "targets": [{"span1": [7, 8], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "on one hand it is remarkable that the president is devoting as much time and as much money uh all towards a disease that does n't exist yet /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Pandemic flu does n't exist yet /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "But a lot of people are talking about it /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "and I think that 's remarkable to a lot of people eh who are citizens and a lot of people in the public health community as well /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "On the other hand to be able to outline and do the thing that were talked about today to basically completely revamp the public health system so that local officials can talk to state officials that can talk to federal officials to be able to pinpoint exactly when a cluster of bird flu happens that takes probably a lot more money and really a complete revamping of our public health systems /.", "targets": [{"span1": [17, 18], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "The other thing Paula really important is that they talk a lot about the fact that we 're a lot better at taking care of patients now than we were in nineteen eighteen , we have a lot of ICUs a lot of ICUs in the hospital behind me that can take care of critically ill patients /.", "targets": [{"span1": [31, 33], "label": "DATE"}, {"span1": [3, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "The problem though at any given time eighty to ninety percent of those ICU rooms are full so we just do n't have the surge capacity and that 's going to cost lots and lots of money to create a health system where we can take care not only of the ill now but the ill that might come in with a pandemic Paula /.", "targets": [{"span1": [7, 11], "label": "PERCENT"}, {"span1": [63, 64], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Uh let 's talk about the other problem of the plan where the president wants to spend a billion dollars to stockpile antiviral medicine like Tamaflu and Rolenza /.", "targets": [{"span1": [17, 20], "label": "MONEY"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Do we even know if these two medications are going to be effective against a strain that has n't even presented itself /?", "targets": [{"span1": [6, 7], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "here 's the important thing about that /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "We do n't know for sure /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "A lot of people focusing a lot of energy on Tamaflu and Rolenza /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "These are antiviral drugs /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "they are not vaccines /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "They are antiviral drugs uh designed to basically shorten uh how bad the flu might effect you uh try to lessen its impact /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "But we only know that it might work because of laboratory studies and animal studies uh uh in particular /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "The way to really study it would be to knowingly expose people to bird flu /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "and nobody will actually ever do that study for obvious reasons /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "So it 's just theoretical really for the most part that those will work Paula /.", "targets": [{"span1": [14, 15], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Dr. Sanjay Gupto thanks for the update /.", "targets": [{"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "By the way are you catching a cold /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "A a little bit /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "You know I just got back /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "and the ninteen hour plane ride /.", "targets": [{"span1": [2, 4], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Not bird flu though /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "I can assure you that Paula /.", "targets": [{"span1": [5, 6], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Chicken soup /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "That 's right /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Just what the doctor ordered /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Works all the time /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "Yeah right /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 10}, "text": "I made a free house call for you doctor /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 11}, "text": "Coming up on News Night Tonight , cooking a turkey is fine /.", "targets": [{"span1": [3, 6], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 11}, "text": "appearing in one is n't /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 11}, "text": "Will her Nielson do to Martha Stewart what her prison time did n't /?", "targets": [{"span1": [5, 7], "label": "PERSON"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Rapper Fifty Cents or Fitty Cent as some of you say sells millions of records /.", "targets": [{"span1": [4, 6], "label": "PERSON"}, {"span1": [12, 13], "label": "CARDINAL"}, {"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but one neighborhood does n't like the sales pitch /.", "targets": [{"span1": [1, 2], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "They call him Fitty Cent /.", "targets": [{"span1": [3, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but he is worth millions /.", "targets": [{"span1": [4, 5], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "His music like the gold single PIMP may come straight from violent inner city streets /.", "targets": [{"span1": [6, 7], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but suburban kids from coast to coast love the heavy base beat /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "The music sells /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but not everyone is buying the message /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Savela Vargas reports /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Fitty Cent 's film Get Rich or Die Trying has n't even hit theaters yet /.", "targets": [{"span1": [0, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but its marketing has already enraged people in South Central Los Angeles /.", "targets": [{"span1": [8, 12], "label": "LOC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Since two thousand there have been eight hundred homicides in this community /.", "targets": [{"span1": [1, 3], "label": "DATE"}, {"span1": [6, 8], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Now who wants to uphold that standard /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Who wants to keep perpetrating that madness /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "The movie 's billboard shows the rapper in a crucifixion - like pose brandishing a microphone in one hand and a gun in the other /.", "targets": [{"span1": [17, 18], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Paramount you are doing damage to our community /.", "targets": [{"span1": [0, 1], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "you are doing an injustice to our community /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "and you committing violence in our community /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "and that includes Fifty Cent too /.", "targets": [{"span1": [3, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "It must go /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "And go it did /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "A day after about twenty five people rallied in Hyde Park Paramount pulled one sign down and since has pulled about half a dozen others near LA area schools /.", "targets": [{"span1": [3, 6], "label": "CARDINAL"}, {"span1": [13, 14], "label": "CARDINAL"}, {"span1": [9, 11], "label": "LOC"}, {"span1": [11, 12], "label": "ORG"}, {"span1": [26, 27], "label": "GPE"}, {"span1": [0, 2], "label": "DATE"}, {"span1": [20, 24], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "I think what happens oftentimes people are so overwhelmed in communities particularly African American communities by say an image in this case Hollywood /.", "targets": [{"span1": [22, 23], "label": "GPE"}, {"span1": [12, 14], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "It just seems so big /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "it just seems so overwhelming /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "it 's almost like can we really fight City Hall /?", "targets": [{"span1": [8, 10], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Whatever we 're going to do no matter how much outrage and anger that we express it 's not going to change anything /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "But in this case that was shown that that 's not the case /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "A Paramount spokesman says the company is reviewing billboards in other locations /.", "targets": [{"span1": [1, 2], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Now similar complaints are coming from Brooklyn New York /.", "targets": [{"span1": [7, 9], "label": "GPE"}, {"span1": [6, 7], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Back in LA the image hits too close to home /.", "targets": [{"span1": [2, 3], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Not too long ago we was over here /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "and a guy just pulled out a gun and was shooting right in front of my daughter /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "We did n't come back for a week cause I was scared and she was /.", "targets": [{"span1": [6, 8], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "So I mean that right there it enraged me /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Not a good message /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "No it 's already enough gang violence out here /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "We do n't need that /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Cynthia Levas director of Golden Day preschool thinks the billboard touched a nerve because many children here are Fitty Cent fans /.", "targets": [{"span1": [4, 7], "label": "ORG"}, {"span1": [18, 20], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "When it comes to ABC they be like A B /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "and you have to wait for the other letters /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but Fitty Cent song they can sing that word for word /.", "targets": [{"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Rapper Fitty Cent whose real name is Curtis Jackson says it was ludicrous to single out his poster /.", "targets": [{"span1": [7, 9], "label": "PERSON"}, {"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "You got to look at how often we put out action films and other films that utilize weapons as a marketing tool /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "We 'll find guns or weapons on the cover of films probably more often than we 'll find people 's faces /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "He thinks the controversy will lead the film to greater box office success /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "but to the members of this community the victory is knowing that somebody listened /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Man they heard us /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "They heard our voice /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "and I 'm glad /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "I mean I mean usually in this area nobody really cares /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "so for them to care about how we feel and how you know we raising our kids that meant a lot to all of us /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "so I 'm happy /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 12}, "text": "Savela Vargas CNN Los Angeles /.", "targets": [{"span1": [3, 5], "label": "GPE"}, {"span1": [0, 2], "label": "PERSON"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "And still ahead on News Night /.", "targets": [{"span1": [4, 6], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I carry this little packet my kid gave me /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "See what my daughter /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Daddy I love you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I miss you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "be safe /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "come home ASAP /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Danger on the ground in Iraq and under it /.", "targets": [{"span1": [5, 6], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "IED Improvised Explosive Devices take a terrible toll /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "And prison barely dented her popularity /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "but can Martha Stewart survive her primetime ratings /?", "targets": [{"span1": [2, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Everyday in Iraq US soldiers work very hard to reassure local civilians train the Iraqi army and stay alive /.", "targets": [{"span1": [2, 3], "label": "GPE"}, {"span1": [3, 4], "label": "GPE"}, {"span1": [14, 15], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "but with the increasing power of Improvised Explosive Devices IEDs staying alive takes a lot of training and time /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Eddie Shrahmin is imbedded with American soldiers in northern Bavil province /.", "targets": [{"span1": [5, 6], "label": "NORP"}, {"span1": [8, 11], "label": "LOC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "As the uh informants /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Come here Strovell /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "listen up please /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Like the soldiers he commands Lieutenant Colonel Ross Brown suits up daily trying to rid his area of roadside bombs /.", "targets": [{"span1": [7, 9], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Whenever you roll out of the gate and you 're out there operating you never know if you 're going to hit one of these or not /.", "targets": [{"span1": [22, 23], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "The first stop today is Route Tampa some of the worst stretch of highway in what is called the Triangle of Death /.", "targets": [{"span1": [3, 4], "label": "DATE"}, {"span1": [18, 22], "label": "LOC"}, {"span1": [1, 2], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Salaam Alakum /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "where these stall owners Brown told are aware of impending attacks /.", "targets": [{"span1": [4, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Did you know in advance that the IED was going to go off here /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "/.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Tell him to look me in the eye /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "/.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "tell me that again /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "/.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "It is a fine line to walk routing out information without creating new enemies battling an insurgency that kills at will , that turns civilians into accomplices /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I think they 're scared to death /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I think they see us as temporary and they got to live with those people forever /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Finding friends locally seems the toughest part of Brown 's strategy /.", "targets": [{"span1": [8, 9], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "but his next task proves just as difficult /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Here the Lieutenant Colonel has stopped at one of the firm bases one of the areas that Iraqis are manning their own position /.", "targets": [{"span1": [17, 18], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "The commander on duty emerges out of uniform /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "and the Lieutenant colonel struggles to find progress /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "they did n't do too much work yesterday /.", "targets": [{"span1": [7, 8], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "They did n't do too much work the day before /.", "targets": [{"span1": [7, 10], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "They have n't done too much work since they 've been here /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "/.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Brown is unsure if this unit can survive an insurgent attack uncertainties shared by the US forces as well each soldier with his own way to cope /.", "targets": [{"span1": [15, 16], "label": "GPE"}, {"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Hey Morales you carry anything special with you on missions to help you out /?", "targets": [{"span1": [1, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Well I carry my wedding ring a bracelet my wife sent me /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I carry a Bible Psalms ninety - one /.", "targets": [{"span1": [4, 8], "label": "WORK_OF_ART"}, {"span1": [3, 4], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "A picture of an angel an archangel /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I carry this little packet my kid gave me /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "See what my daughter /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Daddy I love you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "I miss you /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "be safe /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "come home ASAP /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Is n't that cool /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "All right let 's go /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Overhead helicopters are responding to an IED attack that moments ago killed Colonel William Wood the highest ranking US officer to die in combat in Iraq a personal friend of Brown 's an added personal reason why tomorrow he 'll be suiting up again /.", "targets": [{"span1": [37, 38], "label": "DATE"}, {"span1": [18, 19], "label": "GPE"}, {"span1": [25, 26], "label": "GPE"}, {"span1": [9, 11], "label": "TIME"}, {"span1": [30, 31], "label": "PERSON"}, {"span1": [13, 15], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 13}, "text": "Eddie Shrahmin CNN northern Bavil Province /.", "targets": [{"span1": [3, 6], "label": "LOC"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "And we turn our attention now to London where a memorial service was held today for the fifty - two victims of the bomb attacks in the city 's public transport systems back in July /.", "targets": [{"span1": [14, 15], "label": "DATE"}, {"span1": [17, 20], "label": "CARDINAL"}, {"span1": [7, 8], "label": "GPE"}, {"span1": [34, 35], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Queen Elizabeth and Prime Minister Tony Blair attended as did relatives to those who died and emergency workers who responded to the terrorist attacks /.", "targets": [{"span1": [5, 7], "label": "PERSON"}, {"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Andrew Carey has the story of three firefighters who were first on the scene at one of the bombings /.", "targets": [{"span1": [6, 7], "label": "CARDINAL"}, {"span1": [10, 11], "label": "ORDINAL"}, {"span1": [15, 16], "label": "CARDINAL"}, {"span1": [0, 2], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "A major incident in central London /-", "targets": [{"span1": [5, 6], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Four explosions ripping through the subway s- /-", "targets": [{"span1": [0, 1], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Chaos on services with some passengers trapped underground /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "It began as any other day you know just uh doing eh normal checks /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "At nine o'clock we started our shift /.", "targets": [{"span1": [1, 3], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "And so the bells went /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "It was about a minute past nine when we got the shout for uh smoke issuing in Allgate tube station /.", "targets": [{"span1": [2, 7], "label": "TIME"}, {"span1": [17, 20], "label": "FAC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "The explosion at Allgate was the first of the four bombs to go off on July the seventh at eight fifty in the morning /.", "targets": [{"span1": [15, 18], "label": "DATE"}, {"span1": [9, 10], "label": "CARDINAL"}, {"span1": [3, 4], "label": "FAC"}, {"span1": [6, 7], "label": "ORDINAL"}, {"span1": [19, 24], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "But Paul Kelly Steve Sodbury and Mel Anderson of Shadwell Firestation 's blue watch had no idea what had happened as they got into the fire engine to answer the call /.", "targets": [{"span1": [3, 5], "label": "PERSON"}, {"span1": [6, 8], "label": "PERSON"}, {"span1": [1, 3], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "On the arrival at Allgate we saw dozens of casualties outside the front sitting down /.", "targets": [{"span1": [4, 5], "label": "FAC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "and it looked so serious that for one second I thought this must be like a training exercise /.", "targets": [{"span1": [7, 9], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "These people had flesh injuries /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "but they also had psychological injuries /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "They just needed reassurance /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "They just needed reassurance because a lot of them were scared /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "It always happens to someone else on the television a terrorist incident /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "As medical teams arrived at the scene Steve Paul and two other firefighters went into the station /.", "targets": [{"span1": [10, 11], "label": "CARDINAL"}, {"span1": [7, 8], "label": "PERSON"}, {"span1": [8, 9], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "This scene of walking down the platform and down the tracks with lines of injured people walking past you out the other way is /-", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "I 'll remember it forever I think /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "By the time they reached the second carriage they knew they were dealing with a bomb explosion /.", "targets": [{"span1": [6, 7], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Carnage /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "A man sitting down next door he had half his leg /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "um a person lying down /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "there was like a half a torso in front of the carriage as you go in /.", "targets": [{"span1": [4, 5], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "It sounds very harsh to say now /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "but when you 're down there and you 're dealing with it it kind of just happens /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "You go into autopilot /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "and you look /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "and you think I ca n't help that person /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "let 's move on to the next one /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Eight people including the bomber died at Allgate /.", "targets": [{"span1": [0, 1], "label": "CARDINAL"}, {"span1": [7, 8], "label": "FAC"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "one hundred and twenty were injured /.", "targets": [{"span1": [0, 4], "label": "CARDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "At the end of the day back home with their loved ones a time for the firefighters to reflect and some mixed emotions /.", "targets": [{"span1": [1, 6], "label": "TIME"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "To them it was their happiness to see me walking through the door /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "but I knew that somewhere someone 's daughter was n't coming home , their father was n't coming home /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Watching it on the news is completely different to looking in the eyes of a wounded person /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "As a fire brigade you 're there to rescue them /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "so it 'll always be a sense of regret as we did as much as we could but there was still a human cost and there 's nothing that we 'll ever be able to do about it /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "Andrew Carey CNN London /.", "targets": [{"span1": [3, 4], "label": "GPE"}, {"span1": [0, 2], "label": "PERSON"}, {"span1": [2, 3], "label": "ORG"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 14}, "text": "A producer from our London Bureau /.", "targets": [{"span1": [4, 5], "label": "GPE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 15}, "text": "Still to come the ups and downs of Martha Stewart and the British are coming ! The British are coming !", "targets": [{"span1": [17, 18], "label": "NORP"}, {"span1": [8, 10], "label": "PERSON"}, {"span1": [12, 13], "label": "NORP"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 15}, "text": "No wait /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 15}, "text": "are n't they already here /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 15}, "text": "But does anyone really care /?", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "And now we 're going to take a look at the trials and tribulations of Martha Stewart /.", "targets": [{"span1": [15, 17], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "You might have thought serving time in prison was tough /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "As it turns out , being on the outside might be even tougher /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "It seems like just yesterday Martha Stewart was sprung from prison and poised for her comeback /.", "targets": [{"span1": [3, 5], "label": "DATE"}, {"span1": [5, 7], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "This is a country where we believe in second acts , we believe in redemption , we believe in confessional stories , we believe in the comeback , we 've /-", "targets": [{"span1": [8, 9], "label": "ORDINAL"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Five months behind bars had n't dimmed Martha 's image /.", "targets": [{"span1": [0, 2], "label": "DATE"}, {"span1": [7, 8], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "If anything it was soaring /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Along with her company stock it doubled during that time /.", "targets": [{"span1": [8, 10], "label": "DATE"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Martha once again took the helm of her company and her magazine /.", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "She also landed a starring role in the spinoff of one of TV 's hottest reality shows The Apprentice /.", "targets": [{"span1": [17, 19], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Martha the woman everyone loves to hate was loved /.", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "It 's really wonderful to be back /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "I 've missed you as you can imagine /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "But what a difference a TV show makes especialy when that show is a flop /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "I 'm looking for the apprentice /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "The Apprentice Martha Stewart debuted in September /.", "targets": [{"span1": [6, 7], "label": "DATE"}, {"span1": [0, 4], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Her ratings tanked /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "and her stock followed suit plunging about forty - seven percent since her release from prison in March /.", "targets": [{"span1": [17, 18], "label": "DATE"}, {"span1": [6, 11], "label": "PERCENT"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Once again Martha Stewart is persona non grata /.", "targets": [{"span1": [2, 4], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Even her friend and fellow Apprentice star Donald Trump made it clear that her show was not a good thing /.", "targets": [{"span1": [7, 9], "label": "PERSON"}, {"span1": [5, 6], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "He had this to say in a recent radio interview /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "I think there was confusion between Martha 's Apprentice and mine /.", "targets": [{"span1": [6, 7], "label": "PERSON"}, {"span1": [8, 9], "label": "WORK_OF_ART"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "and mine continues to do well /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "and the other has struggled very severely /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "I think it probably hurt mine /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "and I sort of predicted that it would /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "You 're fired /.", "targets": []}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Ouch smackdown from the Donald /.", "targets": [{"span1": [3, 5], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Donald /?", "targets": [{"span1": [0, 1], "label": "PERSON"}]}
+{"info": {"document_id": "bc/cnn/00/cnn_0000", "sentence_id": 16}, "text": "Martha Stewart punched back in a recent Fortune magazine interview saying she was actually told that she would be firing the Donald /.", "targets": [{"span1": [7, 9], "label": "ORG"}, {"span1": [0, 2], "label": "PERSON"}, {"span1": [20, 22], "label": "PERSON"}]}
