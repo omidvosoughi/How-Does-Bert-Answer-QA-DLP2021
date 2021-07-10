@@ -1,0 +1,500 @@
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where were the 196 Summer Olympics held", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where did Freidreich Wilhelm Ludwig Leichhardt , Prussian born explorer , go to school", "targets": [{"span1": [0, 14], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the difference between love and infatuation", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is molybdenum", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do I legally make my own will and testament", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What international amateur sports spectacle was first telecast in 1956", "targets": [{"span1": [0, 10], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the green variety of beryl called", "targets": [{"span1": [0, 8], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who created private detective Philip Marlowe", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the first names of the famous husband-and-wife acting team of Lunt and Fontanne", "targets": [{"span1": [0, 15], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many children under 18 are victims of some sort of Physical Abuse each year", "targets": [{"span1": [0, 15], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the claim to fame of night watchman Frank Wills", "targets": [{"span1": [0, 11], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What botanical marvel did Nebuchadnezzar build", "targets": [{"span1": [0, 6], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What country 's people are the top television watchers", "targets": [{"span1": [0, 9], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is Shirley MacLaine", "targets": [{"span1": [0, 4], "label": "HUM:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What relative of Leo Tolstoy translated War and Peace eight times", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What type of animal is the easiest kept pet there is", "targets": [{"span1": [0, 11], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the location of Edinburgh , Scotland", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What stringed weapon fires a bolt", "targets": [{"span1": [0, 6], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the five most expensive cities in the world", "targets": [{"span1": [0, 10], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What do the number 1 , 2 , and 4 mean on Dr. Pepper bottles", "targets": [{"span1": [0, 15], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the deranged super-criminal Otto Octavius uses", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What William Makepeace Thackeray novel was made into a film by Stanley Kubrick", "targets": [{"span1": [0, 13], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What percentage of American men are alcoholic", "targets": [{"span1": [0, 7], "label": "NUM:perc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the nickname of the Cleveland Indians", "targets": [{"span1": [0, 8], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much could you rent a Volkswagen bug for in 1966", "targets": [{"span1": [0, 11], "label": "NUM:money"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can I find info on research being done on oilseeds thru genetics", "targets": [{"span1": [0, 13], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Rona Barrett 's married name", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What do economists do", "targets": [{"span1": [0, 4], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What two presidents of the U.S. published books of poetry", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is `` snoogans ''", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What spider makes a superb pet , even said to recognize its master", "targets": [{"span1": [0, 13], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When did Jaco Pastorius die", "targets": [{"span1": [0, 5], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What countries have the most auto thefts", "targets": [{"span1": [0, 7], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the biblical meaning of ` stones '", "targets": [{"span1": [0, 9], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the first animal into space", "targets": [{"span1": [0, 7], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the inventor of silly putty", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the first X-Man to die in battle", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a gandy dancer", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the percentage of children aged two through eleven who watch ` 'The Simpsons '", "targets": [{"span1": [0, 16], "label": "NUM:perc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the major differences in the Catholic and Methodist religions", "targets": [{"span1": [0, 11], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the fear of frogs", "targets": [{"span1": [0, 6], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the nickname for the state of Mississippi", "targets": [{"span1": [0, 9], "label": "LOC:state"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What appointments secretary to Richard Nixon went to jail", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How fast is light", "targets": [{"span1": [0, 4], "label": "NUM:speed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are liver enzymes", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which oil company almost picked a word that meant `` stalled car '' in Japanese as its new international name", "targets": [{"span1": [0, 20], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many Russians have landed on the moon", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How did the Great Depression affect Japan 's history", "targets": [{"span1": [0, 9], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a fear of slime", "targets": [{"span1": [0, 6], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the four railways in Monopoly", "targets": [{"span1": [0, 7], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who commanded the French forces at the Battle of Orleans", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How long is the Coney Island boardwalk", "targets": [{"span1": [0, 7], "label": "NUM:dist"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When did Mount St. Helens last erupt", "targets": [{"span1": [0, 7], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What determines the value of the pearl", "targets": [{"span1": [0, 7], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who said : `` Soldiers win the battles and generals get the credit ''", "targets": [{"span1": [0, 14], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What two historical figures , who fought each other in a famous battle , each have a food named after them", "targets": [{"span1": [0, 21], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the Democratic nominee in the American presidential election", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is saltpeter", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is Rider College located", "targets": [{"span1": [0, 5], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many bones are in the human hand", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What crop failure caused the Irish Famine", "targets": [{"span1": [0, 7], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What month 's third weekend is the Monterey Jazz Festival held on", "targets": [{"span1": [0, 12], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are some children 's rights", "targets": [{"span1": [0, 6], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What non-alcoholic syrup is made from pomegranate juice", "targets": [{"span1": [0, 8], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What cheery fellow got the ZIP code 9971 from the U.S. Postal Service in 1963", "targets": [{"span1": [0, 15], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you correctly say the word ` qigong '", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How is energy created", "targets": [{"span1": [0, 4], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who received the Will Rogers Award in 1989", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many dots make up the symbol for `` because ''", "targets": [{"span1": [0, 11], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who wrote ` Dubliners '", "targets": [{"span1": [0, 5], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much Coca Cola is drunk in one day in the world", "targets": [{"span1": [0, 12], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many warmup pitches does a reliever get coming into a baseball game", "targets": [{"span1": [0, 13], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What country saw the origin of the Asian Flu", "targets": [{"span1": [0, 9], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the Socratic method", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the abbreviation for limited partnership", "targets": [{"span1": [0, 7], "label": "ABBR:abb"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you find oxidation numbers", "targets": [{"span1": [0, 6], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who sent the brief message `` I came , I saw , I conquered ''", "targets": [{"span1": [0, 15], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Nebraska 's most valuable resource", "targets": [{"span1": [0, 7], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many gallons of paint does it take to paint the Golden Gate Bridge", "targets": [{"span1": [0, 14], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What golfer has been called Ohio Fats and Blobbo", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the two actress daughters of John Mills", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which two products use a tiger as their symbol", "targets": [{"span1": [0, 9], "label": "ENTY:product"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In what medium is Stuart Hamblen considered to be the first singing cowboy", "targets": [{"span1": [0, 13], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What did the Seven Dwarfs do for a living", "targets": [{"span1": [0, 9], "label": "HUM:title"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What U.S. state boasts Leif Ericson Park", "targets": [{"span1": [0, 7], "label": "LOC:state"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How can I get someone 's phone number if I only have their screen name", "targets": [{"span1": [0, 15], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What U.S. state is Mammoth Cave National Park in", "targets": [{"span1": [0, 9], "label": "LOC:state"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many school districts are there in the United States", "targets": [{"span1": [0, 10], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What breed of dog was the `` Little Rascals '' dog", "targets": [{"span1": [0, 11], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who told all in Ball Four", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What board game does a `` wood-pusher '' play poorly", "targets": [{"span1": [0, 10], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much does a poodle weigh", "targets": [{"span1": [0, 6], "label": "NUM:weight"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the blind sculptress in love with the Fantastic Four 's Thing", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is usenet for the Internet", "targets": [{"span1": [0, 6], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do I register a trade name in North Carolina", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why is the word `` abbreviation '' so long", "targets": [{"span1": [0, 9], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the city that Maurizio Pellegrin lives in", "targets": [{"span1": [0, 12], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "CNN is the abbreviation for what", "targets": [{"span1": [0, 6], "label": "ABBR:exp"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does idle mean", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the maximum length , in inches , of a first baseman 's glove", "targets": [{"span1": [0, 15], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the largest lake in North America", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What famous meat company went out of business because it became known that the underworld had been selling them kangaroo meat", "targets": [{"span1": [0, 21], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the most popular four-player game of all time", "targets": [{"span1": [0, 10], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does the abbreviation cwt.", "targets": [{"span1": [0, 5], "label": "ABBR:exp"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who created the World Wide Web , WWW", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What city is terrorized by Dracula in The Night Stalker", "targets": [{"span1": [0, 10], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the tallest piece on a chessboard", "targets": [{"span1": [0, 8], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Judy Garland 's date of birth", "targets": [{"span1": [0, 8], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of a Salt Lake City newspaper", "targets": [{"span1": [0, 10], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is `` Vocal Sampling ''", "targets": [{"span1": [0, 6], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How did Super President gain his powers on the animated series", "targets": [{"span1": [0, 11], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's an infant seal called", "targets": [{"span1": [0, 6], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was made the first honorary citizen of the U.S.", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why were people recruited for the Vietnam War", "targets": [{"span1": [0, 8], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the speed of the Mississippi River", "targets": [{"span1": [0, 8], "label": "NUM:speed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who loved Flash Gordon besides Dale", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where did Luther display his `` Ninety-Five Theses ''", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why do some clothing labels say `` Use a nonchlorine bleach ''", "targets": [{"span1": [0, 12], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much money are Dumbo 's ears insured for", "targets": [{"span1": [0, 9], "label": "NUM:money"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What ocean liner burned and sank in Hong Kong harbor", "targets": [{"span1": [0, 10], "label": "ENTY:veh"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What age is Benny Carter", "targets": [{"span1": [0, 5], "label": "NUM:period"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many points is a disk in the center hole worth in Crokinole", "targets": [{"span1": [0, 13], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When Superman needs to get away from it all , where does he go", "targets": [{"span1": [0, 14], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many spaces follow a period at the end of a sentence", "targets": [{"span1": [0, 12], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many neurons are in the human brain", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What do the 12 days of Christmas mean", "targets": [{"span1": [0, 8], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the backup singing group for Roy Rogers", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the electronic device used to produce visual displays corresponding to electric signals", "targets": [{"span1": [0, 14], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What tennis player has the nickname `` Nasty ''", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where did the name root beer come from", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What county is Chicago in", "targets": [{"span1": [0, 5], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was Darth Vader 's son named", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who starred in Singing in the Rain and The Singing Nun", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What two vegetables are combined in succotash", "targets": [{"span1": [0, 7], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are chloroplasts", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does the name `` Sabrina '' mean", "targets": [{"span1": [0, 8], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What century did art 's Romantic Period begin in", "targets": [{"span1": [0, 9], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What religion has the most members", "targets": [{"span1": [0, 6], "label": "ENTY:religion"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the tallest building in America in 1922", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is the composer of `` Canon in D Major ''", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How did the U.S. come into the possession of an empire in the wake of the Spanish-American War", "targets": [{"span1": [0, 18], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who are Woody Woodpecker 's niece and nephew", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the first country to put a second woman in space", "targets": [{"span1": [0, 12], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What sprawling U.S. state boasts the most airports", "targets": [{"span1": [0, 8], "label": "LOC:state"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How long is human gestation", "targets": [{"span1": [0, 5], "label": "NUM:period"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What political party is Sinn Fein a part of", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In what year was the cannon invented", "targets": [{"span1": [0, 7], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the alphabet for Latin", "targets": [{"span1": [0, 6], "label": "ENTY:letter"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the most popular last name", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What Apollo 11 astronaut minded the store while Armstrong and Aldrin made history", "targets": [{"span1": [0, 13], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the estimated total U.S. whitetail deer population", "targets": [{"span1": [0, 9], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is Samuel F. Pickering", "targets": [{"span1": [0, 5], "label": "HUM:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In what sport are these following numbers relevant : 118 , 126 , 134 , 142 , 15 , 158 , 167 , 177 , and 19", "targets": [{"span1": [0, 27], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What store claims to be the world 's largest department store", "targets": [{"span1": [0, 11], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the first town to be chartered in Vermont", "targets": [{"span1": [0, 10], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Describe the Finnish music personality Salonen 's appearance", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the Valdez Principles", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What colors is magenta made of", "targets": [{"span1": [0, 6], "label": "ENTY:color"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the name of the ball game played by the mayans", "targets": [{"span1": [0, 12], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What crooner joined The Andrews Sisters for Pistol Packin Mama", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What well-known actor is the father of star Alan Alda", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What fastener did Whitcomb Judson patent in 1893", "targets": [{"span1": [0, 8], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a fear of everything", "targets": [{"span1": [0, 6], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What creative genius said : `` Everything comes to him who hustles while he waits ''", "targets": [{"span1": [0, 16], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What film canine is buried in Pere-Lachaise cemetery in Paris", "targets": [{"span1": [0, 10], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does a farrier put shoes on", "targets": [{"span1": [0, 7], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does verdandi mean", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What president also became a supreme court justice", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "CNN 's first broadcast occurred on what date", "targets": [{"span1": [0, 8], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What did brontosauruses eat", "targets": [{"span1": [0, 4], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who owns the rights on a TV program", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a 2-sided object called", "targets": [{"span1": [0, 6], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the first Russian astronaut to do a spacewalk", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much did the first Barbie doll sell for in 1959", "targets": [{"span1": [0, 11], "label": "NUM:money"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When was General Manuel Noriega ousted as the leader of Panama and turned over to U.S. authorities", "targets": [{"span1": [0, 17], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What actress has received the most Oscar nominations", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why do men snore", "targets": [{"span1": [0, 4], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which ear can most people hear better with", "targets": [{"span1": [0, 8], "label": "ENTY:body"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What drug did Sigmund Freud become fascinated with while experimenting with the treatment of neurasthenia", "targets": [{"span1": [0, 15], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many shots can a stock M16 hold", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name a South African diamond producer", "targets": [{"span1": [0, 6], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What facial feature typically contains about 55 hairs", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 1976 Deep Throat clone provides the leading lady with a second larynx", "targets": [{"span1": [0, 13], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What South American city features the exclusive Copacabana Beach and Ipanema", "targets": [{"span1": [0, 11], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What therapy attempts to elicit the `` primal scream ''", "targets": [{"span1": [0, 10], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Olestra", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of a book written by Aaron Hass", "targets": [{"span1": [0, 11], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the king who was forced to agree to the Magna Carta", "targets": [{"span1": [0, 13], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the chances of pregnacy if the penis does not penetrate the vagina", "targets": [{"span1": [0, 14], "label": "NUM:perc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What drink is the best thirst-quencher", "targets": [{"span1": [0, 6], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How does it make its colors", "targets": [{"span1": [0, 6], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the top 5 fiction books of all time", "targets": [{"span1": [0, 10], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What court does Bob Woodward describe in The Brethren", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many people die of tuberculosis yearly", "targets": [{"span1": [0, 7], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What causes rust", "targets": [{"span1": [0, 3], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What causes the body to shiver in cold temperatures", "targets": [{"span1": [0, 9], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who invented television", "targets": [{"span1": [0, 3], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What famous British actor lost his voice after an operation in 1966", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How does a hydroelectric dam work", "targets": [{"span1": [0, 6], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why is Microsoft 's Windows 3 such a successful computer program", "targets": [{"span1": [0, 11], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What English queen had six fingers on one hand", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the food of the Greek gods called", "targets": [{"span1": [0, 9], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do I find a web address for a company", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How is Paraguay for vacations", "targets": [{"span1": [0, 5], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many colored squares are there on a Rubik 's Cube", "targets": [{"span1": [0, 11], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What game do Steve McQueen and Edward G. Robinson play in The Cincinnati Kid", "targets": [{"span1": [0, 14], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What North American city would you visit to see Cleopatra 's Needle", "targets": [{"span1": [0, 12], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the powers and weaknesses of Green Lantern 's ring", "targets": [{"span1": [0, 11], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What kind of creatures are black , yellow , and brown bullheads", "targets": [{"span1": [0, 12], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In what part of the world is Mozambique", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What day of the week was July 13", "targets": [{"span1": [0, 8], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In what county is Eckley Colorado", "targets": [{"span1": [0, 6], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the Benelux countries", "targets": [{"span1": [0, 5], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who starred in the movie The War of the Worlds", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do fuel injectors work", "targets": [{"span1": [0, 5], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who wrote The Secret Life of Walter Mitty", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Aspartame is also known as what", "targets": [{"span1": [0, 6], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What do most tourists visit in Reims", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Nicholas Cage 's occupation", "targets": [{"span1": [0, 6], "label": "HUM:title"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where did the term `` 69 '' come from", "targets": [{"span1": [0, 9], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the ages in comic book lingo", "targets": [{"span1": [0, 8], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What kind of weapons were used in Medieval warfare", "targets": [{"span1": [0, 9], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is the Kentucky Horse Park", "targets": [{"span1": [0, 6], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What do players try to do when the music stops in a game of musical chairs", "targets": [{"span1": [0, 16], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the Great Britain population from 1699-172", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do I e-mail someone at aol.com from yahoo.com", "targets": [{"span1": [0, 9], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What year is etched on the Gold Medal of Excellence from the Paris Exposition depicted on a can of Campbell 's tomato soup", "targets": [{"span1": [0, 23], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does an echidna look like", "targets": [{"span1": [0, 6], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What bay divides Maryland 's Eastern and Western Shores", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What country received all the Nobel Prizes awarded in 1976", "targets": [{"span1": [0, 10], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is money made of", "targets": [{"span1": [0, 5], "label": "ENTY:substance"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which of these are authors", "targets": [{"span1": [0, 5], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is hebephrenia", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is the one Independent Member of Congress", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the acronym for the National Bureau of Investigation", "targets": [{"span1": [0, 10], "label": "ABBR:abb"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How much time does the blinking of an eye take", "targets": [{"span1": [0, 10], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the origin of music", "targets": [{"span1": [0, 6], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the shortest and the longest songs ever produced", "targets": [{"span1": [0, 10], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What kind of guitar did Jimi Hendrix play", "targets": [{"span1": [0, 8], "label": "ENTY:instru"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What bordering country is due north of Costa Rica", "targets": [{"span1": [0, 9], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why is Chicago named Chicago", "targets": [{"span1": [0, 5], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What famed river was Hernando de Soto the first European to see", "targets": [{"span1": [0, 12], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the only primate to lack pigment in the palms of its hands", "targets": [{"span1": [0, 14], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many holes are there in a tenpin bowling ball", "targets": [{"span1": [0, 10], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In Hemingway 's `` Old Man and the Sea , '' what kind of fish does the old man catch", "targets": [{"span1": [0, 20], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are some colorful flowers that will bloom in the fall in New England", "targets": [{"span1": [0, 14], "label": "ENTY:plant"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who lives at 39 Stone Canyon Way", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "The Iraqis launched their attack on Kuwait on what day", "targets": [{"span1": [0, 10], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the woman who was with John Belushi when he died", "targets": [{"span1": [0, 15], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Jane Goodall famous for", "targets": [{"span1": [0, 6], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What makes sperm", "targets": [{"span1": [0, 3], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How can I find a phone number of someone if I only know their email address", "targets": [{"span1": [0, 16], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What country has the port of Haifa", "targets": [{"span1": [0, 7], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What two cities usually mark the extremes of English Channel swims", "targets": [{"span1": [0, 11], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a biologist", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who graced the airwaves with such pearls as `` Do ya lo-o-ove me ? Get naked , baby ! ''", "targets": [{"span1": [0, 20], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the three most populated countries in the world", "targets": [{"span1": [0, 10], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the words to the cd Eminem 's , or slim shady , `` My Name Is ''", "targets": [{"span1": [0, 19], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the origin of Boxing Day", "targets": [{"span1": [0, 7], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the abbreviated form of the National Bureau of Investigation", "targets": [{"span1": [0, 11], "label": "ABBR:abb"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What Nantucket shipwreck killed more divers exploring it than the 52 people it sank with", "targets": [{"span1": [0, 15], "label": "ENTY:veh"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What Russian composer 's Prelude in C Sharp Minor brought him fame and fortune", "targets": [{"span1": [0, 14], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Bella Abzug 's sartorial trademark", "targets": [{"span1": [0, 7], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What writer is famous for physically putting himself into the center of his subject matter", "targets": [{"span1": [0, 15], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who accompanied Space Ghost on his missions", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you make a million bucks", "targets": [{"span1": [0, 7], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What North American city boasts the biggest Polish population", "targets": [{"span1": [0, 9], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What Asian gulf were the destroyers Maddox and C Turner Joy shot up in", "targets": [{"span1": [0, 14], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who portrayed portly criminologist Carl Hyatt on Checkmate", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who moderated the first Kennedy-Nixon TV debate", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What U.S. city is The Queen of the Pacific", "targets": [{"span1": [0, 9], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the symbol for the zodiacal sign Gemini", "targets": [{"span1": [0, 9], "label": "ENTY:symbol"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name a movie that the actress , Sandra Bullock , had a role in", "targets": [{"span1": [0, 14], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What college did Joe Namath play football for", "targets": [{"span1": [0, 8], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does Salk vaccine prevent", "targets": [{"span1": [0, 5], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What U.S. Congressman said : `` Keep the faith , baby ''", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many of every 10 members of the Rodeo Cowboys Association have never worked a ranch", "targets": [{"span1": [0, 16], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is always trying to get the rent from Andy Capp", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "The major league baseball team in Pittsburgh is called what", "targets": [{"span1": [0, 10], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When is the Sun closest to the Earth", "targets": [{"span1": [0, 8], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Dr. Ruth 's last name", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is your favorite color", "targets": [{"span1": [0, 5], "label": "ENTY:color"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many years of bad luck follow breaking a mirror", "targets": [{"span1": [0, 10], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What country is the worlds leading supplier of cannabis", "targets": [{"span1": [0, 9], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What female faith healer wrote the inspirational book I Believe in Miracles", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How does a small businessman contact the Good Humor Ice Cream company to do business with them", "targets": [{"span1": [0, 17], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why can 't you taste anything when you have a cold", "targets": [{"span1": [0, 11], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How is Easter Sunday 's date determined", "targets": [{"span1": [0, 7], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the designer of the shoe that spawned millions of plastic imitations , known as ` jellies '", "targets": [{"span1": [0, 18], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is it planned to berth the merchant ship , Lane Victory , which Merchant Marine veterans are converting into a floating museum", "targets": [{"span1": [0, 23], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are different products of petroleum", "targets": [{"span1": [0, 6], "label": "ENTY:product"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is South Bend", "targets": [{"span1": [0, 4], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you get a girl to have sex with you", "targets": [{"span1": [0, 11], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the best Internet business to go into", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the capital of Taiwan", "targets": [{"span1": [0, 6], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's distinctive about a palmiped 's feet", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Cabarnet Sauvignon", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the proof that houseplants metabolize carcinogens", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is section manager for guidance and control systems at JPL", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does seccession mean", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the only extant trilogy of classical Greek plays", "targets": [{"span1": [0, 9], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was known as the Time Master in comic books", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where does dew come from", "targets": [{"span1": [0, 5], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the mission of Nike", "targets": [{"span1": [0, 6], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the oldest U.S. president", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the most popular sports car color", "targets": [{"span1": [0, 8], "label": "ENTY:color"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name a Salt Lake City newspaper", "targets": [{"span1": [0, 6], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the Islamic equivalent of the Red Cross", "targets": [{"span1": [0, 9], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who created Billy Pilgrim , a survivor of the Dresden firestorm", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the first host of Person to Person", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What percentage of the world 's plant and animal species can be found in the Amazon forests", "targets": [{"span1": [0, 17], "label": "NUM:perc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What instrument does Benny Carter play", "targets": [{"span1": [0, 6], "label": "ENTY:instru"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the recommended daily requirement for folic acid for pregnant women", "targets": [{"span1": [0, 12], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the meaning of the Latin battle cry : Ad arma , ad arma", "targets": [{"span1": [0, 15], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is the youngest of the Beatles", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What war did Florence Nightingale tend the troops in", "targets": [{"span1": [0, 9], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What kind of company is 7-Eleven", "targets": [{"span1": [0, 6], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the supreme policy-making bureau of the Soviet Communist Party", "targets": [{"span1": [0, 11], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How long were Tyrannosaurus Rex 's teeth", "targets": [{"span1": [0, 7], "label": "NUM:dist"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the Homelite Inc. home page", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Smokey The Bear 's middle name", "targets": [{"span1": [0, 8], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is the bridge over the river Kwai", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does Inuit and Eskimo mean", "targets": [{"span1": [0, 6], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How is cologne made", "targets": [{"span1": [0, 4], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the verdict in the trial of Lizzie Borden", "targets": [{"span1": [0, 10], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is white chocolate", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How deep is a fathom", "targets": [{"span1": [0, 5], "label": "NUM:dist"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does a teaspoon of matter weigh in a black hole", "targets": [{"span1": [0, 11], "label": "NUM:weight"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is agent orange", "targets": [{"span1": [0, 4], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the U.S. Senate majority leader and the Speaker of the House", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What nationality is Gorbachev", "targets": [{"span1": [0, 4], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is D.B. Cooper known for", "targets": [{"span1": [0, 6], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What term does a Czech use to describe a Pole", "targets": [{"span1": [0, 10], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What did the Chinese emperor present to the English soldier Gordon in recognition of his services in quelling rebellions", "targets": [{"span1": [0, 19], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What plants are found in an estuary", "targets": [{"span1": [0, 7], "label": "ENTY:plant"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why do we have to go to school", "targets": [{"span1": [0, 8], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who did the Seven Mules block for", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is Melbourne", "targets": [{"span1": [0, 3], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What causes pneumonia", "targets": [{"span1": [0, 3], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the normal resting heart rate of a healthy adult", "targets": [{"span1": [0, 11], "label": "NUM:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who wrote the song , `` Stardust ''", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who made the first airplane", "targets": [{"span1": [0, 5], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where 's the 19th hole on a golf course", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many hearts does an octopus have", "targets": [{"span1": [0, 7], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does NASA stand for", "targets": [{"span1": [0, 5], "label": "ABBR:exp"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How far is Yaroslavl from Moscow", "targets": [{"span1": [0, 6], "label": "NUM:dist"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What U.S. city 's skyline boasts the Gateway Arch", "targets": [{"span1": [0, 9], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the Islamic counterpart to the Red Cross", "targets": [{"span1": [0, 12], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the lengths of pearl necklaces", "targets": [{"span1": [0, 7], "label": "NUM:dist"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where does your hair grow the fastest", "targets": [{"span1": [0, 7], "label": "ENTY:body"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Jackson Pollock is of what nationality", "targets": [{"span1": [0, 6], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is deadrise , nautical ,", "targets": [{"span1": [0, 6], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who wrote the lyrics to Porgy and Bess", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is hypnotherapy", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What comedian was born Allen Stewart Konigsberg", "targets": [{"span1": [0, 7], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the origin of the term soda jerk", "targets": [{"span1": [0, 9], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In order from the top , the four stripes on a can of Pepsi are what colors", "targets": [{"span1": [0, 17], "label": "ENTY:color"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the two mystical ravens Odin has at his command", "targets": [{"span1": [0, 10], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What debts did Qintex group leave", "targets": [{"span1": [0, 6], "label": "NUM:money"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What company 's trademark was His Master 's Voice", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can I get a photograph of professor Randolph Quirk", "targets": [{"span1": [0, 10], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How can I easily remove red wine stains from t-shirts", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the origin of the word `` amen ''", "targets": [{"span1": [0, 10], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When was the Brandenburg Gate in Berlin built", "targets": [{"span1": [0, 8], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do vending machines tell if your dollar is a 1 or a 5", "targets": [{"span1": [0, 14], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who invented the Wonderbra", "targets": [{"span1": [0, 4], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 2th-century American poet wrote a four-volume biography of Abraham Lincoln", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "McCarren Airport is located in what city", "targets": [{"span1": [0, 7], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What heavyweight boxer was known as The Wild Bull of the Pampas", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What two South American countries do n't border Brazil", "targets": [{"span1": [0, 9], "label": "LOC:country"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What tragedy befell the city of Dogtown in 1899", "targets": [{"span1": [0, 9], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What qualifications are there for individuals donating blood", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is Desmond Tutu", "targets": [{"span1": [0, 4], "label": "HUM:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the folklore story regarding birds ' nests and birds in Christmas trees", "targets": [{"span1": [0, 14], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many times larger than life size is the Statue of Liberty", "targets": [{"span1": [0, 12], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many Vietnamese were there in the Soviet Union", "targets": [{"span1": [0, 9], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the location of McCarren Airport", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who won the Superbowl in", "targets": [{"span1": [0, 5], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the components of polyester", "targets": [{"span1": [0, 6], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What kind of women gave Sigmund Freud erotic dreams", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What ship did Lloyd M. Bucher command", "targets": [{"span1": [0, 7], "label": "ENTY:veh"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was originally defined as one 1-millionth of the distance from the equator to the Pole", "targets": [{"span1": [0, 16], "label": "ENTY:termeq"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What events happened January 26 , 1978", "targets": [{"span1": [0, 7], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a fear of motion", "targets": [{"span1": [0, 6], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is the Keck telescope", "targets": [{"span1": [0, 5], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the most common street name in America", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What pseudonym did William Sydney Porter use in writing The Gift of the Magi", "targets": [{"span1": [0, 14], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where did surfing originate", "targets": [{"span1": [0, 4], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where is one 's corpus callosum found", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many times can a nickel-cadmium rechargeable battery be recharged", "targets": [{"span1": [0, 10], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Mississippi 's state animal", "targets": [{"span1": [0, 6], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can I get mailing lists", "targets": [{"span1": [0, 6], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the name of the star of the cooking show , `` Galloping Gourmet ''", "targets": [{"span1": [0, 16], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can one find Rider College", "targets": [{"span1": [0, 6], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you tell your parents you are dating an older man", "targets": [{"span1": [0, 12], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where are the U.S. headquarters for Procter & Gamble", "targets": [{"span1": [0, 9], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the largest museum in the world", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What boxer 's life story is titled Raging Bull", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What animal occurs in Spielberg 's `` Jaws ''", "targets": [{"span1": [0, 9], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When did Fraze get his first patent for the pull-tab can", "targets": [{"span1": [0, 11], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What occupation has the highest divorce rate", "targets": [{"span1": [0, 7], "label": "HUM:title"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does an ashen-faced eidologist search out the existence of", "targets": [{"span1": [0, 10], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a fear of glass", "targets": [{"span1": [0, 6], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name one of King Henry VIII 's wives", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the second-highest mountain in the world", "targets": [{"span1": [0, 8], "label": "LOC:mount"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the second highest mountain peak in the world", "targets": [{"span1": [0, 10], "label": "LOC:mount"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many colors are there in the spectrum", "targets": [{"span1": [0, 8], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In 139 the papal court was forced to move from Rome to where", "targets": [{"span1": [0, 13], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the side effects of mevacor", "targets": [{"span1": [0, 7], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who protects DC Comics ' realm of dreams", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What year did Montana become a state", "targets": [{"span1": [0, 7], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What character in The Beverly Hillbillies has the given names Daisy Moses", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When did Spielberg direct `` Jaws ''", "targets": [{"span1": [0, 7], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which company claimed to be `` the world 's biggest toy store ''", "targets": [{"span1": [0, 13], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which airplane was Fawaz Younis convicted of hijacking", "targets": [{"span1": [0, 8], "label": "ENTY:veh"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name the highest mountain", "targets": [{"span1": [0, 4], "label": "LOC:mount"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How long does it take for your body to restore blood after you donate your blood", "targets": [{"span1": [0, 16], "label": "NUM:period"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "The trials resulting from World War II are known as what", "targets": [{"span1": [0, 11], "label": "ENTY:event"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you write a book report", "targets": [{"span1": [0, 7], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the biggest-selling U.S. magazine aimed at a black audience", "targets": [{"span1": [0, 11], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many meters are in a mile", "targets": [{"span1": [0, 7], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What Italian leader had a lifelong fear of the evil eye", "targets": [{"span1": [0, 11], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a fear of odors , body ,", "targets": [{"span1": [0, 9], "label": "ENTY:dismed"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can I find the lyrics for the song ` Getting Married Today ' from the musical ` Company '", "targets": [{"span1": [0, 20], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the greatest source of `` white '' magic in the Marvel Universe", "targets": [{"span1": [0, 14], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many airline schools are there in the U.S.", "targets": [{"span1": [0, 9], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is `` alternative '' anymore", "targets": [{"span1": [0, 6], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What 's the name of Pittsburgh 's baseball team", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you make a computer chip", "targets": [{"span1": [0, 7], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "In the past 8 years who have the MVP players for the NHL been", "targets": [{"span1": [0, 14], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What impenetrable system of French fortifications was built along the German frontier before World War II", "targets": [{"span1": [0, 16], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How often are quadruplets born", "targets": [{"span1": [0, 5], "label": "NUM:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the average weight for a man", "targets": [{"span1": [0, 8], "label": "NUM:weight"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the fastest computer", "targets": [{"span1": [0, 5], "label": "ENTY:product"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What former African leader held his country 's boxing title for nine years", "targets": [{"span1": [0, 13], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the weather like on the moon", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What schools in the Washington , DC NN NN VBP NN NN NN NN", "targets": [{"span1": [0, 14], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name a tiger that is extinct", "targets": [{"span1": [0, 6], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you get bubblegum out of carpet", "targets": [{"span1": [0, 8], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How did the tradition of best man start", "targets": [{"span1": [0, 8], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the song that Dracula plays on the organ", "targets": [{"span1": [0, 13], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "On what avenue is the original Saks department store located", "targets": [{"span1": [0, 10], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many species of sharks are there", "targets": [{"span1": [0, 7], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Nathan Hamill 's role in the new Star Wars prequel", "targets": [{"span1": [0, 12], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where does Barney Rubble go to work after he drops Fred off in the `` Flintstones '' cartoon series", "targets": [{"span1": [0, 19], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Where can I buy a good snowboard for less than $200", "targets": [{"span1": [0, 11], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the names of Richard Nixon 's two daughters", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many votes in Congress dissented from the 1941 declaration of war with Japan", "targets": [{"span1": [0, 14], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many times a day does the typical person go to the bathroom", "targets": [{"span1": [0, 13], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Why was the L.A. office of Shea and Gould closed", "targets": [{"span1": [0, 10], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the only vegetable that starts with `` z ''", "targets": [{"span1": [0, 11], "label": "ENTY:food"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are Fortune 500 companies", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is federal income tax", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the Taj Majal made of", "targets": [{"span1": [0, 7], "label": "ENTY:substance"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is a movie that Kevin Costner made about Sioux Indians", "targets": [{"span1": [0, 11], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who was the first black to be head coach of a major league pro sports team", "targets": [{"span1": [0, 16], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the rallying cry of the early American revolutionaries", "targets": [{"span1": [0, 10], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the sequel to The Pink Panther", "targets": [{"span1": [0, 8], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is the fastest swimmer in the world", "targets": [{"span1": [0, 8], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does the word camaro mean , from the GM car the Camaro", "targets": [{"span1": [0, 13], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What city 's the kickoff point for climbs of Mount Everest", "targets": [{"span1": [0, 11], "label": "LOC:city"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Which organization is the Security Council a part of", "targets": [{"span1": [0, 9], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What cathedral was Thomas Becket murdered in", "targets": [{"span1": [0, 7], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What ocean is the largest in the world", "targets": [{"span1": [0, 8], "label": "LOC:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is Zionism", "targets": [{"span1": [0, 3], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who kept the most famous diary in the English language", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "When is a woman most fertile", "targets": [{"span1": [0, 6], "label": "NUM:date"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who is the leader of Brunei", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does the name `` Anthony '' mean", "targets": [{"span1": [0, 8], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the name of the 1899 policy forced on China by which all nations had equal trading rights", "targets": [{"span1": [0, 19], "label": "ENTY:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What musical instrument did Prewitt play in James Jones 's From Here to Eternity", "targets": [{"span1": [0, 14], "label": "ENTY:instru"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What mystery writer penned `` ...the glory that was Greece , and the grandeur that was Rome ''", "targets": [{"span1": [0, 18], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many cards are dealt to each player in Gin Rummy", "targets": [{"span1": [0, 11], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What bowl game began as an East-West contest between Michigan and Stanford in 192", "targets": [{"span1": [0, 14], "label": "ENTY:sport"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What does an average daycare provider get paid in New England", "targets": [{"span1": [0, 11], "label": "NUM:money"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is an example of an actual case of using the Fourteenth Amendment", "targets": [{"span1": [0, 13], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was Einstein 's IQ", "targets": [{"span1": [0, 5], "label": "NUM:other"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the name of that popular song the Creeps sang", "targets": [{"span1": [0, 11], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What was the first Sam Spade novel", "targets": [{"span1": [0, 7], "label": "ENTY:cremat"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the Greek numerals", "targets": [{"span1": [0, 5], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How long does it take different materials to decompose", "targets": [{"span1": [0, 9], "label": "NUM:period"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How is ` qigong ' properly pronounced", "targets": [{"span1": [0, 7], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the name of the company that manufactures the `` American Girl '' doll collection", "targets": [{"span1": [0, 16], "label": "HUM:gr"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What would happen to Canada if Quebec separated", "targets": [{"span1": [0, 8], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What percentage of children between the ages of two and eleven watch ` The Simpsons '", "targets": [{"span1": [0, 16], "label": "NUM:perc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is commonly considered the fifth sense", "targets": [{"span1": [0, 7], "label": "DESC:def"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the origin of U.S. Army sergeant 's stripes", "targets": [{"span1": [0, 10], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who delivered his last newscast on March 6 , 1981", "targets": [{"span1": [0, 10], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How many people live in the Falklands", "targets": [{"span1": [0, 7], "label": "NUM:count"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Who created the character of Scrooge", "targets": [{"span1": [0, 6], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How can I transport files from one computer to another", "targets": [{"span1": [0, 10], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What prompted the co-pilot of the Enola Gay to enter only `` My God '' in his log", "targets": [{"span1": [0, 18], "label": "DESC:reason"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What first name was Nipsy Russell given at birth", "targets": [{"span1": [0, 9], "label": "HUM:ind"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How can you stop the itch from poison ivy", "targets": [{"span1": [0, 9], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What state did Anita Bryant represent in the 1959 Miss America contest", "targets": [{"span1": [0, 12], "label": "LOC:state"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "Name four famous cartoon cats", "targets": [{"span1": [0, 5], "label": "ENTY:animal"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "How do you exterminate bees that are in the walls of your home ? Will bee eggs remain over winter", "targets": [{"span1": [0, 20], "label": "DESC:manner"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What letter is to the right of K on a typewriter keyboard", "targets": [{"span1": [0, 12], "label": "ENTY:letter"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What are the requirements for becoming a citizen of Australia", "targets": [{"span1": [0, 10], "label": "DESC:desc"}]}
+{"info": {"doc_id": "trec-qt", "q_id": "0"}, "text": "What is the meaning of the name Kathryn", "targets": [{"span1": [0, 8], "label": "DESC:def"}]}
