@@ -73,18 +73,21 @@ def eval_single_span(val_data, model, loss_func):
     print("Evaluating the model")
     model.eval()
     loop = tqdm(val_data)
-    return sum(loss_func(model(xb, span1), label).mean()
-               for xb, span1, label in loop) / len(loop)
+    with torch.no_grad():
+        return sum(loss_func(model(xb, span1), label).mean()
+                   for xb, span1, label in loop) / len(loop)
 
 def eval_two_span(val_data, model, loss_func):
     print("Evaluating the model")
     model.eval()
     loop = tqdm(val_data)
-    return sum(loss_func(model(
-        input_ids=xb,
-        span1s=span1,
-        span2s=span2), label).mean()
-               for xb, span1, span2, label in loop) / len(loop)
+    with torch.no_grad():
+        return sum(
+            loss_func(model(
+                input_ids=xb,
+                span1s=span1,
+                span2s=span2), label).mean()
+            for xb, span1, span2, label in loop) / len(loop)
 
 def probing(
         train_data: DataLoader,
