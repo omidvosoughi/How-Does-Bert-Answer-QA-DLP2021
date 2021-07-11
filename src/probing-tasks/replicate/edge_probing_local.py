@@ -8,9 +8,6 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 torch.multiprocessing.set_start_method('spawn', force=True)
 
-import torch_xla
-import torch_xla.core.xla_model as xm
-
 import json
 from tqdm import tqdm
 
@@ -23,7 +20,7 @@ JiantData = Tuple[
     List[str]
     ]
 
-def train_single_span(train_data, val_data, model, optimizer, loss_function, epochs: int, tpu: bool):
+def train_single_span(train_data, val_data, model, optimizer, loss_function, epochs: int):
     print("Training the model")
     for epoch in epochs:
         print(f"Epoch {epoch+1} of {epochs}")
@@ -37,16 +34,12 @@ def train_single_span(train_data, val_data, model, optimizer, loss_function, epo
                 )
             loss = loss_function(output, label)
             loss.backward()
-            if tpu:
-                xm.optimizer_step(optimizer)
-                xm.mark_step()
-            else:
-                optimizer.step()
+            optimizer.step()
         loss: float = eval_single_span(val_data, model, loss_func)
         print(f"Loss: {loss}")
 
 
-def train_two_span(train_data: DataLoader, val_data: DataLoader, model, optimizer, loss_func, epochs: int, tpu: bool):
+def train_two_span(train_data: DataLoader, val_data: DataLoader, model, optimizer, loss_func, epochs: int):
     print("Training the model")
     for epoch in range(epochs):
         print(f"Epoch {epoch+1} of {epochs}")
@@ -61,11 +54,7 @@ def train_two_span(train_data: DataLoader, val_data: DataLoader, model, optimize
                 )
             loss = loss_func(output, label)
             loss.backward()
-            if tpu:
-                xm.optimizer_step(optimizer)
-                xm.mark_step()
-            else:
-                optimizer.step()
+            optimizer.step()
         loss: float = eval_two_span(val_data, model, loss_func)
         print(f"Loss: {loss}")
 
@@ -94,8 +83,7 @@ def probing(
         loss_func,
         task_type: str,
         epochs: int=5,
-        device=None,
-        tpu: bool=False
+        device=None
         ):
     for layer in num_layers:
         print(f"Probing layer {layer} of {num_layers[-1]}")
@@ -105,14 +93,14 @@ def probing(
                 num_hidden_layers=layer
                 ).to(device)
             optimizer = optim.Adam(probing_model.parameters())
-            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, tpu)
+            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, epochs)
         elif task_type == "two_span":
             probing_model = BertEdgeProbingTwoSpan.from_pretrained(
                 model_name,
                 num_hidden_layers=layer
                 ).to(device)
             optimizer = optim.Adam(probing_model.parameters())
-            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, tpu)
+            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, epochs)
         else:
             print(f"{task_type} is not a valid task type")
 
