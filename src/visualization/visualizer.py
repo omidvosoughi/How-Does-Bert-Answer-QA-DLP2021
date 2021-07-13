@@ -52,7 +52,7 @@ class Visualizer:
     def __get_labels_for_tokens(
         self, tokens, question_pos, prediction_pos, sup_facts_pos
     ):
-
+        print(question_pos, prediction_pos, sup_facts_pos)
         token_labels = []
 
         for token_pos, _ in enumerate(tokens):
