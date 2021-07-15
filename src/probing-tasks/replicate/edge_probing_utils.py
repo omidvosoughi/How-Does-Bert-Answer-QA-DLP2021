@@ -27,7 +27,8 @@ class BertEdgeProbingSingleSpan(BertPreTrainedModel):
         self.attention1 = nn.Linear(self.projection_size, 1)
 
         self.linear1 = nn.Linear(self.projection_size, self.hidden_size)
-        self.linear2 = nn.Linear(self.hidden_size, config.num_labels)
+        self.linear2 = nn.Linear(self.hidden_size, self.hidden_size)
+        self.output = nn.Linear(self.hidden_size, self.num_labels)
 
         self.sigmoid = nn.Sigmoid()
         self.init_weights()
@@ -71,9 +72,9 @@ class BertEdgeProbingSingleSpan(BertPreTrainedModel):
         attention1 = F.softmax(attention1, 1).unsqueeze(2)
         mlp_input = torch.bmm(torch.transpose(span1_projected, 1, 2), attention1).squeeze(2)
         # mlp_input has shape (N, 256).
-        mlp_output = self.sigmoid(mlp_input)
-        mlp_output = self.linear2(mlp_output)
-        mlp_output = self.sigmoid(mlp_output)
+        mlp_output = self.sigmoid(self.linear1(mlp_input))
+        mlp_output = self.sigmoid(self.linear2(mlp_output))
+        mlp_output = self.sigmoid(self.output(mlp_output))
 
         return mlp_output
 
@@ -99,7 +100,9 @@ class BertEdgeProbingTwoSpan(BertPreTrainedModel):
         self.attention2 = nn.Linear(self.projection_size, 1)
 
         self.linear1 = nn.Linear(2*self.projection_size, self.hidden_size)
-        self.linear2 = nn.Linear(self.hidden_size, config.num_labels)
+        self.linear2 = nn.Linear(self.hidden_size, self.hidden_size)
+        self.output = nn.Linear(self.hidden_size, self.num_labels)
+
 
         self.sigmoid = nn.Sigmoid()
         self.init_weights()
@@ -150,11 +153,11 @@ class BertEdgeProbingTwoSpan(BertPreTrainedModel):
         attention2 = F.softmax(attention2, 1).unsqueeze(2)
         mlp_input1 = torch.bmm(torch.transpose(span1_projected, 1, 2), attention1).squeeze(2)
         mlp_input2 = torch.bmm(torch.transpose(span2_projected, 1, 2), attention2).squeeze(2)
-        mlp_input = self.linear1(torch.cat((mlp_input1, mlp_input2), dim=1))
+        mlp_input = torch.cat((mlp_input1, mlp_input2), dim=1)
         # mlp_input has shape (N, 512).
-        mlp_output = self.sigmoid(mlp_input)
-        mlp_output = self.linear2(mlp_output)
-        mlp_output = self.sigmoid(mlp_output)
+        mlp_output = self.sigmoid(self.linear1(mlp_input))
+        mlp_output = self.sigmoid(self.linear2(mlp_output))
+        mlp_output = self.sigmoid(self.output(mlp_output))
 
         return mlp_output
 
