@@ -2,7 +2,7 @@ from edge_probing_utils import (
     BertEdgeProbingSingleSpan,
     BertEdgeProbingTwoSpan,
     )
-from edge_probing_locals import (
+from edge_probing import (
     eval_single_span,
     eval_two_span,
     test_two_span,
@@ -38,7 +38,6 @@ def train_single_span(
         epochs: int,
         save_path: str = None,
         dev = None,
-        tpu: bool = False
         ):
     print("Training the model")
     losses = []
@@ -59,11 +58,8 @@ def train_single_span(
             loss = loss_func(output, targets.to(dev))
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
-            if tpu:
-                xm.optimizer_step(optimizer)
-                xm.mark_step()
-            else:
-                optimizer.step()
+            xm.optimizer_step(optimizer)
+            xm.mark_step()
         losses.append(eval_single_span(val_data, model, loss_func, dev=dev))
         if save:
             torch.save(model.state_dict(), f"{save_path}/{epoch}")
@@ -82,7 +78,6 @@ def train_two_span(
         epochs: int,
         save_path: str = None,
         dev = None,
-        tpu: bool = False
         ):
     print("Training the model")
     losses = []
@@ -104,11 +99,8 @@ def train_two_span(
             loss = loss_func(output, targets.to(dev))
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
-            if tpu:
-                xm.optimizer_step(optimizer)
-                xm.mark_step()
-            else:
-                optimizer.step()
+            xm.optimizer_step(optimizer)
+            xm.mark_step()
         losses.append(eval_two_span(val_data, model, loss_func, dev=dev))
         if save:
             torch.save(model.state_dict(), f"{save_path}/{epoch}")
@@ -129,7 +121,6 @@ def probing(
         task_type: str,
         epochs: int=5,
         dev=None,
-        tpu: bool=False,
         ):
     results = {}
     print(f"Probing model {model_name}")
@@ -141,7 +132,7 @@ def probing(
                 num_hidden_layers=layer
                 ).to(dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev, tpu=tpu)
+            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev)
             loss, accuracy, f1_score = test_single_span(test_data, probing_model, loss_func, label_to_id.values())
         elif task_type == "two_span":
             probing_model = BertEdgeProbingTwoSpan.from_pretrained(
@@ -149,7 +140,7 @@ def probing(
                 num_hidden_layers=layer
                 ).to(dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev, tpu=tpu)
+            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev)
             loss, accuracy, f1_score = test_two_span(test_data, probing_model, loss_func, label_to_id.values(), dev=dev)
         else:
             print(f"{task_type} is not a valid task type")

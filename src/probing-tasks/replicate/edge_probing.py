@@ -108,7 +108,7 @@ def eval_single_span(val_data, model, loss_func, dev=None):
     model.eval()
     loop = tqdm(val_data)
     with torch.no_grad():
-        return sum(loss_func(model(xb.to(dev), span1s.to(dev)), targets).mean()
+        return sum(loss_func(model(xb.to(dev), span1s.to(dev)), targets).mean().item()
                    for xb, span1s, targets in loop) / len(loop)
 
 def eval_two_span(val_data, model, loss_func, dev=None):
@@ -120,7 +120,7 @@ def eval_two_span(val_data, model, loss_func, dev=None):
             loss_func(model(
                 input_ids=xb.to(dev),
                 span1s=span1s.to(dev),
-                span2s=span2s.to(dev)), targets.to(dev)).mean()
+                span2s=span2s.to(dev)), targets.to(dev)).mean().item()
             for xb, span1s, span2s, targets in loop) / len(loop)
 
 def test_single_span(test_data, model, loss_func, ids, dev=None):
@@ -145,7 +145,10 @@ def test_single_span(test_data, model, loss_func, ids, dev=None):
             accuracy += (preds == targets).float().mean()
     precision = [preds_correct_sum[id] / preds_sum[id] if preds_sum[id] != 0 else 0 for id in ids]
     recall = [preds_correct_sum[id] / targets_sum[id] if targets_sum[id] != 0 else 0 for id in ids]
-    f1_score = sum(2*(precision[id]*recall[id])/(precision[id] + recall[id]) for id in ids)
+    f1_score = sum(
+        2*(precision[id]*recall[id])/(precision[id] + recall[id]) if (precision[id] + recall[id]) != 0
+        else 0 for id in ids
+        )
     return loss / len(loop), accuracy / len(loop), f1_score / len(ids)
 
 def test_two_span(test_data, model, loss_func, ids, dev=None):
@@ -170,7 +173,10 @@ def test_two_span(test_data, model, loss_func, ids, dev=None):
             accuracy += (preds == targets).float().mean()
     precision = [preds_correct_sum[id] / preds_sum[id] if preds_sum[id] != 0 else 0 for id in ids]
     recall = [preds_correct_sum[id] / targets_sum[id] if targets_sum[id] != 0 else 0 for id in ids]
-    f1_score = sum(2*(precision[id]*recall[id])/(precision[id] + recall[id]) for id in ids)
+    f1_score = sum(
+        2*(precision[id]*recall[id])/(precision[id] + recall[id]) if (precision[id] + recall[id]) != 0
+        else 0 for id in ids
+        )
     return loss / len(loop), accuracy / len(loop), f1_score / len(ids)
 
 def probing(
