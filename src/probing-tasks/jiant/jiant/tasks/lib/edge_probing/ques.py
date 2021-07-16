@@ -42,7 +42,7 @@ class QuesTask(edge_probing_single_span.AbstractProbingTask):
         "ENTY:animal", "ENTY:body", "ENTY:color", "ENTY:cremat", "ENTY:currency", "ENTY:dismed",
         "ENTY:event", "ENTY:food", "ENTY:instrument", "ENTY:lang", "ENTY:letter", "ENTY:other",
         "ENTY:plant", "ENTY:product", "ENTY:religion", "ENTY:sport", "ENTY:substance", "ENTY:symbol",
-        "ENTY:techmeth", "ENTY:termeq", "ENTY:vehicle", "ENTY:word", 
+        "ENTY:techmeth", "ENTY:termeq", "ENTY:veh", "ENTY:word", 
         "DESC:def", "DESC:desc", "DESC:manner", "DESC:reason", "DESC:yesno",
         "HUM:gr", "HUM:ind", "HUM:title", "HUM:desc", 
         "LOC:city", "LOC:country", "LOC:mount", "LOC:other", "LOC:state", 
