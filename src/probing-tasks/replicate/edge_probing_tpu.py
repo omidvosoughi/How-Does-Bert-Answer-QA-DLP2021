@@ -35,21 +35,22 @@ def train_single_span(
         model,
         optimizer,
         loss_func,
-        epochs: int,
-        save_path: str = None,
+        lr: float,
+        max_epochs_per_lr: int=5,
+        max_epochs: int=20,
         dev = None,
+        save_path: str = None,
         ):
     print("Training the model")
     losses = []
-    if save_path is not None and epochs > 1:
-        save: bool = True
-    else:
-        save: bool = False
-    for epoch in epochs:
-        print(f"Epoch {epoch+1} of {epochs}")
+    epoch = 1
+    counter = 0
+    while counter < max_epochs:
+        print(f"Epoch {epoch}")
+        epoch += 1
         model.train()
         loop = tqdm(train_data)
-        for xb, span1s, targets in loop:
+        for i, (xb, span1s, span2s, targets) in enumerate(loop):
             optimizer.zero_grad()
             output = model(
                 input_ids=xb.to(dev),
@@ -61,35 +62,46 @@ def train_single_span(
             xm.optimizer_step(optimizer)
             xm.mark_step()
         losses.append(eval_single_span(val_data, model, loss_func, dev=dev))
-        if save:
-            torch.save(model.state_dict(), f"{save_path}/{epoch}")
-        print(f"Loss: {losses[epoch]}")
-    epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
-    if save:
-        print(f"Reverting back to the best model from epoch {epoch_min} with loss {loss_min}")
+        print(f"Loss: {losses[-1]}")
+        if len(losses) > 1 and losses[-1] >= losses[-2]:
+            counter += 1
+        else:
+            if save_path:
+                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+            continue
+        if counter >= max_epochs_per_lr:
+            lr = lr/2
+            print(f"No improvement for [{max_epochs_per_lr} epochs, halving the learning rate to {lr}")
+            for g in optimizer.param_groups:
+                g['lr'] = lr
+    print(f"No improvement for 2{max_epochs} epochs, training is finished")
+    if save_path:
+        epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
+        print(f"Reverting back to the best model from epoch {epoch_min+1} with loss {loss_min}")
         model.load_state_dict(torch.load(f"{save_path}/{epoch_min}"))
 
 def train_two_span(
-        train_data: DataLoader,
-        val_data: DataLoader,
+        train_data,
+        val_data,
         model,
         optimizer,
         loss_func,
-        epochs: int,
-        save_path: str = None,
+        lr: float,
+        max_epochs_per_lr: int=5,
+        max_epochs: int=20,
         dev = None,
+        save_path: str = None,
         ):
     print("Training the model")
     losses = []
-    if save_path is not None and epochs > 1:
-        save: bool = True
-    else:
-        save: bool = False
-    for epoch in range(epochs):
-        print(f"Epoch {epoch+1} of {epochs}")
+    epoch = 1
+    counter = 0
+    while counter < max_epochs:
+        print(f"Epoch {epoch}")
+        epoch += 1
         model.train()
         loop = tqdm(train_data)
-        for xb, span1s, span2s, targets in loop:
+        for i, (xb, span1s, span2s, targets) in enumerate(loop):
             optimizer.zero_grad()
             output = model(
                 input_ids=xb.to(dev),
@@ -101,14 +113,27 @@ def train_two_span(
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
             xm.optimizer_step(optimizer)
             xm.mark_step()
+            if i >= 999:
+                break
         losses.append(eval_two_span(val_data, model, loss_func, dev=dev))
-        if save:
-            torch.save(model.state_dict(), f"{save_path}/{epoch}")
-        print(f"Loss: {losses[epoch]}")
-    epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
-    if save:
-        print(f"Reverting back to the best model from epoch {epoch_min} with loss {loss_min}")
+        print(f"Loss: {losses[-1]}")
+        if len(losses) > 1 and losses[-1] >= losses[-2]:
+            counter += 1
+        else:
+            if save_path:
+                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+            continue
+        if counter >= max_epochs_per_lr:
+            lr = lr/2
+            print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
+            for g in optimizer.param_groups:
+                g['lr'] = lr
+    print(f"No improvement for {max_epochs} epochs, training is finished")
+    if save_path:
+        epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
+        print(f"Reverting back to the best model from epoch {epoch_min+1} with loss {loss_min}")
         model.load_state_dict(torch.load(f"{save_path}/{epoch_min}"))
+
 
 def probing(
         train_data: DataLoader,
@@ -132,7 +157,7 @@ def probing(
                 num_hidden_layers=layer
                 ).to(dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev)
+            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, lr=0.0001, dev=dev)
             loss, accuracy, f1_score = test_single_span(test_data, probing_model, loss_func, label_to_id.values())
         elif task_type == "two_span":
             probing_model = BertEdgeProbingTwoSpan.from_pretrained(
@@ -140,7 +165,7 @@ def probing(
                 num_hidden_layers=layer
                 ).to(dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, epochs, dev=dev)
+            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, lr=0.0001, dev=dev)
             loss, accuracy, f1_score = test_two_span(test_data, probing_model, loss_func, label_to_id.values(), dev=dev)
         else:
             print(f"{task_type} is not a valid task type")
