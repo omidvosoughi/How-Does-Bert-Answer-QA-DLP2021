@@ -38,7 +38,6 @@ from jiant.tasks.lib.multirc import MultiRCTask
 from jiant.tasks.lib.mutual import MutualTask
 from jiant.tasks.lib.mutual_plus import MutualPlusTask
 from jiant.tasks.lib.edge_probing.ner import NerTask
-from jiant.tasks.lib.edge_probing.ques import QuesTask
 from jiant.tasks.lib.newsqa import NewsQATask
 from jiant.tasks.lib.panx import PanxTask
 from jiant.tasks.lib.pawsx import PawsXTask
@@ -48,6 +47,7 @@ from jiant.tasks.lib.qasrl import QASRLTask
 from jiant.tasks.lib.qqp import QqpTask
 from jiant.tasks.lib.qnli import QnliTask
 from jiant.tasks.lib.quail import QuailTask
+from jiant.tasks.lib.edge_probing.ques import QuesTask
 from jiant.tasks.lib.quoref import QuorefTask
 from jiant.tasks.lib.race import RaceTask
 from jiant.tasks.lib.record import ReCoRDTask
@@ -132,7 +132,6 @@ TASK_DICT = {
     "mrpc": MrpcTask,
     "mrqa_natural_questions": MrqaNaturalQuestionsTask,
     "ner": NerTask,
-    "ques": QuesTask,
     "newsqa": NewsQATask,
     "pawsx": PawsXTask,
     "panx": PanxTask,
@@ -142,6 +141,7 @@ TASK_DICT = {
     "qnli": QnliTask,
     "qqp": QqpTask,
     "quail": QuailTask,
+    "ques": QuesTask,
     "quoref": QuorefTask,
     "race": RaceTask,
     "record": ReCoRDTask,

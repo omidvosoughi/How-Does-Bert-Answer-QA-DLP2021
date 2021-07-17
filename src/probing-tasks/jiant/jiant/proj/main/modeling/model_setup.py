@@ -17,7 +17,7 @@ from jiant.proj.main.modeling.taskmodels import JiantTaskModelFactory, Taskmodel
 
 from jiant.shared.model_resolution import ModelArchitectures
 from jiant.tasks.core import Task
-from transformers import BertModel, BertConfig
+
 
 def setup_jiant_model(
     hf_pretrained_model_name_or_path: str,
@@ -52,9 +52,8 @@ def setup_jiant_model(
         JiantModel nn.Module.
 
     """
-    hf_model = transformers.AutoModel.from_pretrained(hf_pretrained_model_name_or_path)
-    bert_layer_config = BertConfig(num_hidden_layers=num_hidden_layers)
-    hf_model = BertModel(bert_layer_config)
+    model_layer_config = transformers.AutoConfig.from_pretrained(hf_pretrained_model_name_or_path, num_hidden_layers=num_hidden_layers)
+    hf_model = transformers.AutoModel.from_config(model_layer_config)
     tokenizer = transformers.AutoTokenizer.from_pretrained(
         hf_pretrained_model_name_or_path, use_fast=False
     )
