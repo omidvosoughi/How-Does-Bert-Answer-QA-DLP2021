@@ -41,34 +41,43 @@ def train_single_span(
         dev = None,
         save_path: str = None,
         ):
+    """Train the model according to the algorithm detailed in the van Aken paper.
+    """
     print("Training the model")
-    losses = []
-    epoch = 1
-    counter = 0
+    loss: float = 0
+    epoch: int = 1
+    counter: int = 0
     while counter < max_epochs:
         print(f"Epoch {epoch}")
         epoch += 1
         model.train()
         loop = tqdm(train_data)
-        for i, (xb, span1s, span2s, targets) in enumerate(loop):
+        for i, (xb, span1s, targets) in enumerate(loop):
             optimizer.zero_grad()
             output = model(
                 input_ids=xb.to(dev),
                 span1s=span1s.to(dev)
                 )
-            loss = loss_func(output, targets.to(dev))
-            loss.backward()
+            batch_loss = loss_func(output, targets.to(dev))
+            batch_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
             xm.optimizer_step(optimizer)
             xm.mark_step()
-        losses.append(eval_single_span(val_data, model, loss_func, dev=dev))
-        print(f"Loss: {losses[-1]}")
-        if len(losses) > 1 and losses[-1] >= losses[-2]:
-            counter += 1
-        else:
-            if save_path:
-                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+            if i >= 999:
+                break
+        loss = eval_single_span(val_data, model, loss_func, dev=dev)
+        print(f"Loss: {loss}")
+        if epoch == 1:
+            min_loss: float = loss
             continue
+        if loss < min_loss:
+            counter = 0
+            min_loss = loss
+            if save_path:
+                best_epoch = epoch
+                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+        else:
+            counter += 1
         if counter >= max_epochs_per_lr:
             lr = lr/2
             print(f"No improvement for [{max_epochs_per_lr} epochs, halving the learning rate to {lr}")
@@ -76,9 +85,8 @@ def train_single_span(
                 g['lr'] = lr
     print(f"No improvement for 2{max_epochs} epochs, training is finished")
     if save_path:
-        epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
-        print(f"Reverting back to the best model from epoch {epoch_min+1} with loss {loss_min}")
-        model.load_state_dict(torch.load(f"{save_path}/{epoch_min}"))
+        print(f"Reverting back to the best model from epoch {best_epoch} with loss {min_loss}")
+        model.load_state_dict(torch.load(f"{save_path}/{best_epoch}"))
 
 def train_two_span(
         train_data,
@@ -93,9 +101,9 @@ def train_two_span(
         save_path: str = None,
         ):
     print("Training the model")
-    losses = []
-    epoch = 1
-    counter = 0
+    epoch: int = 1
+    best_epoch: int = 1
+    counter: int = 0
     while counter < max_epochs:
         print(f"Epoch {epoch}")
         epoch += 1
@@ -108,21 +116,26 @@ def train_two_span(
                 span1s=span1s.to(dev),
                 span2s=span2s.to(dev)
                 )
-            loss = loss_func(output, targets.to(dev))
-            loss.backward()
+            batch_loss = loss_func(output, targets.to(dev))
+            batch_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
             xm.optimizer_step(optimizer)
             xm.mark_step()
             if i >= 999:
                 break
-        losses.append(eval_two_span(val_data, model, loss_func, dev=dev))
-        print(f"Loss: {losses[-1]}")
-        if len(losses) > 1 and losses[-1] >= losses[-2]:
-            counter += 1
-        else:
-            if save_path:
-                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+        loss = eval_two_span(val_data, model, loss_func, dev=dev)
+        print(f"Loss: {loss}")
+        if epoch == 1:
+            min_loss: float = loss
             continue
+        if loss < min_loss:
+            counter = 0
+            min_loss = loss
+            if save_path:
+                best_epoch = epoch
+                torch.save(model.state_dict(), f"{save_path}/{epoch}")
+        else:
+            counter += 1
         if counter >= max_epochs_per_lr:
             lr = lr/2
             print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
@@ -130,9 +143,8 @@ def train_two_span(
                 g['lr'] = lr
     print(f"No improvement for {max_epochs} epochs, training is finished")
     if save_path:
-        epoch_min, loss_min = max(enumerate(losses), key=lambda x: x[1])
-        print(f"Reverting back to the best model from epoch {epoch_min+1} with loss {loss_min}")
-        model.load_state_dict(torch.load(f"{save_path}/{epoch_min}"))
+        print(f"Reverting back to the best model from epoch {best_epoch} with loss {min_loss}")
+        model.load_state_dict(torch.load(f"{save_path}/{best_epoch}"))
 
 
 def probing(
@@ -144,7 +156,6 @@ def probing(
         loss_func,
         label_to_id,
         task_type: str,
-        epochs: int=5,
         dev=None,
         ):
     results = {}
