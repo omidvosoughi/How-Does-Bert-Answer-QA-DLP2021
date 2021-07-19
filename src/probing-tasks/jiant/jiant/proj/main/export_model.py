@@ -1,7 +1,7 @@
 import os
 
 import torch
-from transformers import AutoModelForPreTraining, AutoTokenizer
+from transformers import AutoModelForPreTraining, AutoTokenizer, BertConfig, BertForQuestionAnswering
 
 import jiant.utils.python.io as py_io
 import jiant.utils.zconf as zconf
@@ -14,7 +14,9 @@ class RunConfiguration(zconf.RunConfig):
 
 
 def export_model(
-    hf_pretrained_model_name_or_path: str, output_base_path: str,
+    output_base_path: str,
+    hf_pretrained_model_name_or_path: str = "", 
+    bin_model_path: str = "",
 ):
     """Retrieve model and tokenizer from Transformers and save all necessary data
     Things saved:
@@ -40,7 +42,16 @@ def export_model(
                               ``./my_model_directory/configuration.json``.
         output_base_path: Base path to save output to
     """
-    model = AutoModelForPreTraining.from_pretrained(hf_pretrained_model_name_or_path)
+    if(bin_model_path != ""):
+        config = BertConfig.from_pretrained(pretrained_model_name_or_path="bert-base-uncased", 
+                                            output_hidden_states=True)
+        pretrained_weights = torch.load(bin_model_path, map_location=torch.device("cpu"))
+        model = BertForQuestionAnswering.from_pretrained(pretrained_model_name_or_path="bert-base-uncased",
+                                                         state_dict=pretrained_weights,
+                                                         config=config)
+    else:
+        model = AutoModelForPreTraining.from_pretrained(hf_pretrained_model_name_or_path)
+
 
     model_fol_path = os.path.join(output_base_path, "model")
     model_path = os.path.join(model_fol_path, "model.p")
@@ -49,7 +60,6 @@ def export_model(
 
     os.makedirs(tokenizer_fol_path, exist_ok=True)
     os.makedirs(model_fol_path, exist_ok=True)
-
     torch.save(model.state_dict(), model_path)
     py_io.write_json(model.config.to_dict(), model_config_path)
     tokenizer = AutoTokenizer.from_pretrained(hf_pretrained_model_name_or_path, use_fast=False)

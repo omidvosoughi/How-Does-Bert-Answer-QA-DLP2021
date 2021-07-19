@@ -23,7 +23,7 @@ class RunConfiguration(zconf.RunConfig):
 
     # === Optional parameters === #
     phases = zconf.attr(default="train,val", type=str)
-    max_seq_length = zconf.attr(default=384, type=int)
+    max_seq_length = zconf.attr(default=128, type=int)
     chunk_size = zconf.attr(default=10000, type=int)
     smart_truncate = zconf.attr(action="store_true")
     do_iter = zconf.attr(action="store_true")

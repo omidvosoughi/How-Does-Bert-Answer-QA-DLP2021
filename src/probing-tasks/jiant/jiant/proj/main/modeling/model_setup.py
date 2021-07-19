@@ -6,6 +6,7 @@ from typing import List
 import torch
 import torch.nn as nn
 import transformers
+from transformers import BertConfig, BertModel
 import warnings
 
 import jiant.proj.main.components.container_setup as container_setup
@@ -17,10 +18,11 @@ from jiant.proj.main.modeling.taskmodels import JiantTaskModelFactory, Taskmodel
 
 from jiant.shared.model_resolution import ModelArchitectures
 from jiant.tasks.core import Task
-from transformers import BertModel, BertConfig
+
 
 def setup_jiant_model(
     hf_pretrained_model_name_or_path: str,
+    bin_model_path: str,
     model_config_path: str,
     task_dict: Dict[str, Task],
     taskmodels_config: container_setup.TaskmodelsConfig,
@@ -52,9 +54,18 @@ def setup_jiant_model(
         JiantModel nn.Module.
 
     """
-    hf_model = transformers.AutoModel.from_pretrained(hf_pretrained_model_name_or_path)
-    bert_layer_config = BertConfig(num_hidden_layers=num_hidden_layers)
-    hf_model = BertModel(bert_layer_config)
+    if(bin_model_path != ""):
+        config = BertConfig.from_pretrained(pretrained_model_name_or_path="bert-base-uncased", 
+                                            output_hidden_states=True,
+                                            num_hidden_layers=num_hidden_layers)
+        pretrained_weights = torch.load(bin_model_path, map_location=torch.device("cpu"))
+        hf_model = BertModel.from_pretrained(pretrained_model_name_or_path="bert-base-uncased",
+                                                         state_dict=pretrained_weights,
+                                                         config=config)
+    else:
+        model_layer_config = transformers.AutoConfig.from_pretrained(hf_pretrained_model_name_or_path, num_hidden_layers=num_hidden_layers)
+        hf_model = transformers.AutoModel.from_config(model_layer_config)
+        
     tokenizer = transformers.AutoTokenizer.from_pretrained(
         hf_pretrained_model_name_or_path, use_fast=False
     )

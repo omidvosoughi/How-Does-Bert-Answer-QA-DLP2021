@@ -26,6 +26,7 @@ class RunConfiguration(zconf.RunConfig):
     model_config_path = zconf.attr(default=None, type=str)
     model_load_mode = zconf.attr(default="from_transformers", type=str)
     num_hidden_layers = zconf.attr(default="12", type=str)
+    bin_model_path = zconf.attr(default="", type=str)
 
     # === Running Setup === #
     do_train = zconf.attr(action="store_true")
@@ -90,6 +91,7 @@ def setup_runner(
             task_dict=jiant_task_container.task_dict,
             taskmodels_config=jiant_task_container.taskmodels_config,
             num_hidden_layers=args.num_hidden_layers,
+            bin_model_path=args.bin_model_path,
         )
         jiant_model_setup.delegate_load_from_path(
             jiant_model=jiant_model, weights_path=args.model_path, load_mode=args.model_load_mode
