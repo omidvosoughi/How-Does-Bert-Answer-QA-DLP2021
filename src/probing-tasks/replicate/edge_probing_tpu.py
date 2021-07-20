@@ -21,6 +21,8 @@ from edge_probing import (
     eval_two_span,
     test_two_span,
     test_two_span,
+    ProbeConfig,
+    TrainConfig,
     )
 
 JiantData = Tuple[
