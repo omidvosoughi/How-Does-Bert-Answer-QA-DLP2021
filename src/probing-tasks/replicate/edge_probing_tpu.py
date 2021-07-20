@@ -1,29 +1,19 @@
-from dataclasses import dataclass
-from typing import List, Tuple, Dict
-
-from tqdm import tqdm_notebook as tqdm
+from typing import Dict, List, Tuple
 
 import torch
-import torch.optim as optim
 import torch.nn as nn
-from torch.utils.data import DataLoader
+import torch.optim as optim
+import tqdm
+
 torch.multiprocessing.set_start_method('spawn', force=True)
 
 import torch_xla
 import torch_xla.core.xla_model as xm
 
-from edge_probing_utils import (
-    BertEdgeProbingSingleSpan,
-    BertEdgeProbingTwoSpan,
-    )
-from edge_probing import (
-    eval_single_span,
-    eval_two_span,
-    test_two_span,
-    test_two_span,
-    ProbeConfig,
-    TrainConfig,
-    )
+from edge_probing import (ProbeConfig, TrainConfig, eval_single_span,
+                          eval_two_span, test_two_span)
+from edge_probing_utils import (BertEdgeProbingSingleSpan,
+                                BertEdgeProbingTwoSpan)
 
 JiantData = Tuple[
     List[str],
@@ -40,7 +30,7 @@ def train_single_span(config):
     start_index: int = 1
     while True:
         config.model.train()
-        loop = tqdm(config.train_data)
+        loop = tqdm.tqdm_notebook(config.train_data)
         for i, (xb, span1s, targets) in enumerate(loop, start_index):
             config.optimizer.zero_grad()
             output = config.model(
@@ -92,7 +82,7 @@ def train_two_span(config):
     start_index: int = 1
     while True:
         config.model.train()
-        loop = tqdm(config.train_data)
+        loop = tqdm.tqdm_notebook(config.train_data)
         for i, (xb, span1s, span2s, targets) in enumerate(loop, start_index):
             config.optimizer.zero_grad()
             output = config.model(
@@ -138,36 +128,16 @@ def train_two_span(config):
     print("Training is finished")
 
 def probing(config) -> Dict[int, Dict[str, float]]:
-    """Probe a transformer model according to the edge probing introduced by van Aken.
-    
+    """Probe a transformer model according to the edge probing concept.
+
     For each given layer initialize a model for probing on top of a given transformer model.
     Train and evaluate the model and return loss, accuracy, f1_score for each layer.
-    
-    Args (in ProbingConfig):
-    train_data --
-    val_data: DataLoader
-    test_data: DataLoader
-    model_name: str
-    num_layers: List[int]
-    loss_func: nn.modules.loss._Loss
-    labels_to_ids: Dict[str, int]
-    task_type: str
-    
-    Keyword arguments (in ProbingConfig):
-    lr: learning rate, needs to be the same as the learning rate the optimizer was initialized
-          with (default 0.0001)
-    max_evals: maximum number of evaluations before stopping the training. If None, max_evals_wo_improvement
-                 is used to determine when to stop training (default None)
-    max_evals_per_lr: maximum number of evaluations without improvement before the learning
-                        rate is halved (default 5)
-    max_evals_wo_improvement: maximum number of evaluations without improvement before training
-                                is stopped (default 20)
-    eval_interval: number of batches between two evaluations (default 100)
-    dev: device on which the model runs (default None)
-    
+
+    Args:
+        config: configuration specifying the run paramaters.
     Returns:
-        Dict: 
-    
+        dict: containing the results for each layer.
+
     """
     results = {}
     print(f"Probing model {config.model_name}")
