@@ -1,21 +1,21 @@
-from edge_probing_utils import (
-    BertEdgeProbingSingleSpan,
-    BertEdgeProbingTwoSpan
-    )
+from dataclasses import dataclass
+from typing import List, Tuple, Dict
 
-from transformers import BatchEncoding
+import json
+import matplotlib.pyplot as plt
+from tqdm import tqdm_notebook as tqdm
+
 import torch
 import torch.optim as optim
 import torch.nn as nn
 from torch.utils.data import DataLoader
 torch.multiprocessing.set_start_method('spawn', force=True)
+import transformers
 
-import matplotlib.pyplot as plt
-
-import json
-from tqdm import tqdm
-
-from typing import List, Tuple, Dict
+from edge_probing_utils import (
+    BertEdgeProbingSingleSpan,
+    BertEdgeProbingTwoSpan,
+    )
 
 JiantData = Tuple[
     List[str],
@@ -24,7 +24,142 @@ JiantData = Tuple[
     List[str]
     ]
 
-def train_single_span(
+@dataclass
+class TrainConfig():
+    train_data: DataLoader
+    val_data: DataLoader
+    model: transformers.PreTrainedModel
+    optimizer: optim.Optimizer
+    loss_func: nn.modules.loss._Loss
+    lr: float = 0.0001
+    max_evals: int = None
+    max_evals_per_lr: int = 5
+    max_evals_wo_improvement: int = 20
+    eval_interval: int = 100
+    dev: torch.device = None
+
+@dataclass
+class ProbeConfig():
+    train_data: DataLoader
+    val_data: DataLoader
+    test_data: DataLoader
+    model_name: str
+    num_layers: List[int]
+    loss_func: nn.modules.loss._Loss
+    labels_to_ids: Dict[str, int]
+    task_type: str
+    lr: float = 0.0001
+    max_evals: int = None
+    max_evals_per_lr: int = 5
+    max_evals_wo_improvement: int = 20
+    eval_interval: int = 100
+    dev: torch.device = None
+
+
+def train_single_span(config):
+    print("Training the model")
+    lr = config.lr
+    eval: int = 0
+    counter: int = 0
+    start_index: int = 1
+    while True:
+        config.model.train()
+        loop = tqdm(config.train_data)
+        for i, (xb, span1s, targets) in enumerate(loop, start_index):
+            config.optimizer.zero_grad()
+            output = config.model(
+                input_ids=xb.to(config.dev),
+                span1s=span1s.to(config.dev)
+                )
+            batch_loss = config.loss_func(output, targets.to(config.dev))
+            batch_loss.backward()
+            nn.utils.clip_grad_norm_(config.model.parameters(), 5.0)
+            config.optimizer.step()
+            if i % config.eval_interval == 0:
+                loss = eval_single_span(config.val_data, config.model, config.loss_func, dev=config.dev)
+                print(f"Loss: {loss}")
+                eval += 1
+                # Check if the model has improved.
+                if eval == 1:
+                    min_loss: float = loss
+                    continue
+                if loss < min_loss:
+                    min_loss = loss
+                    counter = 0
+                else:
+                    counter += 1
+                # Check if training is finished.
+                if config.max_evals is not None and eval >= config.max_evals:
+                    break
+                elif counter >= config.max_evals_wo_improvement:
+                    break
+                elif counter >= config.max_evals_per_lr:
+                    lr = lr/2
+                    print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
+                    for g in config.optimizer.param_groups:
+                        g['lr'] = lr
+                    counter = 0
+        # If inner loop did not break.
+        else:
+            start_index = i % config.eval_interval
+            continue
+        # If inner loop did break.
+        break
+    print("Training is finished")
+
+def train_two_span(config):
+    print("Training the model")
+    lr = config.lr
+    eval: int = 0
+    counter: int = 0
+    start_index: int = 1
+    while True:
+        config.model.train()
+        loop = tqdm(config.train_data)
+        for i, (xb, span1s, span2s, targets) in enumerate(loop, start_index):
+            config.optimizer.zero_grad()
+            output = config.model(
+                input_ids=xb.to(config.dev),
+                span2s=span2s.to(config.dev),
+                span1s=span1s.to(config.dev)
+                )
+            batch_loss = config.loss_func(output, targets.to(config.dev))
+            batch_loss.backward()
+            nn.utils.clip_grad_norm_(config.model.parameters(), 5.0)
+            config.optimizer.step()
+            if i % config.eval_interval == 0:
+                loss = eval_two_span(config.val_data, config.model, config.loss_func, dev=config.dev)
+                print(f"Loss: {loss}")
+                eval += 1
+                # Check if the model has improved.
+                if eval == 1:
+                    min_loss: float = loss
+                    continue
+                if loss < min_loss:
+                    min_loss = loss
+                    counter = 0
+                else:
+                    counter += 1
+                # Check if training is finished.
+                if config.max_evals is not None and eval >= config.max_evals:
+                    break
+                elif counter >= config.max_evals_wo_improvement:
+                    break
+                elif counter >= config.max_evals_per_lr:
+                    lr = lr/2
+                    print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
+                    for g in config.optimizer.param_groups:
+                        g['lr'] = lr
+                    counter = 0
+        # If inner loop did not break.
+        else:
+            start_index = i % config.eval_interval
+            continue
+        # If inner loop did break.
+        break
+    print("Training is finished")
+
+def train_single_span_old(
         train_data,
         val_data,
         model,
@@ -37,12 +172,12 @@ def train_single_span(
         save_path: str = None,
         ):
     print("Training the model")
-    epoch: int = 1
+    epoch: int = 0
     best_epoch: int = 1
     counter: int = 0
     while counter < max_epochs:
-        print(f"Epoch {epoch}")
         epoch += 1
+        print(f"Epoch {epoch}")
         model.train()
         loop = tqdm(train_data)
         for i, (xb, span1s, targets) in enumerate(loop):
@@ -55,31 +190,30 @@ def train_single_span(
             batch_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
             optimizer.step()
-            if i >= 999:
-                break
-        loss = eval_two_span(val_data, model, loss_func, dev=dev)
-        print(f"Loss: {loss}")
-        if epoch == 1:
-            min_loss: float = loss
-            continue
-        if loss < min_loss:
-            min_loss = loss
-            if save_path:
-                best_epoch = epoch
-                torch.save(model.state_dict(), f"{save_path}/{epoch}")
-        else:
-            counter += 1
-        if counter >= max_epochs_per_lr:
-            lr = lr/2
-            print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
-            for g in optimizer.param_groups:
-                g['lr'] = lr
+            if i % 1000 == 0:
+                loss = eval_two_span(val_data, model, loss_func, dev=dev)
+                print(f"Loss: {loss}")
+                if epoch == 1:
+                    min_loss: float = loss
+                    continue
+                if loss < min_loss:
+                    min_loss = loss
+                    if save_path:
+                        best_epoch = epoch
+                        torch.save(model.state_dict(), f"{save_path}/{epoch}")
+                else:
+                    counter += 1
+                if counter >= max_epochs_per_lr:
+                    lr = lr/2
+                    print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
+                    for g in optimizer.param_groups:
+                        g['lr'] = lr
     print(f"No improvement for {max_epochs} epochs, training is finished")
     if save_path:
         print(f"Reverting back to the best model from epoch {best_epoch} with loss {min_loss}")
         model.load_state_dict(torch.load(f"{save_path}/{best_epoch}"))
 
-def train_two_span(
+def train_two_span_old(
         train_data,
         val_data,
         model,
@@ -92,13 +226,12 @@ def train_two_span(
         save_path: str = None,
         ):
     print("Training the model")
-    min_loss: float = 0.0
-    epoch: int = 1
+    epoch: int = 0
     best_epoch: int = 1
     counter: int = 0
     while counter < max_epochs:
-        print(f"Epoch {epoch}")
         epoch += 1
+        print(f"Epoch {epoch}")
         model.train()
         loop = tqdm(train_data)
         for i, (xb, span1s, span2s, targets) in enumerate(loop):
@@ -112,25 +245,24 @@ def train_two_span(
             batch_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 5.0)
             optimizer.step()
-            if i >= 999:
-                break
-        loss = eval_two_span(val_data, model, loss_func, dev=dev)
-        print(f"Loss: {loss}")
-        if epoch == 1:
-            min_loss: float = loss
-            continue
-        if loss < min_loss:
-            min_loss = loss
-            if save_path:
-                torch.save(model.state_dict(), f"{save_path}/{epoch}")
-                best_epoch = epoch
-        else:
-            counter += 1
-        if counter >= max_epochs_per_lr:
-            lr = lr/2
-            print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
-            for g in optimizer.param_groups:
-                g['lr'] = lr
+            if i % 1000 == 0:
+                loss = eval_two_span(val_data, model, loss_func, dev=dev)
+                print(f"Loss: {loss}")
+                if epoch == 1:
+                    min_loss: float = loss
+                    continue
+                if loss < min_loss:
+                    min_loss = loss
+                    if save_path:
+                        torch.save(model.state_dict(), f"{save_path}/{epoch}")
+                        best_epoch = epoch
+                else:
+                    counter += 1
+                if counter >= max_epochs_per_lr:
+                    lr = lr/2
+                    print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
+                    for g in optimizer.param_groups:
+                        g['lr'] = lr
     print(f"No improvement for {max_epochs} epochs, training is finished")
     if save_path:
         print(f"Reverting back to the best model from epoch {best_epoch} with loss {min_loss}")
@@ -214,42 +346,66 @@ def test_two_span(test_data, model, loss_func, ids, dev=None):
         )
     return loss / len(loop), accuracy / len(loop), f1_score / len(ids)
 
-def probing(
-        train_data: DataLoader,
-        val_data: DataLoader,
-        test_data: DataLoader,
-        model_name: str,
-        num_layers: List[int],
-        loss_func,
-        label_to_id,
-        task_type: str,
-        dev=None,
-        ):
+def probing(config):
     results = {}
-    print(f"Probing model {model_name}")
-    for layer in num_layers:
-        print(f"Probing layer {layer} of {num_layers[-1]}")
-        if task_type == "single_span":
+    print(f"Probing model {config.model_name}")
+    for layer in config.num_layers:
+        print(f"Probing layer {layer} of {config.num_layers[-1]}")
+        if config.task_type == "single_span":
             probing_model = BertEdgeProbingSingleSpan.from_pretrained(
-                model_name,
-                num_labels = len(label_to_id.keys()),
+                config.model_name,
+                num_labels = len(config.labels_to_ids.keys()),
                 num_hidden_layers=layer
-                ).to(dev)
-            optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_single_span(train_data, val_data, probing_model, optimizer, loss_func, lr=0.0001, dev=dev)
-            loss, accuracy, f1_score = test_single_span(test_data, probing_model, loss_func, label_to_id.values(), dev=dev)
-        elif task_type == "two_span":
+                ).to(config.dev)
+            optimizer = optim.Adam(probing_model.parameters(), lr=config.lr)
+            train_single_span(TrainConfig(
+                config.train_data,
+                config.val_data,
+                probing_model,
+                optimizer,
+                config.loss_func,
+                lr=config.lr,
+                max_evals=config.max_evals,
+                max_evals_per_lr=config.max_evals_per_lr,
+                max_evals_wo_improvement=config.max_evals_wo_improvement,
+                eval_interval=config.eval_interval,
+                dev=config.dev
+                ))
+            loss, accuracy, f1_score = test_single_span(
+                config.test_data,
+                probing_model,
+                config.loss_func,
+                config.labels_to_ids.values(),
+                dev=config.dev)
+        elif config.task_type == "two_span":
             probing_model = BertEdgeProbingTwoSpan.from_pretrained(
-                model_name,
+                config.model_name,
+                num_labels = len(config.labels_to_ids.keys()),
                 num_hidden_layers=layer
-                ).to(dev)
-            optimizer = optim.Adam(probing_model.parameters(), lr=0.0001)
-            train_two_span(train_data, val_data, probing_model, optimizer, loss_func, lr=0.0001, dev=dev)
-            loss, accuracy, f1_score = test_two_span(test_data, probing_model, loss_func, label_to_id.values(), dev=dev)
+                ).to(config.dev)
+            optimizer = optim.Adam(probing_model.parameters(), lr=config.lr)
+            train_two_span(TrainConfig(
+                config.train_data,
+                config.val_data,
+                probing_model,
+                optimizer,
+                config.loss_func,
+                lr=config.lr,
+                max_evals=config.max_evals,
+                max_evals_per_lr=config.max_evals_per_lr,
+                max_evals_wo_improvement=config.max_evals_wo_improvement,
+                eval_interval=config.eval_interval,
+                dev=config.dev
+                ))
+            loss, accuracy, f1_score = test_two_span(
+                config.test_data,
+                probing_model,
+                config.loss_func,
+                config.labels_to_ids.values(),
+                dev=config.dev)
         else:
-            print(f"{task_type} is not a valid task type")
+            print(f"{config.task_type} is not a valid task type")
             return None
-
         results[layer] = {"loss": loss, "accuracy": accuracy, "f1_score": f1_score}
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
     return results
@@ -289,9 +445,9 @@ def tokenize_jiant_dataset(
         span1s: List[List[int]],
         span2s: List[List[int]],
         labels: List[str],
-        label_to_id: Dict[str, int],
+        labels_to_ids: Dict[str, int],
         max_seq_length: int=128,
-        ) -> BatchEncoding:
+        ) -> transformers.BatchEncoding:
     """Prepare a jiant dataset for the DataSet function.
 
     This function does all the heavy work, so that while training the model __getitem__ runs fast.
@@ -302,7 +458,7 @@ def tokenize_jiant_dataset(
     span1_masks: List[torch.Tensor] = []
     span2_masks: List[torch.Tensor] = []
     updated_input_ids: List[torch.Tensor] = []
-    num_labels: int = len(label_to_id.keys())
+    num_labels: int = len(labels_to_ids.keys())
 
     for i, tokens in enumerate(tqdm(encodings.input_ids)):
         # Pad the sequence with zeros, if it's too short.
@@ -333,7 +489,7 @@ def tokenize_jiant_dataset(
         span2_mask = torch.minimum(span2_mask_start, span2_mask_end)
 
         label_tensor = torch.tensor(
-            [0 if label_to_id[labels[i]]==k else 1 for k in range(num_labels)]
+            [0 if labels_to_ids[labels[i]]==k else 1 for k in range(num_labels)]
             ).float()
 
         updated_input_ids.append(target)

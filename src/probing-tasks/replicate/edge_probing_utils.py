@@ -6,7 +6,6 @@ import torch.utils.data as data
 
 from typing import Tuple
 
-
 class BertEdgeProbingSingleSpan(BertPreTrainedModel):
 
     def __init__(self, config):

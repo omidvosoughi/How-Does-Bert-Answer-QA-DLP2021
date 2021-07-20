@@ -5,10 +5,10 @@ import json
 from typing import List
 
 def reduce(input_dir: str, train_size: int=5000, val_size: int=500) -> None:
+    os.makedirs(f"{input_dir}/big", exist_ok=True)
+    os.makedirs(f"{input_dir}/small", exist_ok=True)
+    os.makedirs(f"{input_dir}/medium", exist_ok=True)
     for phase, limit in {"train": train_size, "val": val_size}.items():
-        os.makedirs(f"{input_dir}/big", exist_ok=True)
-        os.makedirs(f"{input_dir}/small", exist_ok=True)
-        os.makedirs(f"{input_dir}/medium", exist_ok=True)
         shutil.move(f"{input_dir}/{phase}.jsonl", f"{input_dir}/big/{phase}.jsonl")
         with open(f"{input_dir}/big/{phase}.jsonl", 'r') as f:
             lines: List[str] = f.readlines()
