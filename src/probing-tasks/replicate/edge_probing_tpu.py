@@ -43,6 +43,7 @@ def train_single_span(config):
             xm.optimizer_step(config.optimizer)
             xm.mark_step()
             if i % config.eval_interval == 0:
+                print(f"Training run {eval+1} finished")
                 loss = eval_single_span(config.val_data, config.model, config.loss_func, dev=config.dev)
                 print(f"Loss: {loss}")
                 eval += 1
@@ -55,6 +56,7 @@ def train_single_span(config):
                     counter = 0
                 else:
                     counter += 1
+                print(f"No improvement for {counter} evaluations")
                 # Check if training is finished.
                 if config.max_evals is not None and eval >= config.max_evals:
                     break
@@ -96,6 +98,7 @@ def train_two_span(config):
             xm.optimizer_step(config.optimizer)
             xm.mark_step()
             if i % config.eval_interval == 0:
+                print(f"Training run {eval+1} finished")
                 loss = eval_two_span(config.val_data, config.model, config.loss_func, dev=config.dev)
                 print(f"Loss: {loss}")
                 eval += 1
@@ -108,6 +111,7 @@ def train_two_span(config):
                     counter = 0
                 else:
                     counter += 1
+                print(f"No improvement for {counter} evaluations")
                 # Check if training is finished.
                 if config.max_evals is not None and eval >= config.max_evals:
                     break

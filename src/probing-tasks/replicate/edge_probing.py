@@ -111,6 +111,7 @@ def train_single_span(config: TrainConfig) -> None:
             config.optimizer.step()
             # Evaluate the model after each eval_interval.
             if i % config.eval_interval == 0:
+                print(f"Training run {eval+1} finished")
                 loss: float = eval_single_span(config.val_data, config.model, config.loss_func, dev=config.dev)
                 print(f"Loss: {loss}")
                 eval += 1
@@ -165,6 +166,7 @@ def train_two_span(config: TrainConfig) -> None:
             config.optimizer.step()
             # Evaluate the model after each eval_interval.
             if i % config.eval_interval == 0:
+                print(f"Training run {eval+1} finished")
                 loss: float = eval_two_span(config.val_data, config.model, config.loss_func, dev=config.dev)
                 print(f"Loss: {loss}")
                 eval += 1
@@ -176,6 +178,7 @@ def train_two_span(config: TrainConfig) -> None:
                     counter = 0
                 else:
                     counter += 1
+                print(f"No improvement for {counter} evaluations")
                 # Check if training is finished.
                 if config.max_evals is not None and eval >= config.max_evals:
                     break
@@ -239,6 +242,7 @@ def train_single_span_old(
                         torch.save(model.state_dict(), f"{save_path}/{epoch}")
                 else:
                     counter += 1
+                print(f"No improvement for {counter} evaluations")
                 if counter >= max_epochs_per_lr:
                     lr = lr/2
                     print(f"No improvement for {max_epochs_per_lr} epochs, halving the learning rate to {lr}")
