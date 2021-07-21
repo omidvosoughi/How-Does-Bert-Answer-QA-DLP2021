@@ -207,7 +207,7 @@ def probing(config) -> Dict[int, Dict[str, float]]:
         results[layer] = {"loss": loss, "accuracy": accuracy, "f1_score": f1_score}
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
         if config.results_path is not None:
-            with open(f"config.results_path/results.json", "w") as f:
+            with open(f"{config.results_path}/results.json", "w") as f:
                 json.dump(results, f)            
 
     return results
