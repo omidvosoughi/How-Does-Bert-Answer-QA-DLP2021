@@ -553,7 +553,7 @@ def tokenize_jiant_dataset(
         span2_mask = torch.minimum(span2_mask_start, span2_mask_end)
 
         label_tensor = torch.tensor(
-            [0 if labels_to_ids[labels[i]]==k else 1 for k in range(num_labels)]
+            [1 if labels_to_ids[labels[i]]==k else 0 for k in range(num_labels)]
             ).float()
 
         updated_input_ids.append(target)
