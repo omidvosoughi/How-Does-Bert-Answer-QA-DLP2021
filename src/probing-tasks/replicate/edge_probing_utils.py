@@ -67,7 +67,7 @@ class BertEdgeProbingSingleSpan(BertPreTrainedModel):
         span1 = outputs[0] * span1s.unsqueeze(-1)
         span1_projected = self.projection1(span1)
         # span1_projected has shape (N, L, 256), but is zero on all sequence elements not in the span.
-        attention1 = self.attention1(span1_projected).squeeze()
+        attention1 = self.attention1(span1_projected).squeeze(-1)
         attention1 = F.softmax(attention1, 1).unsqueeze(2)
         mlp_input = torch.bmm(torch.transpose(span1_projected, 1, 2), attention1).squeeze(2)
         # mlp_input has shape (N, 256).
@@ -146,8 +146,8 @@ class BertEdgeProbingTwoSpan(BertPreTrainedModel):
         span1_projected = self.projection1(span1)
         span2_projected = self.projection2(span2)
         # span1_projected has shape (N, L, 256), but is zero on all sequence elements not in the span.
-        attention1 = self.attention1(span1_projected).squeeze()
-        attention2 = self.attention2(span2_projected).squeeze()
+        attention1 = self.attention1(span1_projected).squeeze(-1)
+        attention2 = self.attention2(span2_projected).squeeze(-1)
         attention1 = F.softmax(attention1, 1).unsqueeze(2)
         attention2 = F.softmax(attention2, 1).unsqueeze(2)
         mlp_input1 = torch.bmm(torch.transpose(span1_projected, 1, 2), attention1).squeeze(2)

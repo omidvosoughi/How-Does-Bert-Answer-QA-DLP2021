@@ -11,7 +11,7 @@ import torch_xla
 import torch_xla.core.xla_model as xm
 
 from edge_probing import (ProbeConfig, TrainConfig, eval_single_span,
-                          eval_two_span, test_two_span)
+                          eval_two_span, test_single_span, test_two_span)
 from edge_probing_utils import (BertEdgeProbingSingleSpan,
                                 BertEdgeProbingTwoSpan)
 
