@@ -134,7 +134,6 @@ def train_single_span(config: TrainConfig) -> None:
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
                         g['lr'] = lr
-                    counter = 0
         # If inner loop did not break start another epoch.
         else:
             start_index = i % config.eval_interval
@@ -190,7 +189,6 @@ def train_two_span(config: TrainConfig) -> None:
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
                         g['lr'] = lr
-                    counter = 0
         # If inner loop did not break start anther epoch.
         else:
             start_index = i % config.eval_interval
