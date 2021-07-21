@@ -86,6 +86,7 @@ class ProbeConfig():
     max_evals_wo_improvement: int = 20
     eval_interval: int = 100
     dev: torch.device = None
+    results_path: str = None
 
 
 def train_single_span(config: TrainConfig) -> None:
@@ -351,11 +352,10 @@ def test_single_span(test_data: data.DataLoader, model, loss_func, ids, dev=None
             accuracy += (preds == targets_max).float().mean().item()
     precision = [preds_correct_sum[id]/preds_sum[id] if preds_sum[id] != 0 else 0 for id in ids]
     recall = [preds_correct_sum[id]/targets_sum[id] if targets_sum[id] != 0 else 0 for id in ids]
-    f1_score = sum(
-        2*(precision[id]*recall[id])/(precision[id] + recall[id]) if (precision[id] + recall[id]) != 0
-        else 0 for id in ids
-        )
-    return loss / len(loop), accuracy / len(loop), f1_score / len(ids)
+    macro_precision = sum(precision) / len(ids)
+    macro_recall = sum(recall) / len(ids)
+    macro_f1_score = 2*(macro_precision*macro_recall) / (macro_precision + macro_recall)
+    return loss / len(loop), accuracy / len(loop), macro_f1_score
 
 def test_two_span(test_data, model, loss_func, ids, dev=None) -> Tuple[float, float, float]:
     print("Testing the model")
@@ -380,11 +380,10 @@ def test_two_span(test_data, model, loss_func, ids, dev=None) -> Tuple[float, fl
             accuracy += (preds == targets_max).float().mean().item()
     precision = [preds_correct_sum[id]/preds_sum[id] if preds_sum[id] != 0 else 0 for id in ids]
     recall = [preds_correct_sum[id]/targets_sum[id] if targets_sum[id] != 0 else 0 for id in ids]
-    f1_score = sum(
-        2*(precision[id]*recall[id])/(precision[id] + recall[id]) if (precision[id] + recall[id]) != 0
-        else 0 for id in ids
-        )
-    return loss / len(loop), accuracy / len(loop), f1_score / len(ids)
+    macro_precision = sum(precision) / len(ids)
+    macro_recall = sum(recall) / len(ids)
+    macro_f1_score = 2*(macro_precision*macro_recall) / (macro_precision + macro_recall)
+    return loss / len(loop), accuracy / len(loop), macro_f1_score
 
 def probing(config: ProbeConfig):
     """Probe a transformer model according to the edge probing concept.
@@ -458,6 +457,9 @@ def probing(config: ProbeConfig):
             return None
         results[layer] = {"loss": loss, "accuracy": accuracy, "f1_score": f1_score}
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
+        if config.results_path is not None:
+            with open(f"config.results_path/results.json", "w") as f:
+                json.dump(results, f)            
     return results
 
 def read_jiant_dataset(input_path: str) -> JiantData:

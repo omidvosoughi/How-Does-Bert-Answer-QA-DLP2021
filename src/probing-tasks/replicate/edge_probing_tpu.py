@@ -1,3 +1,4 @@
+import json
 from typing import Dict, List, Tuple
 
 import torch
@@ -6,6 +7,7 @@ import torch.optim as optim
 import tqdm
 
 torch.multiprocessing.set_start_method('spawn', force=True)
+
 
 import torch_xla
 import torch_xla.core.xla_model as xm
@@ -204,4 +206,8 @@ def probing(config) -> Dict[int, Dict[str, float]]:
             return None
         results[layer] = {"loss": loss, "accuracy": accuracy, "f1_score": f1_score}
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
+        if config.results_path is not None:
+            with open(f"config.results_path/results.json", "w") as f:
+                json.dump(results, f)            
+
     return results
