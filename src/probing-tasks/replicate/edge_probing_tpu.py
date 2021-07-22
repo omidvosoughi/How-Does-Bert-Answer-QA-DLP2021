@@ -64,7 +64,7 @@ def train_single_span(config):
                     break
                 elif counter >= config.max_evals_wo_improvement:
                     break
-                elif counter >= config.max_evals_per_lr:
+                elif counter % config.max_evals_per_lr == 0 and counter > 0:
                     lr = lr/2
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
@@ -118,7 +118,7 @@ def train_two_span(config):
                     break
                 elif counter >= config.max_evals_wo_improvement:
                     break
-                elif counter >= config.max_evals_per_lr:
+                elif counter % config.max_evals_per_lr == 0 and counter > 0:
                     lr = lr/2
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:

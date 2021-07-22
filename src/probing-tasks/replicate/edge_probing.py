@@ -129,7 +129,7 @@ def train_single_span(config: TrainConfig) -> None:
                     break
                 elif counter >= config.max_evals_wo_improvement:
                     break
-                elif counter >= config.max_evals_per_lr:
+                elif counter % config.max_evals_per_lr == 0 and counter > 0:
                     lr = lr/2
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
@@ -184,7 +184,7 @@ def train_two_span(config: TrainConfig) -> None:
                     break
                 elif counter >= config.max_evals_wo_improvement:
                     break
-                elif counter >= config.max_evals_per_lr:
+                elif counter % config.max_evals_per_lr == 0 and counter > 0:
                     lr = lr/2
                     print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
@@ -471,22 +471,16 @@ def read_jiant_dataset(input_path: str) -> JiantData:
     span2s: List[List[int]] = []
     labels: List[str] = []
 
-    text_save: str = ""
-
     for line in lines:
         jiant_dict = json.loads(line)
         # In case there are no targets, save the text and append to it the next line.
-        text_save += jiant_dict["text"]
         targets = jiant_dict["targets"]
-        if not targets:
-            continue
         for target in targets:
-            texts.append(text_save)
+            texts.append(jiant_dict["text"])
             span1s.append(target["span1"])
             if "span2" in target.keys():
                 span2s.append(target["span2"])
             labels.append(target["label"])
-        text_save = ""
 
     return texts, span1s, span2s, labels
 
@@ -520,7 +514,7 @@ def tokenize_jiant_dataset(
         # Otherwise continue to the next sample.
         
         # Differentiate between dataset with span2s and dataset without span2s. 
-        if span2s:
+        if span2s[i]:
             spans = [
                 encodings.word_to_tokens(span1s[i][0]),
                 encodings.word_to_tokens(span1s[i][1]),
@@ -533,7 +527,7 @@ def tokenize_jiant_dataset(
             _, span1_end = spans[1]
             span2_start, _ = spans[2]
             _, span2_end = spans[3]
-        else:
+        elif span1s[i]:
             spans = [
                 encodings.word_to_tokens(span1s[i][0]),
                 encodings.word_to_tokens(span1s[i][1]),
