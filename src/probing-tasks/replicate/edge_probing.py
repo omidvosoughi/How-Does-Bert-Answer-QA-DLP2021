@@ -473,7 +473,6 @@ def read_jiant_dataset(input_path: str) -> JiantData:
 
     for line in lines:
         jiant_dict = json.loads(line)
-        # In case there are no targets, save the text and append to it the next line.
         targets = jiant_dict["targets"]
         for target in targets:
             texts.append(jiant_dict["text"])
