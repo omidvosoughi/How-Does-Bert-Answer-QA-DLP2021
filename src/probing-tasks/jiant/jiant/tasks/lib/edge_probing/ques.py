@@ -40,7 +40,7 @@ class QuesTask(edge_probing_single_span.AbstractProbingTask):
     LABELS = [
         "ABBR:abb", "ABBR:exp",
         "ENTY:animal", "ENTY:body", "ENTY:color", "ENTY:cremat", "ENTY:currency", "ENTY:dismed",
-        "ENTY:event", "ENTY:food", "ENTY:instrument", "ENTY:lang", "ENTY:letter", "ENTY:other",
+        "ENTY:event", "ENTY:food", "ENTY:instru", "ENTY:lang", "ENTY:letter", "ENTY:other",
         "ENTY:plant", "ENTY:product", "ENTY:religion", "ENTY:sport", "ENTY:substance", "ENTY:symbol",
         "ENTY:techmeth", "ENTY:termeq", "ENTY:veh", "ENTY:word", 
         "DESC:def", "DESC:desc", "DESC:manner", "DESC:reason", "DESC:yesno",
