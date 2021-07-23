@@ -457,7 +457,7 @@ def probing(config: ProbeConfig):
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
         if config.results_path is not None:
             with open(f"{config.results_path}/results.json", "w") as f:
-                json.dump(results, f)            
+                json.dump(results, f)
     return results
 
 def read_jiant_dataset(input_path: str) -> JiantData:
@@ -511,9 +511,9 @@ def tokenize_jiant_dataset(
 
         # Calculate the spans and check if they are valid
         # Otherwise continue to the next sample.
-        
-        # Differentiate between dataset with span2s and dataset without span2s. 
-        if span2s[i]:
+
+        # Differentiate between datasets with span2s and datasets without span2s.
+        if span2s:
             spans = [
                 encodings.word_to_tokens(span1s[i][0]),
                 encodings.word_to_tokens(span1s[i][1]),
@@ -526,7 +526,11 @@ def tokenize_jiant_dataset(
             _, span1_end = spans[1]
             span2_start, _ = spans[2]
             _, span2_end = spans[3]
-        elif span1s[i]:
+            span2_mask_start = (torch.arange(max_seq_length) >= span2_start)
+            span2_mask_end = (torch.arange(max_seq_length) < span2_end)
+            span2_mask = torch.minimum(span2_mask_start, span2_mask_end)
+            span2_masks.append(span2_mask)
+        else:
             spans = [
                 encodings.word_to_tokens(span1s[i][0]),
                 encodings.word_to_tokens(span1s[i][1]),
@@ -535,15 +539,11 @@ def tokenize_jiant_dataset(
                 continue
             span1_start, _ = spans[0]
             _, span1_end = spans[1]
-            span2_start, span2_end = (0, 0)
         # Calculate a mask tensor [x_0,...,x_max_sequence_length]
         # with x_i=1 if if span1[0]<=i<span1[1].
         span1_mask_start = (torch.arange(max_seq_length) >= span1_start)
         span1_mask_end = (torch.arange(max_seq_length) < span1_end)
         span1_mask = torch.minimum(span1_mask_start, span1_mask_end)
-        span2_mask_start = (torch.arange(max_seq_length) >= span2_start)
-        span2_mask_end = (torch.arange(max_seq_length) < span2_end)
-        span2_mask = torch.minimum(span2_mask_start, span2_mask_end)
 
         label_tensor = torch.tensor(
             [1 if labels_to_ids[labels[i]]==k else 0 for k in range(num_labels)]
@@ -551,7 +551,6 @@ def tokenize_jiant_dataset(
 
         updated_input_ids.append(target)
         span1_masks.append(span1_mask)
-        span2_masks.append(span2_mask)
         label_tensors.append(label_tensor)
 
     encodings.update({
