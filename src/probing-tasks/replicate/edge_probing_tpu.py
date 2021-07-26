@@ -25,6 +25,17 @@ JiantData = Tuple[
     ]
 
 def train_single_span(config):
+    """Train a single span edge probing model.
+
+    Trains the model until either a maximum number of evaluations or a maximum number
+    of evaluations without improvement is reached. Furthermore the learning rate can be halved
+    if the model does not improve for a certain number of evaluations.
+
+    Args:
+        config: configuration specifying the train parameters.
+    Returns:
+        None
+    """
     print("Training the model")
     lr = config.lr
     eval: int = 0
@@ -62,11 +73,11 @@ def train_single_span(config):
                 # Check if training is finished.
                 if config.max_evals is not None and eval >= config.max_evals:
                     break
-                elif counter >= config.max_evals_wo_improvement:
+                elif counter >= config.patience:
                     break
-                elif counter % config.max_evals_per_lr == 0 and counter > 0:
+                elif counter % config.patience_lr == 0 and counter > 0:
                     lr = lr/2
-                    print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
+                    print(f"No improvement for {config.patience_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
                         g['lr'] = lr
         # If inner loop did not break.
@@ -78,6 +89,17 @@ def train_single_span(config):
     print("Training is finished")
 
 def train_two_span(config):
+    """Train a two span edge probing model.
+
+    Trains the model until either a maximum number of evaluations or a maximum number
+    of evaluations without improvement is reached. Furthermore the learning rate can be halved
+    if the model does not improve for a certain number of evaluations.
+
+    Args:
+        config: configuration specifying the train parameters.
+    Returns:
+        None
+    """
     print("Training the model")
     lr = config.lr
     eval: int = 0
@@ -116,11 +138,11 @@ def train_two_span(config):
                 # Check if training is finished.
                 if config.max_evals is not None and eval >= config.max_evals:
                     break
-                elif counter >= config.max_evals_wo_improvement:
+                elif counter >= config.patience:
                     break
-                elif counter % config.max_evals_per_lr == 0 and counter > 0:
+                elif counter % config.patience_lr == 0 and counter > 0:
                     lr = lr/2
-                    print(f"No improvement for {config.max_evals_per_lr} epochs, halving the learning rate to {lr}")
+                    print(f"No improvement for {config.patience_lr} epochs, halving the learning rate to {lr}")
                     for g in config.optimizer.param_groups:
                         g['lr'] = lr
         # If inner loop did not break.
@@ -141,18 +163,24 @@ def probing(config) -> Dict[int, Dict[str, float]]:
         config: configuration specifying the run paramaters.
     Returns:
         dict: containing the results for each layer.
-
     """
     results = {}
     print(f"Probing model {config.model_name}")
     for layer in config.num_layers:
         print(f"Probing layer {layer} of {config.num_layers[-1]}")
         if config.task_type == "single_span":
-            probing_model = BertEdgeProbingSingleSpan.from_pretrained(
-                config.model_name,
-                num_labels = len(config.labels_to_ids.keys()),
-                num_hidden_layers=layer
-                ).to(config.dev)
+            if config.model_name.startswith("roberta"):
+                probing_model = RobertaEdgeProbingSingleSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
+            elif config.model_name.startswith("bert"):
+                probing_model = BertEdgeProbingSingleSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=config.lr)
             train_single_span(TrainConfig(
                 config.train_data,
@@ -162,8 +190,8 @@ def probing(config) -> Dict[int, Dict[str, float]]:
                 config.loss_func,
                 lr=config.lr,
                 max_evals=config.max_evals,
-                max_evals_per_lr=config.max_evals_per_lr,
-                max_evals_wo_improvement=config.max_evals_wo_improvement,
+                patience_lr=config.patience_lr,
+                patience=config.patience,
                 eval_interval=config.eval_interval,
                 dev=config.dev
                 ))
@@ -174,11 +202,18 @@ def probing(config) -> Dict[int, Dict[str, float]]:
                 config.labels_to_ids.values(),
                 dev=config.dev)
         elif config.task_type == "two_span":
-            probing_model = BertEdgeProbingTwoSpan.from_pretrained(
-                config.model_name,
-                num_labels = len(config.labels_to_ids.keys()),
-                num_hidden_layers=layer
-                ).to(config.dev)
+            if config.model_name.startswith("roberta"):
+                probing_model = RobertaEdgeProbingTwoSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
+            elif config.model_name.startswith("bert"):
+                probing_model = BertEdgeProbingTwoSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=config.lr)
             train_two_span(TrainConfig(
                 config.train_data,
@@ -188,8 +223,8 @@ def probing(config) -> Dict[int, Dict[str, float]]:
                 config.loss_func,
                 lr=config.lr,
                 max_evals=config.max_evals,
-                max_evals_per_lr=config.max_evals_per_lr,
-                max_evals_wo_improvement=config.max_evals_wo_improvement,
+                patience_lr=config.patience_lr,
+                patience=config.patience,
                 eval_interval=config.eval_interval,
                 dev=config.dev
                 ))
@@ -206,6 +241,5 @@ def probing(config) -> Dict[int, Dict[str, float]]:
         print(f"Test loss: {loss}, accuracy: {accuracy}, f1_score: {f1_score}")
         if config.results_path is not None:
             with open(f"{config.results_path}/results.json", "w") as f:
-                json.dump(results, f)            
-
+                json.dump(results, f)
     return results
