@@ -1,0 +1,1 @@
+coref, base, 5 patience_lr, 20 patience: 1: {'loss': 0.48906864585428395, 'accuracy': 0.7798166161623465, 'f1_score': 0.6841428697910443}
