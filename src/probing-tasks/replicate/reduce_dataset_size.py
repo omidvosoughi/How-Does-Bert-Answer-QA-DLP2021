@@ -21,21 +21,36 @@ def reduce(
         if os.path.isfile(f"{input_dir}/big/{phase}.jsonl"):
             with open(f"{input_dir}/big/{phase}.jsonl", 'r') as f:
                 lines.extend(f.readlines())
-    num = len(lines)
     random.shuffle(lines)
+    num_samples: int = 0    
+    for line in lines:
+        num_samples += len(json.loads(line)["targets"])
+    counter: int = 0
+    for line_index, line in enumerate(lines):
+        counter += len(json.loads(line)["targets"])
+        if counter < train_split*num_samples:
+            train_end: int = line_index
+        elif counter < (train_split + val_split)*num_samples:
+            val_end: int = line_index
+        else:
+            break
     phase_lines = {
-        "train": lines[:int(train_split*num)],
-        "val": lines[int(train_split*num):int((train_split + val_split)*num)],
-        "test": lines[int((train_split + val_split)*num):],
-            }
+        "train": lines[:train_end],
+        "val": lines[train_end:val_end],
+        "test": lines[val_end:],
+        }
     for phase, split in {"train": train_split, "val": val_split, "test": test_split}.items():
         with open(f"{input_dir}/big/{phase}.jsonl", 'w') as output:
+            counter: int = 0
             lines_iter = iter(phase_lines[phase])
             while True:
                 line = next(lines_iter, None)
                 if line is None:
                     break
+                counter += len(json.loads(line)["targets"])
                 output.write(line)
+            print(f"wrote {counter} samples to {phase}")
+"""
         with open(f"{input_dir}/medium/{phase}.jsonl", 'w') as output:
             counter: int = 0
             lines_iter = iter(phase_lines[phase])
@@ -54,6 +69,7 @@ def reduce(
                     break
                 counter += len(json.loads(line)["targets"])
                 output.write(line)
+"""
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
