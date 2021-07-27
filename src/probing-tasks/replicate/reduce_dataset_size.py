@@ -1,35 +1,59 @@
 import argparse
-import shutil
-import os
 import json
+import os
+import random
 from typing import List
 
-def reduce(input_dir: str, train_size: int=5000, val_size: int=500) -> None:
+def reduce(
+        input_dir: str,
+        medium_size: int=5000,
+        small_size: int=500,
+        val_split: float=0.15,
+        test_split: float=0.1
+        ) -> None:
     os.makedirs(f"{input_dir}/big", exist_ok=True)
     os.makedirs(f"{input_dir}/small", exist_ok=True)
     os.makedirs(f"{input_dir}/medium", exist_ok=True)
-    for phase, limit in {"train": train_size, "val": val_size}.items():
-        shutil.move(f"{input_dir}/{phase}.jsonl", f"{input_dir}/big/{phase}.jsonl")
-        with open(f"{input_dir}/big/{phase}.jsonl", 'r') as f:
-            lines: List[str] = f.readlines()
-            with open(f"{input_dir}/medium/{phase}.jsonl", 'w') as output:
-                counter: int = 0
-                lines_iter = iter(lines)
-                while counter < limit:
-                    line = next(lines_iter, None)
-                    if line is None:
-                        break
-                    counter += len(json.loads(line)["targets"])
-                    output.write(line)
-            with open(f"{input_dir}/small/{phase}.jsonl", 'w') as output:
-                counter: int = 0
-                lines_iter = iter(lines)
-                while counter < (limit // 10):
-                    line = next(lines_iter, None)
-                    if line is None:
-                        break
-                    counter += len(json.loads(line)["targets"])
-                    output.write(line)
+    lines: List[str] = []
+    train_split = 1-val_split-test_split
+    for phase in ["train", "val", "test"]:
+        #shutil.move(f"{input_dir}/{phase}.jsonl", f"{input_dir}/big/{phase}.jsonl")
+        if os.path.isfile(f"{input_dir}/big/{phase}.jsonl"):
+            with open(f"{input_dir}/big/{phase}.jsonl", 'r') as f:
+                lines.extend(f.readlines())
+    num = len(lines)
+    random.shuffle(lines)
+    phase_lines = {
+        "train": lines[:int(train_split*num)],
+        "val": lines[int(train_split*num):int((train_split + val_split)*num)],
+        "test": lines[int((train_split + val_split)*num):],
+            }
+    for phase, split in {"train": train_split, "val": val_split, "test": test_split}.items():
+        with open(f"{input_dir}/big/{phase}.jsonl", 'w') as output:
+            lines_iter = iter(phase_lines[phase])
+            while True:
+                line = next(lines_iter, None)
+                if line is None:
+                    break
+                output.write(line)
+        with open(f"{input_dir}/medium/{phase}.jsonl", 'w') as output:
+            counter: int = 0
+            lines_iter = iter(phase_lines[phase])
+            while counter < medium_size*split:
+                line = next(lines_iter, None)
+                if line is None:
+                    break
+                counter += len(json.loads(line)["targets"])
+                output.write(line)
+        with open(f"{input_dir}/small/{phase}.jsonl", 'w') as output:
+            counter: int = 0
+            lines_iter = iter(phase_lines[phase])
+            while counter < small_size*split:
+                line = next(lines_iter, None)
+                if line is None:
+                    break
+                counter += len(json.loads(line)["targets"])
+                output.write(line)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
