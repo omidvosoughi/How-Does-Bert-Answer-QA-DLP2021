@@ -37,32 +37,34 @@ def convert_to_jiant_ep_format(input_path: str):
         for line in lines:
             info = {"doc_id": DOC_ID, "q_id": str(q_id)}
             
+			# start processing and getting the context
             if(line.startswith("1 ")):
                 text = ""
                 current_context = {}
             
             targets = []
-            if("\t" in line):
-                line_split = line.split("\t")
-                question_split = line_split[0].split(" ")
-                question = " ".join(question_split[1:])
-                question = question[:-2] + " " + question[-2]
+			# If we read the question and answer
+            if("\t" in line):	# for example: "4 Where is the football? 	kitchen	2 3"
+                line_split = line.split("\t")					# [ "4 Where is the football?", "kitchen", "2 3" ]
+                question_split = line_split[0].split(" ")		# [ "4", "Where", "is", "the", "football?" ]
+                question = " ".join(question_split[1:])			# Where is the football?
+                question = question[:-2] + " " + question[-2]	# Where is the football ?
                 
-                ques_len = len(question.split(" "))
+                ques_len = len(question.split(" "))				# 5
 
-                sup_facts = line_split[2].split(" ")
-                sup_facts = [int(s) for s in sup_facts]
-                span_start = ques_len
-                for key in current_context:
-                    if key in sup_facts:
+                sup_facts = line_split[2].split(" ")			# [ "2", "3" ]
+                sup_facts = [int(s) for s in sup_facts]			# [ 2, 3 ]
+                span_start = ques_len							# 5
+                for key in current_context:						
+                    if key in sup_facts:	# get the label of supporting fact
                         label = "1"
                     else: 
                         label = "0"
-                    span2_len = current_context[int(key)]
+                    span2_len = current_context[int(key)]	# get the length of supporting facts
                     targets.append({"span1": [0, ques_len], 
                                     "span2": [span_start, span_start+span2_len], 
                                     "label": label})
-                    span_start += span2_len 
+                    span_start += span2_len # get the new start position for the next context
                 
                 entry = {"info": info,
                          "text": question + text,
@@ -70,11 +72,11 @@ def convert_to_jiant_ep_format(input_path: str):
                 samples.append(entry)
                 q_id += 1
 
-            else:
+            else:	# We read and save the contexts
                 line_split = line.split(" ")
-                line_text = " ".join(line_split[1:]) 
-                text += " " + line_text[:-2] + " " + line_text[-2]
-                current_context[int(line_split[0])] = len(line.split(" "))
+                line_text = " ".join(line_split[1:]) # get the context content
+                text += " " + line_text[:-2] + " " + line_text[-2] # create a space before the "."
+                current_context[int(line_split[0])] = len(line.split(" "))	# save the context with the number of it
 
     return samples
 
