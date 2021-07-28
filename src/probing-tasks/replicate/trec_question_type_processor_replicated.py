@@ -34,12 +34,13 @@ def convert_to_jiant_ep_format(input_path: str):
         sample_id += 1
         lines = input_file.readlines()
         for line in lines:
-            line = line[:-1]
-            line_split = line.split(" ")
+            line = line[:-1] # remove the last question mark
+            line_split = line.split(" ")	# split each word in the line
             
-            label = line_split[0]
-            text = line_split[1:-1]
-                
+            label = line_split[0]	# get label
+            text = line_split[1:-1]	# get text content
+            
+			# create an entry and add to sample list
             entry = {"info": info,
                      "text": " ".join(text),
                      "targets": [{"span1": [0, len(text)], "label": label}]}
@@ -54,5 +55,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     samples = convert_to_jiant_ep_format(input_path=args.input_path)
-    #print(samples)
+
     output_task_in_jiant_format(samples)
