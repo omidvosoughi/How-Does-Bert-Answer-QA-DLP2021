@@ -17,7 +17,6 @@ class BertEdgeProbingSingleSpan(BertPreTrainedModel):
         self.projection_size = 256
         self.hidden_size = 256
 
-
         self.bert = BertModel(config, add_pooling_layer=False)
         # Disable autograd for all parameters of the BertModel.
         for param in self.bert.parameters():
@@ -172,10 +171,9 @@ class RobertaEdgeProbingSingleSpan(RobertaPreTrainedModel):
         self.projection_size = 256
         self.hidden_size = 256
 
-
         self.roberta = RobertaModel(config, add_pooling_layer=False)
         # Disable autograd for all parameters of the BertModel.
-        for param in self.bert.parameters():
+        for param in self.roberta.parameters():
             param.requires_grad = False
         self.projection1 = nn.Linear(config.hidden_size, self.projection_size)
 
