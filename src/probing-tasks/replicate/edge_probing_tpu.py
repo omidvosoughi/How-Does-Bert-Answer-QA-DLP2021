@@ -183,6 +183,12 @@ def probing(config) -> Dict[int, Dict[str, float]]:
                     num_labels = len(config.labels_to_ids.keys()),
                     num_hidden_layers=layer
                     ).to(config.dev)
+            else:
+                probing_model = BertEdgeProbingSingleSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
             optimizer = optim.Adam(probing_model.parameters(), lr=config.lr)
             train_single_span(TrainConfig(
                 config.train_data,
@@ -211,6 +217,12 @@ def probing(config) -> Dict[int, Dict[str, float]]:
                     num_hidden_layers=layer
                     ).to(config.dev)
             elif config.model_name.startswith("bert"):
+                probing_model = BertEdgeProbingTwoSpan.from_pretrained(
+                    config.model_name,
+                    num_labels = len(config.labels_to_ids.keys()),
+                    num_hidden_layers=layer
+                    ).to(config.dev)
+            else:
                 probing_model = BertEdgeProbingTwoSpan.from_pretrained(
                     config.model_name,
                     num_labels = len(config.labels_to_ids.keys()),
