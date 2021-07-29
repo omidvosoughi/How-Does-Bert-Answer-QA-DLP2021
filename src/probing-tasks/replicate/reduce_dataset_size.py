@@ -8,7 +8,7 @@ def reduce(
         input_dir: str,
         medium_size: int=5000,
         small_size: int=500,
-        timing_size: int=427,
+        timing_size: int=437,
         val_split: float=0.15,
         test_split: float=0.1
         ) -> None:
